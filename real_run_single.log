@@ -1,0 +1,73 @@
+[33mNextflow 26.04.1 is available - Please consider updating your version to it(B[m
+N E X T F L O W  ~  version 24.10.6
+Launching `main.nf` [agitated_goldwasser] DSL2 - revision: b4c08bb6ad
+WARN: Task runtime metrics are not reported when using macOS without a container engine
+[27/8f57e0] Submitted process > SCQ:KB_COUNT (SRR21064278)
+[7f/4e8cbc] Submitted process > SCQ:FASTP (SRR21064278)
+[dd/83f12d] Submitted process > SCQ:CHEMISTRY_CHECK (SRR21064278)
+[68/a1375e] Submitted process > SCQ:VALIDATE_SAMPLESHEET
+[a7/37f609] Submitted process > SCQ:SOFTWARE_VERSIONS
+ERROR ~ Error executing process > 'SCQ:KB_COUNT (SRR21064278)'
+
+Caused by:
+  Process `SCQ:KB_COUNT (SRR21064278)` terminated with an error exit status (1)
+
+
+Command executed:
+
+  mkdir -p kb_out
+  kb count \
+      --workflow nac \
+      --kallisto $(command -v kallisto) \
+      --bustools $(command -v bustools) \
+      -i index.idx \
+      -g t2g.txt \
+      -c1 cdna.txt \
+      -c2 nascent.txt \
+      -x 10xv3 \
+      -t 2 \
+      -m 16G \
+      -o kb_out \
+      --sum=total \
+      SRR21064278_R1.fastq.gz SRR21064278_R2.fastq.gz
+  cp kb_out/run_info.json SRR21064278_run_info.json
+
+Command exit status:
+  1
+
+Command output:
+  (empty)
+
+Command error:
+  [2026-05-18 20:58:51,575]    INFO [count_nac] Using index index.idx to generate BUS file to kb_out from
+  [2026-05-18 20:58:51,576]    INFO [count_nac]         SRR21064278_R1.fastq.gz
+  [2026-05-18 20:58:51,576]    INFO [count_nac]         SRR21064278_R2.fastq.gz
+  [2026-05-18 20:59:07,172]   ERROR [count_nac] 
+  [bus] Note: Strand option was not specified; setting it to --fr-stranded for specified technology
+  libc++abi: terminating due to uncaught exception of type std::bad_alloc: std::bad_alloc
+  [2026-05-18 20:59:07,172]   ERROR [main] An exception occurred
+  Traceback (most recent call last):
+    File "/Users/m.faizankh/anaconda3/envs/SingleCell/lib/python3.10/site-packages/kb_python/main.py", line 1933, in main
+      COMMAND_TO_FUNCTION[args.command](parser, args, temp_dir=temp_dir)
+    File "/Users/m.faizankh/anaconda3/envs/SingleCell/lib/python3.10/site-packages/kb_python/main.py", line 595, in parse_count
+      count_nac(
+    File "/Users/m.faizankh/anaconda3/envs/SingleCell/lib/python3.10/site-packages/ngs_tools/logging.py", line 62, in inner
+      return func(*args, **kwargs)
+    File "/Users/m.faizankh/anaconda3/envs/SingleCell/lib/python3.10/site-packages/kb_python/count.py", line 1894, in count_nac
+      bus_result = kallisto_bus(
+    File "/Users/m.faizankh/anaconda3/envs/SingleCell/lib/python3.10/site-packages/kb_python/count.py", line 244, in kallisto_bus
+      run_executable(command)
+    File "/Users/m.faizankh/anaconda3/envs/SingleCell/lib/python3.10/site-packages/kb_python/dry/__init__.py", line 25, in inner
+      return func(*args, **kwargs)
+    File "/Users/m.faizankh/anaconda3/envs/SingleCell/lib/python3.10/site-packages/kb_python/utils.py", line 203, in run_executable
+      raise sp.CalledProcessError(p.returncode, ' '.join(command))
+  subprocess.CalledProcessError: Command '/Users/m.faizankh/anaconda3/envs/SingleCell/bin/kallisto bus -i index.idx -o kb_out -x 10xv3 -t 2 SRR21064278_R1.fastq.gz SRR21064278_R2.fastq.gz' died with <Signals.SIGABRT: 6>.
+  cp: cannot stat 'kb_out/run_info.json': No such file or directory
+
+Work dir:
+  /Users/m.faizankh/Coding/GitHub/Low-Compute-SingleCell-QC-Nextflow-Pipeline/work/27/8f57e006a2e8feb0d78c85314db430
+
+Tip: when you have fixed the problem you can continue the execution adding the option `-resume` to the run command line
+
+ -- Check '.nextflow.log' file for details
+WARN: Killing running tasks (4)

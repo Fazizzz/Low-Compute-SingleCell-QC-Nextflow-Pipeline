@@ -1,0 +1,54 @@
+[33mNextflow 26.04.1 is available - Please consider updating your version to it(B[m
+N E X T F L O W  ~  version 24.10.6
+Launching `main.nf` [stoic_coulomb] DSL2 - revision: 381bf9b104
+WARN: Task runtime metrics are not reported when using macOS without a container engine
+[ea/f4171d] Cached process > SCQ:CHEMISTRY_CHECK (SRR21064278)
+[90/80d312] Cached process > SCQ:CHEMISTRY_CHECK (SRR31131525)
+[2b/90deb6] Cached process > SCQ:FASTP (SRR21064278)
+[52/b89c99] Cached process > SCQ:FASTP (SRR21064279)
+[7e/7b198d] Cached process > SCQ:FASTP (SRR31131527)
+[20/1f2ec8] Cached process > SCQ:KB_COUNT (SRR31131525)
+[94/e79059] Cached process > SCQ:CHEMISTRY_CHECK (SRR21064279)
+[f0/9b1ac2] Cached process > SCQ:CHEMISTRY_CHECK (SRR31131527)
+[73/330892] Cached process > SCQ:KB_COUNT (SRR31131527)
+[86/467c50] Cached process > SCQ:SOFTWARE_VERSIONS
+[c9/db44c4] Cached process > SCQ:KB_COUNT (SRR21064279)
+[32/25c1cf] Cached process > SCQ:FASTP (SRR31131525)
+[0b/b8a2ff] Cached process > SCQ:KB_COUNT (SRR21064278)
+[d4/855238] Submitted process > SCQ:FASTP (SRR33398036)
+[ca/f2e284] Submitted process > SCQ:VALIDATE_SAMPLESHEET
+[34/d23cac] Submitted process > SCQ:CHEMISTRY_CHECK (SRR33398039)
+[c6/e683a3] Cached process > SCQ:CELL_CALLING (SRR21064278)
+[f4/dcd8c6] Cached process > SCQ:CELL_CALLING (SRR31131525)
+[be/363b8a] Cached process > SCQ:CELL_CALLING (SRR21064279)
+[9b/62d57d] Cached process > SCQ:CELL_CALLING (SRR31131527)
+[86/9ba86d] Submitted process > SCQ:CHEMISTRY_CHECK (SRR33398036)
+[26/0e85ee] Cached process > SCQ:DOUBLET_DETECT (SRR21064278)
+[46/2b0372] Cached process > SCQ:DOUBLET_DETECT (SRR31131527)
+[72/67df77] Cached process > SCQ:DOUBLET_DETECT (SRR31131525)
+[7a/ac1161] Cached process > SCQ:DOUBLET_DETECT (SRR21064279)
+[b2/edb11a] Cached process > SCQ:QC_METRICS (SRR21064279)
+[de/98d267] Cached process > SCQ:QC_METRICS (SRR31131527)
+[e8/dfbba2] Cached process > SCQ:QC_METRICS (SRR21064278)
+[48/d8f2dc] Cached process > SCQ:QC_METRICS (SRR31131525)
+[87/a3b49e] Cached process > SCQ:SAMPLE_REPORT (SRR31131527)
+[63/eec7cf] Cached process > SCQ:SAMPLE_REPORT (SRR21064278)
+[2a/e8fe27] Cached process > SCQ:SAMPLE_REPORT (SRR21064279)
+[d7/4f354d] Cached process > SCQ:SAMPLE_REPORT (SRR31131525)
+[d9/cbaeeb] Submitted process > SCQ:FASTP (SRR33398039)
+WARN: Task runtime metrics are not reported when using macOS without a container engine
+[33/e70bb4] Submitted process > SCQ:KB_COUNT (SRR33398039)
+WARN: Task runtime metrics are not reported when using macOS without a container engine
+[a6/650613] Submitted process > SCQ:KB_COUNT (SRR33398036)
+WARN: Task runtime metrics are not reported when using macOS without a container engine
+[83/498b66] Submitted process > SCQ:CELL_CALLING (SRR33398039)
+[48/e8d3bd] Submitted process > SCQ:CELL_CALLING (SRR33398036)
+WARN: Task runtime metrics are not reported when using macOS without a container engine
+[a3/301d0e] Submitted process > SCQ:DOUBLET_DETECT (SRR33398039)
+[cc/984d54] Submitted process > SCQ:DOUBLET_DETECT (SRR33398036)
+WARN: Task runtime metrics are not reported when using macOS without a container engine
+[7d/227453] Submitted process > SCQ:QC_METRICS (SRR33398039)
+[9b/e19688] Submitted process > SCQ:QC_METRICS (SRR33398036)
+[90/2c7953] Submitted process > SCQ:SAMPLE_REPORT (SRR33398039)
+[05/ea4d09] Submitted process > SCQ:SAMPLE_REPORT (SRR33398036)
+[48/9a6c92] Submitted process > SCQ:GROUP_REPORT

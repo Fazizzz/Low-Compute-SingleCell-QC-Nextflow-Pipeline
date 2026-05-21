@@ -1,0 +1,70 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "scq pipeline parameters",
+    "type": "object",
+    "properties": {
+        "samplesheet": {
+            "type": "string",
+            "description": "Path to samplesheet CSV (sample_id,fastq_r1,fastq_r2,chemistry,species)"
+        },
+        "genome_fasta": {
+            "type": ["string", "null"],
+            "description": "Path to genome FASTA (gzipped)"
+        },
+        "genome_gtf": {
+            "type": ["string", "null"],
+            "description": "Path to GTF annotation"
+        },
+        "prebuilt_index": {
+            "type": ["string", "null"],
+            "description": "Path to pre-built kallisto index (.idx)"
+        },
+        "t2g": {
+            "type": ["string", "null"],
+            "description": "Path to transcript-to-gene file (required with prebuilt_index)"
+        },
+        "outdir": {
+            "type": "string",
+            "default": "results",
+            "description": "Output directory"
+        },
+        "workflow": {
+            "type": "string",
+            "default": "quick",
+            "enum": ["quick", "full"],
+            "description": "Pseudoalignment mode. 'quick' uses a cDNA-only index (intronic reads cannot align, expect 49-65% pseudoalignment). 'full' uses kb-python nac mode and sums spliced + nascent matrices (expect ~80-95% pseudoalignment, ~1.5x runtime)."
+        },
+        "cdna_t2c": {
+            "type": ["string", "null"],
+            "description": "cdna transcript-to-capture file (required with --workflow full + --prebuilt_index)"
+        },
+        "nascent_t2c": {
+            "type": ["string", "null"],
+            "description": "nascent transcript-to-capture file (required with --workflow full + --prebuilt_index)"
+        },
+        "min_umi_threshold": {
+            "type": "integer",
+            "default": 200,
+            "description": "Hard UMI filter cutoff"
+        },
+        "threads": {
+            "type": "integer",
+            "default": 4,
+            "description": "CPUs per kb count"
+        },
+        "ref_cache_dir": {
+            "type": "string",
+            "description": "Cache directory for built references"
+        },
+        "run_celltypist": {
+            "type": "boolean",
+            "default": false,
+            "description": "Enable celltypist annotation"
+        },
+        "celltypist_model_path": {
+            "type": ["string", "null"],
+            "description": "Path to local celltypist .pkl model file"
+        }
+    },
+    "required": ["samplesheet"]
+}

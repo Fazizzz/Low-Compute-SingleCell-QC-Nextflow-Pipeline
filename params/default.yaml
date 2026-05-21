@@ -1,0 +1,17 @@
+# Default parameters for scq pipeline
+samplesheet: null
+genome_fasta: null
+genome_gtf: null
+prebuilt_index: null
+t2g: null
+cdna_t2c: null
+nascent_t2c: null
+outdir: results
+# 'quick' = cDNA-only (faster, lower alignment rate, 49-65% typical)
+# 'full'  = nac mode, sums spliced + nascent (longer runtime, ~80-95% alignment)
+workflow: quick
+min_umi_threshold: 200
+threads: 4
+ref_cache_dir: null
+run_celltypist: false
+celltypist_model_path: null

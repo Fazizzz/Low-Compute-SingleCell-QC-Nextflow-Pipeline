@@ -1,0 +1,14 @@
+{
+	"n_targets": 315648,
+	"n_bootstraps": 0,
+	"n_processed": 310000000,
+	"n_pseudoaligned": 260623595,
+	"n_unique": 91807023,
+	"p_pseudoaligned": 84.1,
+	"p_unique": 29.6,
+	"kallisto_version": "0.51.1",
+	"index_version": 13,
+	"k-mer length": 31,
+	"start_time": "Wed May 20 03:00:21 2026",
+	"call": "/opt/conda/bin/kallisto bus -i index_nac.idx -o kb_out -x 10xv3 -t 2 SRR33398036_R1.fastq.gz SRR33398036_R2.fastq.gz"
+}

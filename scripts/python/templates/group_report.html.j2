@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>SingleCell Quick QC Group Report</title>
+<script>{{ plotly_js | safe }}</script>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; background: #f3f7f5; color: #1a1f2e; }
+  header { background: #2E8B57; color: white; padding: 18px 28px; border-bottom: 3px solid #1f6e44; }
+  header h1 { margin: 0; font-size: 22px; font-weight: 500; }
+  header .meta { font-size: 12px; opacity: 0.9; margin-top: 4px; }
+  main { max-width: 1200px; margin: 24px auto; padding: 0 24px; }
+  section { background: white; border-radius: 6px; padding: 18px 22px; margin-bottom: 18px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); border: 1px solid #d8e4dd; }
+  section h2 { margin: 0 0 12px; font-size: 16px; color: #1f6e44; border-bottom: 1px solid #cfe0d6; padding-bottom: 6px; }
+  table { border-collapse: collapse; width: 100%; font-size: 13px; }
+  th, td { padding: 6px 10px; border-bottom: 1px solid #eef1f5; text-align: left; }
+  th { background: #e9f1ec; font-weight: 600; color: #1f6e44; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 11px; font-weight: 600; }
+  .pass { background: #d4edda; color: #155724; }
+  .warn { background: #fff3cd; color: #856404; }
+  .fail { background: #f8d7da; color: #721c24; }
+  .unknown { background: #e2e3e5; color: #383d41; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .plot { min-height: 320px; }
+  ul.warnings { margin: 0; padding-left: 20px; font-size: 13px; }
+  ul.warnings li { margin-bottom: 4px; }
+  pre.versions { font-size: 12px; background: #f8f9fb; padding: 10px; border-radius: 4px; overflow-x: auto; }
+  .note { font-size: 12px; color: #4d5b54; margin-top: 8px; }
+  .note .star { color: #e67e22; font-weight: 700; }
+  .compute-summary { font-size: 13px; }
+  .compute-summary td { padding: 6px 14px; }
+  .compute-summary td:first-child { color: #4d5b54; font-weight: 500; min-width: 220px; }
+  footer { color: #4d5b54; font-size: 11px; padding: 12px 28px 24px; text-align: center; }
+</style>
+</head>
+<body>
+<header>
+  <h1>SingleCell Quick QC Group Report</h1>
+  <div class="meta">generated {{ generated_at }} &middot; {{ n_samples }} sample{{ '' if n_samples == 1 else 's' }} &middot; workflow: <strong>{{ scq_workflow }}</strong></div>
+</header>
+<main>
+
+<section>
+  <h2>Sample status</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Sample</th><th>Status</th><th>Cells</th><th>Median UMI</th>
+        <th>% aligned{% if scq_workflow == 'quick' %} <span class="note star">*</span>{% endif %}</th>
+        <th>Doublet rate</th><th>Chemistry</th><th>Report</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for s in samples %}
+      <tr>
+        <td>{{ s.sample_id }}</td>
+        <td><span class="badge {{ s.status | lower }}">{{ s.status }}</span></td>
+        <td>{{ s.cells_called }}</td>
+        <td>{{ s.median_umi }}</td>
+        <td>{{ '%.1f' % s.p_pseudoaligned }}%</td>
+        <td>{{ '-' if s.doublet_rate is none else ('%.1f%%' % (s.doublet_rate * 100)) }}</td>
+        <td><span class="badge {{ s.chemistry_status | lower }}">{{ s.chemistry_status }}</span></td>
+        <td><a href="{{ s.sample_id }}/{{ s.sample_id }}_report.html">view</a></td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  {% if scq_workflow == 'quick' %}
+  <div class="note"><span class="star">*</span> Quick mode uses a cDNA-only kallisto index;
+    intronic reads do not align so 49 to 65 percent is expected. Re-run with
+    <code>--workflow full</code> for ~80 to 95 percent (sums spliced + nascent).</div>
+  {% endif %}
+</section>
+
+{% if compact_mode %}
+<section>
+  <h2>Per-sample comparisons</h2>
+  <p class="note">{{ n_samples }} samples exceed the interactive chart limit of {{ chart_sample_limit }}.
+    Showing summary statistics only; per-sample reports still available via the table above.</p>
+  <table>
+    <thead><tr><th>Metric</th><th>Min</th><th>Median</th><th>Max</th></tr></thead>
+    <tbody>
+    {% for r in summary_stats %}
+      <tr><td>{{ r.metric }}</td><td>{{ r.min }}</td><td>{{ r.median }}</td><td>{{ r.max }}</td></tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</section>
+{% else %}
+<section>
+  <h2>Per-sample comparisons</h2>
+  <div class="grid">
+    <div id="bar_cells" class="plot"></div>
+    <div id="bar_umi" class="plot"></div>
+    <div id="bar_aligned" class="plot"></div>
+    <div id="bar_doublet" class="plot"></div>
+  </div>
+</section>
+{% endif %}
+
+<section>
+  <h2>Warnings</h2>
+  {% if warnings %}
+    <ul class="warnings">
+      {% for w in warnings %}<li>{{ w }}</li>{% endfor %}
+    </ul>
+  {% else %}
+    <p style="font-size: 13px; color: #4d5b54;">No warnings raised.</p>
+  {% endif %}
+</section>
+
+{% if compute_summary %}
+<section>
+  <h2>Compute and resource summary</h2>
+  <table class="compute-summary">
+    <tbody>
+      <tr><td>Total tasks</td><td>{{ compute_summary.n_tasks }}</td></tr>
+      <tr><td>Total wall time across tasks</td><td>{{ compute_summary.total_realtime }}</td></tr>
+      <tr><td>Total CPU-hours (approx)</td><td>{{ compute_summary.cpu_hours }}</td></tr>
+      <tr><td>Max memory reserved per task</td><td>{{ compute_summary.max_memory }}</td></tr>
+    </tbody>
+  </table>
+  <div class="note">Per-step compute for each sample is at the bottom of that sample's report.</div>
+</section>
+{% endif %}
+
+<section>
+  <h2>Software versions</h2>
+  <pre class="versions">{{ software_versions }}</pre>
+</section>
+
+</main>
+<footer>SingleCell Quick QC &middot; group report rendered on {{ generated_at }}</footer>
+
+{% if not compact_mode %}
+<script>
+const bars = {{ bar_charts_json | safe }};
+if (bars.cells) Plotly.newPlot('bar_cells', bars.cells.data, bars.cells.layout, {responsive: true});
+if (bars.umi) Plotly.newPlot('bar_umi', bars.umi.data, bars.umi.layout, {responsive: true});
+if (bars.aligned) Plotly.newPlot('bar_aligned', bars.aligned.data, bars.aligned.layout, {responsive: true});
+if (bars.doublet) Plotly.newPlot('bar_doublet', bars.doublet.data, bars.doublet.layout, {responsive: true});
+</script>
+{% endif %}
+</body>
+</html>

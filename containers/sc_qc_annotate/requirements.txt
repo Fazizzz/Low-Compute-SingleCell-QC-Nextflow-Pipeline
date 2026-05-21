@@ -1,0 +1,2 @@
+celltypist>=1.6
+anndata>=0.11

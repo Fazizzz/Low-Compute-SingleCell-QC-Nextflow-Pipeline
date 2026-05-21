@@ -1,0 +1,2 @@
+sample_id,fastq_r1,fastq_r2,chemistry,species
+SRR21064278,test_data/SRR21064278_R1.fastq.gz,test_data/SRR21064278_R2.fastq.gz,10xv3,human

@@ -1,0 +1,11 @@
+{
+  "sample_id": "SRR21064279",
+  "threshold_used": 200,
+  "cells_called": 9179,
+  "n_barcodes_total": 1332181,
+  "median_umi_called": 8726,
+  "total_umi_called": 93847161,
+  "auto_knee_umi": 61645,
+  "auto_knee_rank": 1,
+  "knee_status": "unreliable"
+}

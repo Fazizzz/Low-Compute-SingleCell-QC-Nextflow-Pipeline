@@ -1,0 +1,980 @@
+barcode,predicted_labels,over_clustering,majority_voting
+AAACCCACAACGTTAC,Tem/Temra cytotoxic T cells,0,Monocytes
+AAACGAAAGGGCATGT,Non-classical monocytes,1,Monocytes
+AAACGAACACTGGCCA,Mono-mac,2,Monocytes
+AAAGAACCACTGTTCC,Monocytes,3,Monocytes
+AAAGGATTCATTCTTG,Monocytes,4,Monocytes
+AAAGGTACACCAGGTC,Monocytes,5,Monocytes
+AAAGTGACAAGAGGCT,Mono-mac,5,Monocytes
+AAATGGAAGCCATTCA,Monocytes,6,Monocytes
+AAATGGAAGTTTCTTC,Monocytes,7,Monocytes
+AAATGGAGTCCTACAA,Non-classical monocytes,8,Monocytes
+AACAAAGGTATAATGG,Monocytes,9,Monocytes
+AACAAAGGTTCTTGCC,Non-classical monocytes,11,Monocytes
+AACAACCAGGTGCCAA,Monocytes,13,Monocytes
+AACAACCGTCGGTGAA,Monocytes,9,Monocytes
+AACAACCTCGACCACG,Monocytes,15,Monocytes
+AACAAGAGTCTGTCCT,Monocytes,16,Monocytes
+AACCAACGTCGGCCTA,Monocytes,11,Monocytes
+AACCACAGTGATGTAA,Classical monocytes,17,Classical monocytes
+AACCATGAGGGCTGAT,Monocytes,18,Classical monocytes
+AACCTTTAGAGCTGAC,Monocytes,20,Monocytes
+AACCTTTTCATTTCCA,Monocytes,0,Monocytes
+AACGAAAAGCACTTTG,Non-classical monocytes,16,Monocytes
+AACTTCTGTCGTGATT,Monocytes,21,Monocytes
+AAGACTCCAGGGTTGA,Monocytes,22,Monocytes
+AAGACTCGTACAGTCT,Monocytes,23,Monocytes
+AAGCATCCAGCAGATG,Non-classical monocytes,24,Monocytes
+AAGCATCGTACCAGAG,Macrophages,25,Monocytes
+AAGCGAGCAGTAACGG,Monocytes,26,Monocytes
+AAGCGAGGTTGCGTAT,Monocytes,6,Monocytes
+AAGGTAACACCGGCTA,Mono-mac,27,Monocytes
+AAGTACCAGAATCGAT,Monocytes,22,Monocytes
+AAGTCGTGTCCCTCAT,Macrophages,28,Monocytes
+AAGTGAATCGTAGTGT,Non-classical monocytes,29,Monocytes
+AATAGAGAGCATTGAA,Monocytes,31,Monocytes
+AATAGAGTCATTTGTC,Monocytes,32,Monocytes
+AATCACGCAATCTCTT,Monocytes,10,Monocytes
+AATCACGGTCGTTTCC,Monocytes,16,Monocytes
+AATCGACAGGCCACTC,Monocytes,33,Monocytes
+AATCGACCAAGCTGTT,Monocytes,20,Monocytes
+AATCGTGAGAAACCCG,Monocytes,34,Monocytes
+AATGAAGCAGGACATG,Monocytes,16,Monocytes
+AATGACCTCTTTGCGC,Monocytes,35,Monocytes
+AATGCCATCGGTCGGT,Monocytes,36,Monocytes
+AATGGAACATAACTCG,Tcm/Naive cytotoxic T cells,18,Classical monocytes
+AATGGAAGTTTATGCG,Monocytes,37,Monocytes
+AATGGAATCAACACGT,Non-classical monocytes,34,Monocytes
+AATTTCCAGCGTACAG,Monocytes,38,Monocytes
+AATTTCCCACCGTCTT,Non-classical monocytes,39,Monocytes
+ACAAAGAGTAGACAGC,Monocytes,2,Monocytes
+ACAACCACAATGAACA,Monocytes,40,Monocytes
+ACACCAACATCCTGTC,Monocytes,15,Monocytes
+ACACCAATCCAGCAAT,Macrophages,41,Monocytes
+ACACGCGTCACTGATG,Monocytes,38,Monocytes
+ACACTGACACTGTCCT,Non-classical monocytes,42,Monocytes
+ACAGAAACAATAACGA,Monocytes,43,Monocytes
+ACAGCCGCAGCCCACA,Monocytes,25,Monocytes
+ACATCCCCAATGTGGG,Macrophages,3,Monocytes
+ACATCGACATCCTCAC,Non-classical monocytes,44,Monocytes
+ACATCGAGTATCAAGA,Mono-mac,44,Monocytes
+ACATGCAAGCTGACTT,Monocytes,45,Monocytes
+ACCAAACAGTCCTGCG,Monocytes,22,Monocytes
+ACCAAACTCCCTCATG,Monocytes,46,Monocytes
+ACCACAAAGCGTATAA,Monocytes,13,Monocytes
+ACCACAAGTTGCGGAA,Monocytes,47,Monocytes
+ACCCTCAAGCAAGCCA,Macrophages,48,Monocytes
+ACCGTTCCATGACAAA,Monocytes,49,Non-classical monocytes
+ACCGTTCGTTCTCCCA,Mono-mac,48,Monocytes
+ACCGTTCTCACGGGCT,Monocytes,29,Monocytes
+ACCTACCCAGGGAGAG,Monocytes,50,Monocytes
+ACCTGAATCTAGCCAA,Monocytes,25,Monocytes
+ACCTGTCAGCTGGCCT,Monocytes,51,Monocytes
+ACCTGTCGTCGACTTA,Mono-mac,9,Monocytes
+ACGCACGAGCATACTC,Mono-mac,10,Monocytes
+ACGCACGCATCTTTCA,Monocytes,52,Monocytes
+ACGGGTCAGAAACTAC,Monocytes,53,Monocytes
+ACGGTCGAGCAAATCA,Monocytes,48,Monocytes
+ACGGTCGCAGGAATAT,Monocytes,54,Monocytes
+ACGTAACAGCTTCATG,Monocytes,46,Monocytes
+ACGTACAAGGAGGTTC,Monocytes,55,Monocytes
+ACGTAGTGTATGCAAA,Monocytes,7,Monocytes
+ACGTCCTAGCAGCAGT,Monocytes,56,Monocytes
+ACGTCCTCATCAGCTA,Mono-mac,37,Monocytes
+ACTACGAGTTTGATCG,Monocytes,35,Monocytes
+ACTACGATCGCTAATG,Macrophages,49,Non-classical monocytes
+ACTATGGCAATAGTCC,Macrophages,57,Monocytes
+ACTATGGCAATCAGCT,Classical monocytes,58,Monocytes
+ACTATGGGTCGAACGA,Monocytes,59,Monocytes
+ACTATGGTCGAACGAA,Classical monocytes,29,Monocytes
+ACTCCCAAGCATGTTC,Monocytes,61,Monocytes
+ACTCCCAGTGAGAACC,Monocytes,7,Monocytes
+ACTCCCATCACCTCTG,Monocytes,43,Monocytes
+ACTGATGTCCAAATGC,Monocytes,62,Monocytes
+ACTGTCCGTAGCTAAA,Non-classical monocytes,34,Monocytes
+ACTTAGGGTGCCTGAC,Non-classical monocytes,49,Non-classical monocytes
+ACTTAGGTCCAGTGCG,Monocytes,61,Monocytes
+ACTTATCCATCAGCAT,Monocytes,59,Monocytes
+ACTTATCCATGAGATA,Tem/Temra cytotoxic T cells,63,Monocytes
+ACTTATCGTCATGGCC,Monocytes,37,Monocytes
+ACTTATCTCACGGGCT,NK cells,43,Monocytes
+ACTTCCGGTGCCCACA,Monocytes,58,Monocytes
+ACTTCGCAGCCTCTTC,Monocytes,62,Monocytes
+AGAACAACAAATAAGC,Myelocytes,64,Monocytes
+AGAAGCGGTGCAACGA,Monocytes,59,Monocytes
+AGAAGCGTCGCTAGCG,Macrophages,26,Monocytes
+AGAAGTATCTCATAGG,Non-classical monocytes,65,Monocytes
+AGACAAAGTGTTACAC,Monocytes,50,Monocytes
+AGACAGGAGCTGAGTG,Monocytes,42,Monocytes
+AGACAGGCAGCTCTGG,Monocytes,66,Monocytes
+AGACCATTCAGGAAAT,Macrophages,9,Monocytes
+AGACTCAAGCGATGCA,Monocytes,67,Monocytes
+AGAGAGCTCGCGTCGA,Monocytes,19,Monocytes
+AGATAGAAGAATTCAG,Monocytes,7,Monocytes
+AGATAGATCAGATTGC,Monocytes,33,Monocytes
+AGATAGATCCGTGGGT,Myelocytes,51,Monocytes
+AGATCCACACACTTAG,Monocytes,1,Monocytes
+AGATGAAAGAATAACC,Monocytes,28,Monocytes
+AGATGCTAGCACTAAA,Monocytes,37,Monocytes
+AGATGCTGTCAGACGA,Myelocytes,68,Monocytes
+AGCATCACAGGTGAGT,Monocytes,4,Monocytes
+AGCCAGCAGGTAGGCT,Classical monocytes,23,Monocytes
+AGCGATTAGGGTTGCA,Non-classical monocytes,69,Monocytes
+AGCGATTCACTTCTCG,Monocytes,69,Monocytes
+AGCGCCACAGGGAGAG,Monocytes,70,Monocytes
+AGCGTATGTTGTGTAC,Monocytes,8,Monocytes
+AGCGTCGGTAGGCAAC,NK cells,29,Monocytes
+AGCTACACAAGAGATT,Non-classical monocytes,71,Monocytes
+AGCTACATCTACTATC,Macrophages,17,Classical monocytes
+AGCTCAATCCCGAAAT,Monocytes,17,Classical monocytes
+AGGAAATGTTTAAGGA,Monocytes,37,Monocytes
+AGGAATATCACCATGA,Classical monocytes,63,Monocytes
+AGGACTTAGTCAGGGT,Monocytes,5,Monocytes
+AGGAGGTAGACAGCTG,Classical monocytes,72,Monocytes
+AGGAGGTGTACGATTC,Macrophages,11,Monocytes
+AGGATAACAAGACAAT,Monocytes,28,Monocytes
+AGGATCTGTAGTATAG,Monocytes,20,Monocytes
+AGGATCTTCTCAACCC,Monocytes,6,Monocytes
+AGGGCCTCAATTCTTC,Monocytes,14,Monocytes
+AGGGCCTCACAGTCCG,Monocytes,23,Monocytes
+AGGGTGAAGAAGCTCG,Myelocytes,63,Monocytes
+AGGGTTTGTCGTACTA,Monocytes,15,Monocytes
+AGGTCATCAGCTGGTC,Non-classical monocytes,74,Monocytes
+AGGTCATTCGCCCAGA,Monocytes,6,Monocytes
+AGGTCTAAGATTGGGC,Monocytes,58,Monocytes
+AGGTCTAAGGTTGAGC,NK cells,34,Monocytes
+AGGTCTATCAAGGAGC,Monocytes,75,Monocytes
+AGGTCTATCCTATGGA,Monocytes,73,Myelocytes
+AGGTTACAGACGGTCA,Monocytes,76,Monocytes
+AGGTTACCAGCGGTTC,Monocytes,64,Monocytes
+AGGTTGTCACCAAAGG,Monocytes,31,Monocytes
+AGGTTGTTCTGAACGT,Tem/Temra cytotoxic T cells,77,Myelocytes
+AGTACCACATTAAGCC,Monocytes,70,Monocytes
+AGTCAACCAAGTCCAT,Monocytes,65,Monocytes
+AGTCATGTCTCATGCC,Monocytes,61,Monocytes
+AGTCTCCGTCCTCCTA,Non-classical monocytes,7,Monocytes
+AGTGATCTCGAGTCCG,Non-classical monocytes,69,Monocytes
+AGTGTTGAGCGTTCCG,Monocytes,34,Monocytes
+AGTGTTGCATCGAACT,Non-classical monocytes,71,Monocytes
+AGTGTTGGTCTACGAT,Monocytes,66,Monocytes
+AGTGTTGTCGGCCTTT,Monocytes,76,Monocytes
+AGTTCCCGTTCTAACG,Monocytes,51,Monocytes
+AGTTCGAAGTTAACGA,Monocytes,78,Monocytes
+ATACCTTAGGCTGAAC,Macrophages,79,Monocytes
+ATACCTTCAGGTATGG,Classical monocytes,24,Monocytes
+ATAGAGACAGGCCCTA,Monocytes,46,Monocytes
+ATAGAGACAGGGATAC,Monocytes,33,Monocytes
+ATAGAGATCGTTCCCA,Monocytes,13,Monocytes
+ATAGGCTAGAAGTCTA,DC2,68,Monocytes
+ATCACGAAGAGGTATT,Mono-mac,32,Monocytes
+ATCACGAAGTCTCGTA,Monocytes,80,Monocytes
+ATCACTTTCATCACTT,Classical monocytes,75,Monocytes
+ATCAGGTCACGACAAG,Non-classical monocytes,5,Monocytes
+ATCATTCCACAAGTGG,Mono-mac,27,Monocytes
+ATCCATTAGACTTCAC,Monocytes,52,Monocytes
+ATCCATTAGAGTATAC,Memory B cells,77,Myelocytes
+ATCCATTCAAGAGGTC,Classical monocytes,7,Monocytes
+ATCCCTGTCTTCACAT,Mono-mac,74,Monocytes
+ATCCGTCTCGCTCATC,Classical monocytes,47,Monocytes
+ATCGCCTAGGAAGTAG,Monocytes,26,Monocytes
+ATCGGATCACTACACA,ILC3,81,Monocytes
+ATCGGCGAGACTCGAG,Monocytes,51,Monocytes
+ATCGGCGCAGTGAGCA,Monocytes,37,Monocytes
+ATCGTCCAGCATCCCG,Monocytes,0,Monocytes
+ATCGTCCCAGCGGATA,Classical monocytes,45,Monocytes
+ATCTCTAGTACAGTCT,Monocytes,82,Monocytes
+ATCTCTAGTCAGCTTA,Macrophages,57,Monocytes
+ATCTTCACACCCATAA,Classical monocytes,68,Monocytes
+ATGAAAGGTTATGACC,Non-classical monocytes,12,Monocytes
+ATGAAAGTCAGACCCG,Mono-mac,72,Monocytes
+ATGCGATAGGATATAC,Classical monocytes,18,Classical monocytes
+ATGCGATAGTCTGCAT,Monocytes,67,Monocytes
+ATGGGAGAGCGTGTCC,Monocytes,36,Monocytes
+ATGGTTGAGCGCCTTG,Monocytes,84,Monocytes
+ATGGTTGCAGGTCAAG,Monocytes,24,Monocytes
+ATGTCCCCAGCGTTGC,Classical monocytes,24,Monocytes
+ATTACTCGTATTGACC,Monocytes,31,Monocytes
+ATTATCCAGGATGCGT,Monocytes,10,Monocytes
+ATTATCCGTCGGAAAC,Monocytes,2,Monocytes
+ATTCAGGCAAGATGTA,Trm cytotoxic T cells,45,Monocytes
+ATTCATCCAAGCACCC,Monocytes,80,Monocytes
+ATTCATCTCACCTGGG,Monocytes,10,Monocytes
+ATTCCATTCCACATAG,Monocytes,36,Monocytes
+ATTCGTTAGGAGACCT,Monocytes,66,Monocytes
+ATTCGTTGTAACAGGC,Monocytes,13,Monocytes
+ATTCTACAGAGCGACT,Non-classical monocytes,49,Non-classical monocytes
+ATTCTACGTTATCCAG,Macrophages,59,Monocytes
+ATTCTTGTCTATCCAT,Mono-mac,47,Monocytes
+ATTGGGTAGACTCCGC,Monocytes,12,Monocytes
+ATTGTTCCACTAGGTT,Non-classical monocytes,0,Monocytes
+ATTGTTCGTTATGTGC,Mono-mac,1,Monocytes
+ATTTCACGTGGATCAG,Non-classical monocytes,63,Monocytes
+ATTTCTGCAAAGCTAA,Monocytes,12,Monocytes
+CAACCAATCCACGGGT,Non-classical monocytes,64,Monocytes
+CAACGATAGCGAGAAA,Tcm/Naive helper T cells,77,Myelocytes
+CAACGATCAGATACTC,Regulatory T cells,60,Monocytes
+CAACGATTCATTGCGA,Monocytes,80,Monocytes
+CAACGGCAGCAACCAG,Monocytes,3,Monocytes
+CAACGGCAGTATCCTG,Classical monocytes,59,Monocytes
+CAACGGCGTGACTCTA,Non-classical monocytes,42,Monocytes
+CAAGAGGCAGACATCT,Monocytes,70,Monocytes
+CAAGCTACAGCGTTTA,Monocytes,8,Monocytes
+CAATCGAAGACGAGCT,Monocytes,65,Monocytes
+CAATCGAAGGGCTTCC,Non-classical monocytes,55,Monocytes
+CAATCGAGTCCCGCAA,Monocytes,20,Monocytes
+CAATGACGTGGCAACA,Monocytes,71,Monocytes
+CACAACACAAACGGCA,Monocytes,9,Monocytes
+CACAGGCCAGATCACT,Macrophages,84,Monocytes
+CACATGAAGCTATCCA,Monocytes,44,Monocytes
+CACATGACAGTCCGTG,Macrophages,21,Monocytes
+CACATGATCTGGGTCG,Monocytes,85,Monocytes
+CACCAAAGTGGCTTAT,Monocytes,68,Monocytes
+CACGGGTAGTGCTAGG,Non-classical monocytes,39,Monocytes
+CACGTGGTCCCTCTCC,Monocytes,69,Monocytes
+CACGTTCTCGAACGGA,Monocytes,39,Monocytes
+CACTGAACAAGCTCTA,Monocytes,25,Monocytes
+CACTGGGAGGAACTCG,Non-classical monocytes,73,Myelocytes
+CACTGGGAGTTAGAAC,Trm cytotoxic T cells,29,Monocytes
+CACTGGGTCAAAGACA,Monocytes,3,Monocytes
+CACTGGGTCATGACAC,Monocytes,71,Monocytes
+CACTGTCCAACGATTC,Monocytes,61,Monocytes
+CACTTCGTCCATCTAT,Monocytes,66,Monocytes
+CAGAGCCTCGCTCATC,Monocytes,58,Monocytes
+CAGATACAGTATGGCG,Monocytes,80,Monocytes
+CAGATCATCTGCTTAT,Classical monocytes,69,Monocytes
+CAGATTGTCTCAGAAC,Myelocytes,29,Monocytes
+CAGCAATGTTTGAACC,Monocytes,21,Monocytes
+CAGCCAGCAATCAGCT,Macrophages,48,Monocytes
+CAGCCAGCAGCGGTCT,Monocytes,26,Monocytes
+CAGCCAGTCGAGAGCA,Classical monocytes,55,Monocytes
+CAGGGCTCACTCAAGT,NK cells,54,Monocytes
+CAGGGCTGTTGGCTAT,Monocytes,74,Monocytes
+CAGGTATGTATTGGCT,Monocytes,24,Monocytes
+CAGGTATGTCCTGAAT,Monocytes,69,Monocytes
+CAGTGCGCAATCGCAT,Myelocytes,73,Myelocytes
+CAGTGCGCATGACCCG,Tcm/Naive helper T cells,86,Myelocytes
+CAGTGCGGTAGTTACC,Macrophages,39,Monocytes
+CAGTTCCTCAAGAGTA,Monocytes,21,Monocytes
+CAGTTCCTCACCTCGT,DC2,0,Monocytes
+CATAAGCGTGCCTTCT,Non-classical monocytes,87,Monocytes
+CATAAGCTCAAGTGTC,Monocytes,80,Monocytes
+CATAAGCTCGGTCTAA,Monocytes,76,Monocytes
+CATACAGGTATCCTCC,Monocytes,14,Monocytes
+CATACCCCACTATCGA,Monocytes,71,Monocytes
+CATACCCGTCCAACGC,Monocytes,34,Monocytes
+CATACCCGTGTGTCCG,Monocytes,44,Monocytes
+CATACCCGTTCGTACA,Monocytes,66,Monocytes
+CATACTTAGTCCGCGT,Tem/Temra cytotoxic T cells,58,Monocytes
+CATCAAGAGGGACTGT,Monocytes,53,Monocytes
+CATCAAGTCTTCCACG,Monocytes,14,Monocytes
+CATCCCAAGAGCCCAA,Monocytes,56,Monocytes
+CATCGCTCACAAGCAG,Monocytes,5,Monocytes
+CATGAGTAGCAATTCC,Monocytes,14,Monocytes
+CATGAGTAGGCCATAG,Monocytes,34,Monocytes
+CATGAGTGTACCGTGC,Tcm/Naive helper T cells,73,Myelocytes
+CATGCAAAGCCTCAGC,Macrophages,49,Non-classical monocytes
+CATGCGGCACAAGCTT,Mono-mac,67,Monocytes
+CATGCGGCATATGAAG,Classical monocytes,6,Monocytes
+CATGCTCAGATGCAGC,Mono-mac,69,Monocytes
+CATGCTCAGTGGATTA,Monocytes,43,Monocytes
+CATGCTCGTGTAACGG,Monocytes,64,Monocytes
+CATGCTCTCTCTCGAC,Monocytes,66,Monocytes
+CATGCTCTCTGGAAGG,Myelocytes,5,Monocytes
+CATGGATGTCAAAGTA,Regulatory T cells,19,Monocytes
+CATGGATTCCGTATAG,Myelocytes,86,Myelocytes
+CATTCCGAGGAAACGA,Monocytes,38,Monocytes
+CATTGAGTCATTGCCC,Monocytes,55,Monocytes
+CCAAGCGGTATCAGCT,Classical monocytes,73,Myelocytes
+CCAATGACAGCTCGGT,Classical monocytes,63,Monocytes
+CCAATGAGTAGTGTGG,Tem/Temra cytotoxic T cells,76,Monocytes
+CCAATGAGTTCAGCGC,Classical monocytes,69,Monocytes
+CCAATTTCACCAGCTG,Monocytes,30,Monocytes
+CCAATTTTCGTGTCAA,Monocytes,71,Monocytes
+CCACAAATCGACCCAG,Monocytes,38,Monocytes
+CCACAAATCGATTGGT,Monocytes,7,Monocytes
+CCACCATCACTAACCA,Classical monocytes,27,Monocytes
+CCACCATGTTCGGGTC,Tcm/Naive helper T cells,29,Monocytes
+CCACGAGTCCAACTAG,Monocytes,1,Monocytes
+CCACTTGTCAACCGAT,Monocytes,56,Monocytes
+CCATAAGCAAGATGTA,Myelocytes,77,Myelocytes
+CCATAAGCACGCAGTC,Regulatory T cells,85,Monocytes
+CCATAAGGTATGTCTG,Monocytes,5,Monocytes
+CCATCACCACACGTGC,Mono-mac,30,Monocytes
+CCATCACTCACATCAG,Monocytes,3,Monocytes
+CCCAACTAGTATAGAC,Monocytes,59,Monocytes
+CCCAACTCATAGATGA,Monocytes,2,Monocytes
+CCCATTGGTAACGATA,Monocytes,12,Monocytes
+CCCATTGGTAATCAGA,Regulatory T cells,17,Classical monocytes
+CCCGAAGTCGACATCA,Monocytes,13,Monocytes
+CCCTAACGTGTACGCC,Non-classical monocytes,88,Monocytes
+CCCTCAACAAATTAGG,Monocytes,29,Monocytes
+CCCTCAAGTTGCTCGG,Monocytes,54,Monocytes
+CCCTCTCCAGCTGTCG,Monocytes,59,Monocytes
+CCCTTAGAGATGATTG,Classical monocytes,31,Monocytes
+CCCTTAGCAGAGTTGG,Monocytes,63,Monocytes
+CCCTTAGGTTCGAACT,Myelocytes,86,Myelocytes
+CCGATCTTCCACAGGC,Monocytes,37,Monocytes
+CCGATGGTCAATCCAG,Monocytes,56,Monocytes
+CCGCAAGTCTCCCATG,Monocytes,72,Monocytes
+CCGGTAGCACCGTACG,Mono-mac,51,Monocytes
+CCGGTGAAGAATAGTC,Monocytes,12,Monocytes
+CCGGTGACAAATACGA,Monocytes,58,Monocytes
+CCGTGAGAGTTTCGAC,Monocytes,56,Monocytes
+CCTAAGAAGCAGCACA,Monocytes,81,Monocytes
+CCTAAGAGTCAAGCCC,Monocytes,24,Monocytes
+CCTACGTAGCAGGCTA,Monocytes,44,Monocytes
+CCTATCGCATCCGTTC,Monocytes,27,Monocytes
+CCTCAACGTACCTAAC,Monocytes,61,Monocytes
+CCTCAACGTTGCTCCT,Mono-mac,10,Monocytes
+CCTCAGTGTTGGATCT,Monocytes,9,Monocytes
+CCTCAGTTCGCACGAC,Monocytes,88,Monocytes
+CCTCAGTTCTCACCCA,Non-classical monocytes,37,Monocytes
+CCTCATGGTCTGCGCA,Classical monocytes,17,Classical monocytes
+CCTCATGGTGCTGTCG,Mono-mac,69,Monocytes
+CCTCATGTCACGGGAA,Monocytes,42,Monocytes
+CCTCCAAAGAAAGCGA,Monocytes,20,Monocytes
+CCTCCAAGTCGTCAGC,Macrophages,13,Monocytes
+CCTGCATCAATAGTGA,Monocytes,58,Monocytes
+CCTGCATCAGACATCT,Monocytes,34,Monocytes
+CCTTCAGGTATGTCAC,Non-classical monocytes,10,Monocytes
+CCTTGTGAGGTCCCGT,Monocytes,8,Monocytes
+CCTTGTGAGTCACGCC,Monocytes,82,Monocytes
+CCTTTGGAGACAACAT,Monocytes,80,Monocytes
+CCTTTGGCAAGCAATA,Monocytes,10,Monocytes
+CCTTTGGCATGAAGGC,Fibroblasts,31,Monocytes
+CGAGAAGAGGGAGGGT,Non-classical monocytes,84,Monocytes
+CGAGAAGGTGCCCACA,Monocytes,44,Monocytes
+CGAGGCTCAGAACTCT,Monocytes,28,Monocytes
+CGAGGCTGTAGGAGGG,Monocytes,14,Monocytes
+CGAGTGCAGTGCGACA,Monocytes,53,Monocytes
+CGAGTGCTCGTTTACT,Monocytes,73,Myelocytes
+CGAGTTAGTCGTCGGT,Monocytes,56,Monocytes
+CGATGGCCAGACCATT,Monocytes,15,Monocytes
+CGCATAACAAATGAAC,Myelocytes,73,Myelocytes
+CGCATGGGTTCTGACA,Mono-mac,77,Myelocytes
+CGCCATTAGCGCACAA,Macrophages,78,Monocytes
+CGCCATTAGTAGGGTC,Regulatory T cells,26,Monocytes
+CGGAACCCAGAAATCA,Mono-mac,4,Monocytes
+CGGAACCGTCTCGGAC,Monocytes,19,Monocytes
+CGGAACCTCTTCGTAT,Non-classical monocytes,65,Monocytes
+CGGAATTAGGGTCAAC,Classical monocytes,18,Classical monocytes
+CGGAATTCACCTGCTT,Monocytes,89,Monocytes
+CGGAGAAGTATGACAA,Myelocytes,37,Monocytes
+CGGGACTCAATGCAGG,Macrophages,13,Monocytes
+CGGGTCAAGATGAACT,Tem/Temra cytotoxic T cells,25,Monocytes
+CGGGTCAGTCTGTAAC,Monocytes,38,Monocytes
+CGGGTCATCACCACAA,Monocytes,90,Monocytes
+CGGGTGTCAGGGTCTC,Monocytes,87,Monocytes
+CGGTCAGCATTCACAG,Monocytes,40,Monocytes
+CGGTCAGGTCCTCATC,Monocytes,88,Monocytes
+CGTAAGTAGGTAGTCG,Monocytes,19,Monocytes
+CGTAAGTTCAAGTCTG,Monocytes,85,Monocytes
+CGTAATGGTCTACAAC,Monocytes,33,Monocytes
+CGTCAAACACAACGAG,Monocytes,58,Monocytes
+CGTGAATCAGGTCCCA,Monocytes,19,Monocytes
+CGTGATACAATTGAAG,Classical monocytes,25,Monocytes
+CGTGCTTGTCATATGC,Monocytes,34,Monocytes
+CGTTAGACATCTAACG,Macrophages,21,Monocytes
+CGTTAGAGTGTGTGTT,Macrophages,32,Monocytes
+CGTTAGATCGTGAGAG,Monocytes,69,Monocytes
+CTAACCCCAGCAGAAC,Tcm/Naive helper T cells,86,Myelocytes
+CTAACCCGTTACGCCG,Non-classical monocytes,31,Monocytes
+CTAACTTGTACTCGTA,Monocytes,50,Monocytes
+CTACATTAGACTGGGT,Myelocytes,68,Monocytes
+CTACCCAGTCTCGGGT,Monocytes,72,Monocytes
+CTACCTGCAGGGTCTC,Monocytes,7,Monocytes
+CTACCTGGTCTAGGCC,Monocytes,27,Monocytes
+CTACGGGTCATGGGAG,Monocytes,66,Monocytes
+CTACTATCACGACGCT,Monocytes,72,Monocytes
+CTAGGTAAGCCGTTGC,Tem/Temra cytotoxic T cells,19,Monocytes
+CTATAGGTCAAAGGAT,NK cells,43,Monocytes
+CTATCCGAGAGCATCG,Monocytes,12,Monocytes
+CTATCCGAGCTCTATG,Monocytes,87,Monocytes
+CTATCTAAGCGCCATC,Monocytes,64,Monocytes
+CTATCTACACGACGAA,NK cells,17,Classical monocytes
+CTATCTATCGACGTCG,Mono-mac,75,Monocytes
+CTCAACCGTGCAATGG,Classical monocytes,85,Monocytes
+CTCAACCGTGGTGATG,Non-classical monocytes,78,Monocytes
+CTCAATTAGGCATCTT,Myelocytes,89,Monocytes
+CTCAATTTCGGTAGAG,Monocytes,90,Monocytes
+CTCACTGTCCACGGGT,Monocytes,48,Monocytes
+CTCAGAACATGACTCA,Mono-mac,70,Monocytes
+CTCAGTCGTCGTGCCA,Non-classical monocytes,73,Myelocytes
+CTCAGTCTCAGCTTGA,Non-classical monocytes,79,Monocytes
+CTCATCGCACAGCTTA,Monocytes,64,Monocytes
+CTCATCGCATATAGCC,Non-classical monocytes,54,Monocytes
+CTCATGCTCATTCTTG,Myelocytes,18,Classical monocytes
+CTCCAACCAGCGTAGA,Classical monocytes,50,Monocytes
+CTCCACAGTCCGGCAT,Monocytes,78,Monocytes
+CTCCACATCCATACAG,Trm cytotoxic T cells,86,Myelocytes
+CTCCATGGTGCTGTCG,Non-classical monocytes,40,Monocytes
+CTCCCAAAGTTATGGA,Monocytes,43,Monocytes
+CTCCCTCCAAGCACAG,Monocytes,58,Monocytes
+CTCCCTCCAATAGTAG,Monocytes,69,Monocytes
+CTCCGATGTTGTGTTG,Non-classical monocytes,89,Monocytes
+CTCCGATTCATCACAG,Monocytes,0,Monocytes
+CTCCTCCGTATGCGGA,Monocytes,39,Monocytes
+CTCCTCCGTCAACCAT,Non-classical monocytes,66,Monocytes
+CTCCTTTTCAATGTCG,Monocytes,35,Monocytes
+CTCCTTTTCGCCGTGA,Tcm/Naive helper T cells,63,Monocytes
+CTCCTTTTCTCTCCTC,Tcm/Naive helper T cells,73,Myelocytes
+CTCGAGGGTAATCAGA,Monocytes,72,Monocytes
+CTCTCGATCGGCTGAC,Classical monocytes,17,Classical monocytes
+CTGAGCGCATAGGTTC,Macrophages,89,Monocytes
+CTGAGGCCAATCTCTT,Monocytes,7,Monocytes
+CTGATCCAGGTCGCCT,Monocytes,68,Monocytes
+CTGCAGGTCCTGGTCT,Myelocytes,86,Myelocytes
+CTGCATCAGCCAAGGT,Monocytes,40,Monocytes
+CTGCATCGTGTAAACA,Mono-mac,72,Monocytes
+CTGGCAGTCGATGGAG,Mono-mac,62,Monocytes
+CTGGTCTAGACATATG,Monocytes,2,Monocytes
+CTGGTCTAGCCTGTCG,Monocytes,80,Monocytes
+CTGGTCTTCTAGCAAC,Monocytes,32,Monocytes
+CTGTAGAAGGTGAGAA,Monocytes,44,Monocytes
+CTGTAGACAACGTTAC,Monocytes,50,Monocytes
+CTGTAGAGTAGAGTTA,Monocytes,3,Monocytes
+CTGTCGTCACCGTCTT,Non-classical monocytes,70,Monocytes
+CTGTCGTGTTCCTAGA,Classical monocytes,32,Monocytes
+CTGTCGTGTTGGGACA,Myelocytes,47,Monocytes
+CTGTGGGAGGATGAGA,Myelocytes,71,Monocytes
+CTGTGGGGTTGCAACT,Monocytes,45,Monocytes
+CTTACCGTCTCTCGAC,Monocytes,78,Monocytes
+CTTCAATTCAGCAATC,Monocytes,70,Monocytes
+CTTCCGAAGTCCCAAT,Monocytes,3,Monocytes
+CTTCCTTGTGCAAGAC,Mono-mac,35,Monocytes
+CTTCGGTCACAGAAGC,Monocytes,30,Monocytes
+CTTCTCTGTACAGGTG,Non-classical monocytes,76,Monocytes
+CTTGATTGTTCCTTGC,Monocytes,21,Monocytes
+CTTTCAATCATTGAGC,Monocytes,5,Monocytes
+CTTTCAATCCATGAGT,Monocytes,59,Monocytes
+GAAACCTTCTGGGCAC,Monocytes,40,Monocytes
+GAACACTAGTATAACG,Monocytes,57,Monocytes
+GAACACTGTACTCAAC,Monocytes,58,Monocytes
+GAACACTTCGGATTAC,Monocytes,65,Monocytes
+GAACGTTAGACAACTA,Classical monocytes,62,Monocytes
+GAACGTTCAGTTAGGG,Macrophages,77,Myelocytes
+GAACGTTGTAAGGAGA,Monocytes,27,Monocytes
+GAACGTTTCGCCTCTA,Monocytes,75,Monocytes
+GAACTGTCAAACCATC,Tcm/Naive helper T cells,63,Monocytes
+GAAGAATAGCTAGAAT,Monocytes,12,Monocytes
+GAAGAATCAGAGTCTT,Regulatory T cells,85,Monocytes
+GAAGCGAAGTGGTCAG,Classical monocytes,82,Monocytes
+GAAGCGATCATTACGG,Tcm/Naive helper T cells,29,Monocytes
+GAAGGGTCACAATGAA,Monocytes,32,Monocytes
+GAAGGGTGTACACTCA,Non-classical monocytes,67,Monocytes
+GAAGTAAGTCAGTCTA,Monocytes,29,Monocytes
+GAATAGAGTGTGTACT,Monocytes,85,Monocytes
+GAATCACAGCACCTGC,Monocytes,36,Monocytes
+GAATCACCAGCGATTT,Monocytes,89,Monocytes
+GACACGCAGGATACCG,Monocytes,45,Monocytes
+GACACGCAGTCCCGAC,Myelocytes,86,Myelocytes
+GACAGCCGTTCCGTTC,Macrophages,21,Monocytes
+GACAGCCTCCATACAG,Non-classical monocytes,35,Monocytes
+GACAGCCTCGTAATGC,Monocytes,39,Monocytes
+GACCAATGTAGTTAGA,Macrophages,54,Monocytes
+GACCCAGTCAAGGAGC,Monocytes,36,Monocytes
+GACCCTTTCGTTATCT,Monocytes,56,Monocytes
+GACCTTCAGCGCTGAA,Monocytes,79,Monocytes
+GACCTTCAGTCGCGAA,Trm cytotoxic T cells,73,Myelocytes
+GACCTTCAGTTAGAAC,Macrophages,54,Monocytes
+GACGCTGAGGATTCCT,Monocytes,70,Monocytes
+GACGCTGCAGTATTCG,Classical monocytes,19,Monocytes
+GACTATGAGTCGCGAA,Non-classical monocytes,11,Monocytes
+GACTCAAAGCATGCAG,Mono-mac,19,Monocytes
+GACTCAAAGCTAGTTC,Monocytes,23,Monocytes
+GAGAAATGTACGGTTT,Mono-mac,58,Monocytes
+GAGAAATGTGACTGAG,Monocytes,46,Monocytes
+GAGAAATTCACGACTA,Naive B cells,63,Monocytes
+GAGACCCAGCTGCGAA,Monocytes,72,Monocytes
+GAGACTTAGAAGTGTT,Monocytes,44,Monocytes
+GAGAGGTCATTGGGAG,Monocytes,87,Monocytes
+GAGCTGCTCCGGCTTT,Monocytes,20,Monocytes
+GAGGCCTGTCACAGTT,Monocytes,2,Monocytes
+GAGGCCTGTTGTGTTG,Macrophages,52,Monocytes
+GAGGGATGTTCGGGTC,Monocytes,64,Monocytes
+GAGTCATGTAAGCTCT,Non-classical monocytes,86,Myelocytes
+GAGTCATTCTTCCTAA,Mono-mac,31,Monocytes
+GAGTCTAAGACCTTTG,Monocytes,58,Monocytes
+GAGTCTACAGCCGTTG,Mono-mac,19,Monocytes
+GAGTGAGCAGTCAGCC,Classical monocytes,55,Monocytes
+GAGTGAGTCAGTCCGG,Non-classical monocytes,24,Monocytes
+GAGTGTTCAAGACTGG,Macrophages,56,Monocytes
+GAGTTGTCAAACGGCA,Classical monocytes,73,Myelocytes
+GAGTTGTCATCGGTTA,Monocytes,54,Monocytes
+GAGTTTGCACAAGGTG,Monocytes,23,Monocytes
+GATCAGTGTCTGCCTT,Monocytes,44,Monocytes
+GATCATGGTGGTGATG,Classical monocytes,4,Monocytes
+GATCCCTGTAACGGTG,Monocytes,24,Monocytes
+GATCCCTTCACTCGAA,Monocytes,80,Monocytes
+GATCGTATCAGCGCAC,Classical monocytes,84,Monocytes
+GATGAGGGTCTAGGTT,Monocytes,79,Monocytes
+GATGAGGTCAATCGGT,Monocytes,32,Monocytes
+GATGATCTCCATTTCA,Monocytes,31,Monocytes
+GATGGAGCACGACCTG,DC2,0,Monocytes
+GATGGAGGTGAAGCGT,Monocytes,83,Monocytes
+GATTCGACAGCGTTGC,Tem/Temra cytotoxic T cells,24,Monocytes
+GATTTCTAGTGAGGCT,Monocytes,34,Monocytes
+GATTTCTCACCAACAT,Monocytes,16,Monocytes
+GATTTCTCAGCCTATA,Monocytes,75,Monocytes
+GCAACATAGTTGTACC,Mono-mac,28,Monocytes
+GCAACCGCAGTATTCG,Monocytes,2,Monocytes
+GCACGTGCAACACAGG,Classical monocytes,36,Monocytes
+GCACGTGGTTGGTAGG,Monocytes,74,Monocytes
+GCACTAACAAGTATCC,Monocytes,13,Monocytes
+GCAGCCACAAGGTACG,Monocytes,8,Monocytes
+GCAGCCACATGTTCGA,Monocytes,51,Monocytes
+GCAGCTGTCCCAGTGG,Monocytes,82,Monocytes
+GCAGGCTTCGATTCCC,Non-classical monocytes,45,Monocytes
+GCAGTTAGTGAGTGAC,Non-classical monocytes,51,Monocytes
+GCATCGGGTGCTATTG,Monocytes,36,Monocytes
+GCATCGGTCGACCTAA,Macrophages,30,Monocytes
+GCATCGGTCGGACGTC,Monocytes,84,Monocytes
+GCATGATTCAAGGCTT,Monocytes,0,Monocytes
+GCCAACGGTACCGTCG,Mono-mac,87,Monocytes
+GCCAGCACAAAGCTAA,Monocytes,14,Monocytes
+GCCAGCACAACTCATG,Monocytes,77,Myelocytes
+GCCAGCAGTTAAGAAC,Monocytes,67,Monocytes
+GCCAGCATCCACCTCA,Mono-mac,77,Myelocytes
+GCCAGGTCAGGACGAT,Mono-mac,66,Monocytes
+GCCAGTGCAGAACATA,Tem/Temra cytotoxic T cells,53,Monocytes
+GCCAGTGGTGTTCATG,Non-classical monocytes,79,Monocytes
+GCCAGTGTCCGTAGTA,Non-classical monocytes,73,Myelocytes
+GCCATGGAGCCTCTGG,Mono-mac,31,Monocytes
+GCCATTCCACGACGCT,Early lymphoid/T lymphoid,3,Monocytes
+GCCCAGACAATGACCT,Tem/Temra cytotoxic T cells,61,Monocytes
+GCCCAGAGTGACCGTC,Monocytes,3,Monocytes
+GCCCGAAAGCTCGACC,Monocytes,28,Monocytes
+GCCGATGAGCTCCCTT,Monocytes,6,Monocytes
+GCCGTGAAGTTAGTAG,Classical monocytes,47,Monocytes
+GCCGTGAGTTATGTGC,Mono-mac,12,Monocytes
+GCCTGTTTCTGGAGAG,CD16- NK cells,68,Monocytes
+GCGAGAAGTACTGTTG,Monocytes,17,Classical monocytes
+GCGAGAATCACTGGTA,Monocytes,46,Monocytes
+GCGAGAATCATTCCTA,Monocytes,29,Monocytes
+GCGATCGGTAGATTGA,Classical monocytes,13,Monocytes
+GCGATCGGTCTCGACG,DC2,49,Non-classical monocytes
+GCGGAAAGTGTAACGG,Monocytes,4,Monocytes
+GCGGAAATCAGACAAA,Mono-mac,29,Monocytes
+GCGTGCAAGACCTCCG,Monocytes,90,Monocytes
+GCGTGCACAGTAGTTC,Monocytes,82,Monocytes
+GCTACCTAGTCATGGG,Monocytes,79,Monocytes
+GCTACCTTCTCGGGAC,Monocytes,38,Monocytes
+GCTCAAAAGGCCCGTT,Macrophages,36,Monocytes
+GCTCAAAAGTGACCTT,Mono-mac,66,Monocytes
+GCTCAAATCGGTTCAA,Non-classical monocytes,10,Monocytes
+GCTGAATGTGGTTTGT,Monocytes,8,Monocytes
+GCTGCAGCACCGGCTA,DC2,51,Monocytes
+GCTTGGGAGCAGATAT,Non-classical monocytes,43,Monocytes
+GCTTGGGCAGGTCAAG,Mono-mac,51,Monocytes
+GCTTTCGCAGCACACC,Monocytes,38,Monocytes
+GCTTTCGGTACTAAGA,Monocytes,79,Monocytes
+GGAATCTGTGATTAGA,Monocytes,81,Monocytes
+GGAATGGAGGGCAATC,Monocytes,74,Monocytes
+GGAATGGCAAGGTACG,Monocytes,16,Monocytes
+GGAATGGCAGTCGGAA,Monocytes,2,Monocytes
+GGACGTCGTCGTGATT,Mono-mac,78,Monocytes
+GGAGAACCAGGCTATT,Tem/Temra cytotoxic T cells,68,Monocytes
+GGAGCAAAGAGTGTTA,Monocytes,29,Monocytes
+GGAGCAAAGTACCCTA,Monocytes,34,Monocytes
+GGAGGATAGACTCTAC,Monocytes,13,Monocytes
+GGAGGATAGATCGGTG,Classical monocytes,66,Monocytes
+GGAGGTACAAGAGATT,DC2,17,Classical monocytes
+GGAGGTACAAGTTCGT,Monocytes,75,Monocytes
+GGATGTTAGTTAGAAC,Monocytes,56,Monocytes
+GGCACGTAGAGCAACC,Monocytes,1,Monocytes
+GGCGTCAAGTGATCGG,Monocytes,21,Monocytes
+GGCTGTGTCGTGTGGC,Monocytes,31,Monocytes
+GGCTTGGCACGTGAGA,Monocytes,61,Monocytes
+GGCTTTCTCACTTTGT,Monocytes,44,Monocytes
+GGGAAGTCAAGACTGG,Monocytes,39,Monocytes
+GGGACAACATTCTCTA,Monocytes,40,Monocytes
+GGGACAATCGGCTGAC,Classical monocytes,20,Monocytes
+GGGACCTAGCATGCAG,Classical monocytes,82,Monocytes
+GGGACCTGTACCCAGC,Monocytes,50,Monocytes
+GGGACCTTCTTGGATG,Monocytes,54,Monocytes
+GGGACTCAGTCAATCC,Monocytes,42,Monocytes
+GGGACTCCACAACCGC,Monocytes,32,Monocytes
+GGGACTCGTGCCCTTT,Monocytes,69,Monocytes
+GGGAGTACAGCTGTGC,Monocytes,44,Monocytes
+GGGAGTACATGACAGG,Non-classical monocytes,3,Monocytes
+GGGAGTAGTGTAGGAC,Monocytes,46,Monocytes
+GGGAGTAGTGTTTGCA,Regulatory T cells,60,Monocytes
+GGGATCCCACAATCTG,Monocytes,37,Monocytes
+GGGATCCTCACTCGAA,Monocytes,83,Monocytes
+GGGCCATCAAAGACTA,Macrophages,62,Monocytes
+GGGCCATCAGAGGCAT,Tem/Temra cytotoxic T cells,19,Monocytes
+GGGCGTTCAGAACTTC,Monocytes,70,Monocytes
+GGGCGTTTCGACATAC,Monocytes,51,Monocytes
+GGGTATTAGGTTTACC,Myelocytes,17,Classical monocytes
+GGGTCACTCAATCAGC,Monocytes,8,Monocytes
+GGGTGAACAGTCTGGC,Monocytes,28,Monocytes
+GGGTGTCCATTAAGCC,Monocytes,44,Monocytes
+GGGTTATTCGACGAGA,Monocytes,37,Monocytes
+GGTAACTAGCAGATAT,Macrophages,83,Monocytes
+GGTAACTCATGCCATA,Monocytes,3,Monocytes
+GGTAACTGTGCGACAA,Monocytes,53,Monocytes
+GGTAATCGTCTGCATA,Mono-mac,79,Monocytes
+GGTAGAGAGATTAGTG,Monocytes,42,Monocytes
+GGTCACGTCTGCTGAA,Monocytes,67,Monocytes
+GGTCTGGAGCTAGTTC,Monocytes,18,Classical monocytes
+GGTCTGGTCCCGAAAT,Monocytes,60,Monocytes
+GGTGAAGCAAATGAGT,Monocytes,6,Monocytes
+GGTGAAGGTTGTCAGT,Monocytes,69,Monocytes
+GGTGATTCACGAGAAC,Monocytes,58,Monocytes
+GGTGATTTCTATACGG,Monocytes,12,Monocytes
+GGTGTCGCATAGCTGT,Monocytes,63,Monocytes
+GGTGTCGTCGAACGGA,Monocytes,51,Monocytes
+GGTTGTACAGTGCCTG,Tem/Temra cytotoxic T cells,28,Monocytes
+GGTTGTATCCATTCGC,CD16- NK cells,45,Monocytes
+GTAACACGTCCTCATC,Monocytes,69,Monocytes
+GTAAGTCGTTACCCAA,Monocytes,34,Monocytes
+GTAAGTCTCGATACTG,Monocytes,49,Non-classical monocytes
+GTAATCGAGACATAGT,Classical monocytes,78,Monocytes
+GTAATCGAGACGCCCT,Tcm/Naive helper T cells,17,Classical monocytes
+GTAATCGCAGGTCAAG,Non-classical monocytes,53,Monocytes
+GTAATCGTCCCTCTAG,Non-classical monocytes,48,Monocytes
+GTAATGCGTTTCGTGA,Monocytes,90,Monocytes
+GTAATGCTCTAGCCAA,Monocytes,54,Monocytes
+GTACAACGTAGACAGC,Monocytes,59,Monocytes
+GTAGAAAAGCTCTTCC,Monocytes,28,Monocytes
+GTAGAGGCACGTACAT,Myelocytes,85,Monocytes
+GTAGAGGCAGGTCAGA,Monocytes,48,Monocytes
+GTAGCTAAGCACACCC,Monocytes,68,Monocytes
+GTAGCTATCAGGTGTT,Monocytes,1,Monocytes
+GTAGGAGGTGGAGAAA,Monocytes,41,Monocytes
+GTAGTACGTATCGCTA,Myelocytes,63,Monocytes
+GTATTTCAGCGTTGTT,Monocytes,65,Monocytes
+GTATTTCTCGCAATTG,Monocytes,88,Monocytes
+GTCAAACAGGAATTAC,Classical monocytes,16,Monocytes
+GTCAAACGTGCCTATA,Monocytes,26,Monocytes
+GTCAAGTCACTGAGGA,Monocytes,1,Monocytes
+GTCACTCTCGAGCCTG,Monocytes,20,Monocytes
+GTCAGCGAGTGAGGTC,Monocytes,53,Monocytes
+GTCAGCGCACACACTA,Non-classical monocytes,42,Monocytes
+GTCATTTCAGACCTGC,Monocytes,89,Monocytes
+GTCATTTCAGATCCAT,Monocytes,63,Monocytes
+GTCCACTCACCGTACG,Monocytes,16,Monocytes
+GTCCCATAGCGCCTAC,Monocytes,80,Monocytes
+GTCCTCACATCGCCTT,Tem/Temra cytotoxic T cells,13,Monocytes
+GTCCTCAGTCACAATC,Monocytes,77,Myelocytes
+GTCGAATAGCGCCTCA,Monocytes,76,Monocytes
+GTCGAATAGGTCATTC,Monocytes,62,Monocytes
+GTCGCGACAGCGTGAA,Regulatory T cells,29,Monocytes
+GTCGTAAAGATGCTTC,Monocytes,29,Monocytes
+GTCGTTCAGGCATGGT,Monocytes,83,Monocytes
+GTCGTTCGTCAGTCTA,Monocytes,43,Monocytes
+GTCTAGATCCCTTGGT,Non-classical monocytes,47,Monocytes
+GTCTTTACACTGAGGA,Monocytes,55,Monocytes
+GTCTTTACATCTCATT,Monocytes,5,Monocytes
+GTGAGTTGTTTGGCTA,Monocytes,85,Monocytes
+GTGATGTCAGTTAGGG,Monocytes,28,Monocytes
+GTGCAGCCAAAGACTA,Monocytes,89,Monocytes
+GTGCTTCAGCGTGTTT,Non-classical monocytes,4,Monocytes
+GTGGCGTGTCGTATGT,pDC,31,Monocytes
+GTGGGAAAGTTCTCTT,Classical monocytes,81,Monocytes
+GTGGTTACAATAGTAG,Monocytes,0,Monocytes
+GTGGTTACATGTGGCC,Myelocytes,77,Myelocytes
+GTGGTTATCAACACCA,Non-classical monocytes,47,Monocytes
+GTGGTTATCATCGACA,Monocytes,2,Monocytes
+GTGTAACAGATCCCAT,Monocytes,51,Monocytes
+GTGTAACCAGCAGGAT,Macrophages,0,Monocytes
+GTGTAACTCTTGCGCT,Monocytes,48,Monocytes
+GTGTCCTAGAATTCAG,Monocytes,0,Monocytes
+GTGTCCTCACATCATG,Monocytes,55,Monocytes
+GTGTGGCAGGCCTGCT,Classical monocytes,80,Monocytes
+GTGTGGCGTTCGGACC,Myelocytes,71,Monocytes
+GTGTTAGAGTAATACG,Macrophages,15,Monocytes
+GTGTTCCAGACAACAT,Monocytes,76,Monocytes
+GTGTTCCGTCGTAATC,Mono-mac,68,Monocytes
+GTTACCCGTTATAGCC,Monocytes,72,Monocytes
+GTTACCCTCCTGATAG,Monocytes,90,Monocytes
+GTTACGAGTGCAACAG,Macrophages,6,Monocytes
+GTTACGATCTTGGTCC,Monocytes,28,Monocytes
+GTTAGTGCAATGAGCG,Monocytes,81,Monocytes
+GTTAGTGGTGTTATCG,Monocytes,28,Monocytes
+GTTATGGAGCCGTAAG,Monocytes,41,Monocytes
+GTTATGGCAGCAGATG,Monocytes,33,Monocytes
+GTTCATTAGCACTCAT,Monocytes,65,Monocytes
+GTTCCGTGTCAACACT,Monocytes,10,Monocytes
+GTTCCGTTCTTAGCAG,Monocytes,11,Monocytes
+GTTCTATCAGGTCCGT,Monocytes,51,Monocytes
+GTTGAACCACGCCAGT,Monocytes,33,Monocytes
+GTTGAACTCGAGAAAT,Monocytes,9,Monocytes
+GTTGCGGGTGCCCAGT,Monocytes,25,Monocytes
+GTTGCTCTCATTACTC,Monocytes,56,Monocytes
+GTTGTAGAGAAGCGCT,Monocytes,89,Monocytes
+GTTGTCCAGTCAATCC,Non-classical monocytes,80,Monocytes
+GTTTACTCAAGCTACT,Mono-mac,61,Monocytes
+GTTTGGATCCGTCAAA,Monocytes,82,Monocytes
+TAACGACAGGTGAGCT,Monocytes,74,Monocytes
+TAACGACCAGGTAGTG,Monocytes,33,Monocytes
+TAAGCACAGTGAACAT,Monocytes,6,Monocytes
+TAAGCACCAAATCAGA,Monocytes,52,Monocytes
+TAAGCCAAGGTTGCCC,Monocytes,59,Monocytes
+TAAGCGTGTCAAAGTA,Monocytes,15,Monocytes
+TAAGCGTGTTGGGTAG,Non-classical monocytes,0,Monocytes
+TAAGTCGAGAAAGTCT,Classical monocytes,54,Monocytes
+TAATCTCAGAAACCCG,Monocytes,78,Monocytes
+TAATTCCGTAACACCT,Monocytes,52,Monocytes
+TACAACGGTGTCGATT,Monocytes,10,Monocytes
+TACACCCAGCAAGGAA,Macrophages,29,Monocytes
+TACCGAAGTCGCAGTC,Tem/Temra cytotoxic T cells,81,Monocytes
+TACCGGGGTTCTTGCC,Monocytes,53,Monocytes
+TACCGGGTCACCTGTC,Myelocytes,77,Myelocytes
+TACCTCGAGACCTGGA,DC2,47,Monocytes
+TACCTCGGTATCGAGG,Monocytes,25,Monocytes
+TACCTGCCAGTAGTGG,Non-classical monocytes,52,Monocytes
+TACCTGCTCTAGCCAA,Mono-mac,26,Monocytes
+TACGCTCGTACTCAAC,Monocytes,25,Monocytes
+TACGGTAAGCGATGCA,Regulatory T cells,82,Monocytes
+TACGGTACAGCTCCTT,Monocytes,27,Monocytes
+TACTGCCCACGCGCTA,Non-classical monocytes,70,Monocytes
+TACTTCACAGTTGGTT,Monocytes,33,Monocytes
+TACTTGTAGGTCACAG,Monocytes,30,Monocytes
+TACTTGTCATCGAACT,Macrophages,5,Monocytes
+TAGACCAGTCGTGATT,Monocytes,38,Monocytes
+TAGAGTCCAACCGCCA,Monocytes,52,Monocytes
+TAGAGTCGTACCGGCT,Non-classical monocytes,3,Monocytes
+TAGAGTCGTCCATAGT,Monocytes,48,Monocytes
+TAGATCGAGAGAGCCT,Non-classical monocytes,27,Monocytes
+TAGATCGCAGCCGGTT,Mono-mac,60,Monocytes
+TAGATCGGTGGAAATT,CD16- NK cells,73,Myelocytes
+TAGCACACAGGAATCG,Monocytes,51,Monocytes
+TAGCACAGTGATGGCA,Mono-mac,66,Monocytes
+TAGGAGGCATAATCGC,Monocytes,1,Monocytes
+TAGGAGGGTTAGGCTT,Monocytes,82,Monocytes
+TAGGTTGCATGGGTTT,Non-classical monocytes,18,Classical monocytes
+TAGGTTGGTCCATAGT,Monocytes,47,Monocytes
+TAGTGCACAAGAAACT,Classical monocytes,52,Monocytes
+TAGTGCATCGACATAC,Mono-mac,65,Monocytes
+TATACCTTCGTGCGAC,Classical monocytes,85,Monocytes
+TATATCCAGGTAAAGG,Monocytes,32,Monocytes
+TATATCCCATCATCCC,Monocytes,75,Monocytes
+TATCTGTCACTGAGGA,Monocytes,15,Monocytes
+TATGTTCTCCGTCAAA,Monocytes,25,Monocytes
+TATTGCTCAGTGTGGA,Monocytes,33,Monocytes
+TCAAGCATCCGCTGTT,Monocytes,80,Monocytes
+TCAATCTGTGTTGATC,Monocytes,61,Monocytes
+TCAATCTTCTCTGGTC,Monocytes,85,Monocytes
+TCAATTCTCCCTAGGG,Macrophages,39,Monocytes
+TCACACCGTCGAGCTC,Monocytes,53,Monocytes
+TCACGCTAGCTTACGT,Monocytes,7,Monocytes
+TCACGCTGTGACAGGT,Monocytes,23,Monocytes
+TCACTCGGTGGGAGAG,Monocytes,35,Monocytes
+TCAGCAACAGGAATCG,Monocytes,23,Monocytes
+TCAGCCTAGGATCACG,Monocytes,75,Monocytes
+TCAGGGCTCAGAGTGG,Monocytes,62,Monocytes
+TCAGGTAAGGACAGCT,Monocytes,54,Monocytes
+TCAGTCCCAGACCTGC,Monocytes,38,Monocytes
+TCAGTGACAAGCAGGT,Monocytes,72,Monocytes
+TCAGTTTCAGCCGTTG,Monocytes,16,Monocytes
+TCATACTTCGGCATTA,Monocytes,36,Monocytes
+TCATATCAGACCAACG,Myelocytes,73,Myelocytes
+TCATCCGAGAAGGATG,Macrophages,82,Monocytes
+TCATCCGCAAATGCTC,Monocytes,24,Monocytes
+TCATCCGCAATACAGA,Monocytes,21,Monocytes
+TCATGAGAGTCAGCCC,DC2,64,Monocytes
+TCATGCCAGGGTTAAT,Non-classical monocytes,6,Monocytes
+TCATGCCGTGGAACAC,Monocytes,53,Monocytes
+TCATGCCTCTGAATCG,Monocytes,90,Monocytes
+TCATGTTCACCGTGAC,Monocytes,75,Monocytes
+TCATTCACAACGGCTC,Monocytes,30,Monocytes
+TCATTCAGTCTCGCGA,NK cells,55,Monocytes
+TCATTTGCATCTTCGC,Myelocytes,31,Monocytes
+TCATTTGGTCTACGAT,Monocytes,39,Monocytes
+TCCAGAAGTTAGGACG,Monocytes,52,Monocytes
+TCCATCGCACATTCGA,Mono-mac,14,Monocytes
+TCCATCGTCAAACGTC,Monocytes,30,Monocytes
+TCCATGCGTTAAGCAA,Monocytes,3,Monocytes
+TCCCACAAGTCATCGT,Monocytes,36,Monocytes
+TCCCATGCACAGTATC,Non-classical monocytes,12,Monocytes
+TCCCATGGTTGTGCCG,Macrophages,78,Monocytes
+TCCCATGGTTTAGTCG,Monocytes,44,Monocytes
+TCCGAAACACGTGTGC,Monocytes,10,Monocytes
+TCCGAAATCAGAACCT,Monocytes,31,Monocytes
+TCCGAAATCTCTCGAC,Monocytes,56,Monocytes
+TCCGATCTCGGTTCAA,Monocytes,12,Monocytes
+TCCGGGACACTATCGA,Myelocytes,29,Monocytes
+TCCTCCCTCACACGAT,Non-classical monocytes,69,Monocytes
+TCCTCCCTCGAGTTGT,Regulatory T cells,3,Monocytes
+TCCTCGACACGTGTGC,Monocytes,5,Monocytes
+TCCTCGACATAAGCGG,Macrophages,72,Monocytes
+TCCTCGAGTTATCTTC,Monocytes,72,Monocytes
+TCCTCTTAGGGTTTCT,Monocytes,8,Monocytes
+TCCTCTTGTCGAATGG,Monocytes,71,Monocytes
+TCCTCTTGTTCTAACG,Monocytes,25,Monocytes
+TCCTGCACAGCAGGAT,Monocytes,62,Monocytes
+TCCTTCTAGCGATTCT,Monocytes,37,Monocytes
+TCCTTTCCATTAAAGG,Monocytes,60,Monocytes
+TCGAACACAAGCTGTT,Monocytes,71,Monocytes
+TCGAACATCCCTCGAT,Monocytes,11,Monocytes
+TCGAAGTGTTGCGAAG,Tcm/Naive helper T cells,19,Monocytes
+TCGACGGCAGAAGCGT,Monocytes,63,Monocytes
+TCGACGGGTGACTCTA,Non-classical monocytes,33,Monocytes
+TCGATTTAGTCAGAGC,Monocytes,79,Monocytes
+TCGCAGGCACGGAAGT,Monocytes,83,Monocytes
+TCGCTCAGTTTGGAGG,Monocytes,87,Monocytes
+TCGGATACAGGTGTGA,Monocytes,13,Monocytes
+TCGGATATCAGGACAG,Monocytes,59,Monocytes
+TCGGTCTTCACCGGGT,Trm cytotoxic T cells,47,Monocytes
+TCGTAGATCGTGAGAG,Myelocytes,77,Myelocytes
+TCGTGCTCACTGTGAT,Mono-mac,86,Myelocytes
+TCTAACTTCCTCAGGG,Mono-mac,90,Monocytes
+TCTACATCACAGCATT,Non-classical monocytes,1,Monocytes
+TCTACATCACTTCATT,Macrophages,74,Monocytes
+TCTACCGTCCACGGAC,Monocytes,44,Monocytes
+TCTATACCATCGCTCT,Monocytes,50,Monocytes
+TCTATACTCGACCATA,Monocytes,25,Monocytes
+TCTATCAAGAGTGTGC,Monocytes,64,Monocytes
+TCTCACGTCACGGGAA,Non-classical monocytes,87,Monocytes
+TCTCAGCGTAGTCCTA,Monocytes,31,Monocytes
+TCTCAGCTCAGTCAGT,Monocytes,31,Monocytes
+TCTCTGGAGCACTCTA,Monocytes,79,Monocytes
+TCTGGCTGTAGTCTGT,Monocytes,11,Monocytes
+TCTGTCGCATACTTTC,Monocytes,15,Monocytes
+TCTTAGTTCATGACAC,Monocytes,34,Monocytes
+TCTTCCTAGCTTCGTA,Monocytes,37,Monocytes
+TCTTCCTGTGTGTGGA,Non-classical monocytes,49,Non-classical monocytes
+TGAACGTCAGTGTATC,Monocytes,2,Monocytes
+TGAATCGTCCGTAGGC,Monocytes,58,Monocytes
+TGAATGCGTAGCGCTC,Monocytes,58,Monocytes
+TGAATGCTCGCCTATC,Monocytes,0,Monocytes
+TGACAGTAGCACACCC,Classical monocytes,90,Monocytes
+TGACAGTTCATGCGGC,Monocytes,78,Monocytes
+TGACAGTTCTTCCTAA,Monocytes,88,Monocytes
+TGACCCTGTAACCCGC,Monocytes,69,Monocytes
+TGACCCTTCGCCGAAC,Monocytes,64,Monocytes
+TGACGCGCAAGGCAAC,Myelocytes,87,Monocytes
+TGACTCCCACACACTA,Tcm/Naive helper T cells,19,Monocytes
+TGAGGAGGTCATCAGT,Myelocytes,86,Myelocytes
+TGAGGGATCTCATGGA,Monocytes,12,Monocytes
+TGAGGTTTCCATTGGA,Monocytes,82,Monocytes
+TGAGTCATCATCAGTG,Non-classical monocytes,7,Monocytes
+TGATCAGCACTGCACG,Classical monocytes,90,Monocytes
+TGATCAGTCGGCTTCT,Monocytes,36,Monocytes
+TGATCTTGTCGTTTCC,Myelocytes,48,Monocytes
+TGATGCAAGGTCGTGA,Monocytes,60,Monocytes
+TGATGCATCGTCGCTT,Monocytes,69,Monocytes
+TGATGGTAGACTCTTG,Monocytes,69,Monocytes
+TGATGGTCACATGTTG,Classical monocytes,4,Monocytes
+TGATTTCCACATGGTT,Monocytes,16,Monocytes
+TGCACGGAGCGTCAAG,Monocytes,67,Monocytes
+TGCAGATTCCATTTCA,Monocytes,26,Monocytes
+TGCAGATTCGACCAAT,Monocytes,38,Monocytes
+TGCAGGCCATCCGATA,Classical monocytes,43,Monocytes
+TGCAGGCTCCGGTAGC,Mono-mac,87,Monocytes
+TGCAGTATCGTGTCAA,Monocytes,1,Monocytes
+TGCATCCGTGTTCCAA,Classical monocytes,31,Monocytes
+TGCATGAAGTTTGCTG,Monocytes,78,Monocytes
+TGCATGAGTCTTGAAC,Monocytes,85,Monocytes
+TGCGACGCAATTGCAC,Monocytes,3,Monocytes
+TGCGGGTAGTAGAATC,Monocytes,48,Monocytes
+TGCGGGTGTATTTCTC,Monocytes,1,Monocytes
+TGCTCCAAGACGACTG,Monocytes,6,Monocytes
+TGCTCCACATTCTGTT,Monocytes,15,Monocytes
+TGCTCCAGTTGCTAGT,Myelocytes,73,Myelocytes
+TGCTGAAAGTAGACAT,Monocytes,21,Monocytes
+TGGAGAGAGGCAATGC,Non-classical monocytes,65,Monocytes
+TGGAGGACACGGCGTT,Monocytes,1,Monocytes
+TGGAGGAGTCCATCTC,Monocytes,90,Monocytes
+TGGATCACATCAGCGC,Non-classical monocytes,55,Monocytes
+TGGATGTGTTAAGAAC,Tem/Temra cytotoxic T cells,43,Monocytes
+TGGCGTGGTTTAGACC,Monocytes,84,Monocytes
+TGGGAGAGTCCTGTCT,Monocytes,85,Monocytes
+TGGGAGATCACCTACC,Monocytes,32,Monocytes
+TGGGATTTCTCGTCGT,Monocytes,81,Monocytes
+TGGGCGTAGAGGGTAA,Monocytes,67,Monocytes
+TGGGCGTTCTCTTGCG,Monocytes,28,Monocytes
+TGGGCTGAGACATGCG,Monocytes,19,Monocytes
+TGGTACAAGGCGTCCT,Monocytes,33,Monocytes
+TGGTAGTGTTATCCAG,Monocytes,31,Monocytes
+TGGTGATCAGATTAAG,Monocytes,85,Monocytes
+TGGTTAGCACCCTAGG,Monocytes,49,Non-classical monocytes
+TGTAAGCGTTGCTCAA,Non-classical monocytes,85,Monocytes
+TGTACAGAGCCGAATG,Monocytes,4,Monocytes
+TGTACAGAGCGCCTCA,Monocytes,54,Monocytes
+TGTCCACGTCGAAACG,Monocytes,10,Monocytes
+TGTCCACTCGTCGGGT,Monocytes,85,Monocytes
+TGTCCTGAGAGGTTTA,Non-classical monocytes,71,Monocytes
+TGTCCTGGTGCGAGTA,Classical monocytes,86,Myelocytes
+TGTCCTGGTGGCTTGC,Non-classical monocytes,19,Monocytes
+TGTGAGTGTTAAGTCC,Monocytes,35,Monocytes
+TGTGCGGCAAGACGGT,Monocytes,16,Monocytes
+TGTGGCGCACTGTGTA,Monocytes,66,Monocytes
+TGTGGCGGTACGCTAT,Mono-mac,49,Non-classical monocytes
+TGTGTGACATTCCTAT,Monocytes,16,Monocytes
+TGTTCATCAGAGGACT,Classical monocytes,31,Monocytes
+TGTTCCGAGTGGTTGG,Monocytes,46,Monocytes
+TGTTCCGGTGGTATGG,Monocytes,82,Monocytes
+TGTTCTACAGTTACCA,Myelocytes,29,Monocytes
+TGTTGGAGTTCGAACT,Non-classical monocytes,32,Monocytes
+TTACAGGAGAGGCGTT,Non-classical monocytes,82,Monocytes
+TTACAGGCACCGCTAG,Monocytes,6,Monocytes
+TTACAGGGTCCTCCTA,Monocytes,57,Monocytes
+TTACCATCAAGAAACT,Monocytes,6,Monocytes
+TTACCATGTGAGGAAA,Monocytes,44,Monocytes
+TTACGCCGTTACGTAC,Monocytes,30,Monocytes
+TTACGTTGTAAGGCCA,Myelocytes,73,Myelocytes
+TTAGTCTAGACGATAT,Monocytes,71,Monocytes
+TTAGTCTGTACTCGCG,Monocytes,44,Monocytes
+TTCAATCAGCCATGCC,Monocytes,15,Monocytes
+TTCACCGAGACTTCGT,Mono-mac,29,Monocytes
+TTCACGCTCCAAATGC,Monocytes,16,Monocytes
+TTCAGGAAGCATATGA,Non-classical monocytes,46,Monocytes
+TTCAGGACATGAATAG,Monocytes,47,Monocytes
+TTCATGTCACTTGAAC,Monocytes,58,Monocytes
+TTCCACGGTCGCCACA,Monocytes,26,Monocytes
+TTCCGGTCAGTGTACT,Monocytes,73,Myelocytes
+TTCCGGTTCCCATGGG,Mono-mac,58,Monocytes
+TTCCGGTTCCGTAATG,Macrophages,15,Monocytes
+TTCCTAAAGACTTCAC,Trm cytotoxic T cells,29,Monocytes
+TTCCTCTCATACCATG,Monocytes,55,Monocytes
+TTCCTCTGTACAGGTG,Cycling T cells,1,Monocytes
+TTCCTCTGTATCACGT,Monocytes,11,Monocytes
+TTCCTTCAGGTTTACC,Monocytes,11,Monocytes
+TTCGATTAGTGGTCAG,Myelocytes,17,Classical monocytes
+TTCGATTGTCCGATCG,Monocytes,57,Monocytes
+TTCGCTGTCGATACTG,Monocytes,39,Monocytes
+TTCGGTCTCGAGAATA,Classical monocytes,77,Myelocytes
+TTCTAACTCCGTGGTG,Non-classical monocytes,10,Monocytes
+TTCTAGTGTGTCGCTG,Tem/Temra cytotoxic T cells,81,Monocytes
+TTCTCTCCATAAGCAA,Monocytes,27,Monocytes
+TTCTGTAAGCGATTCT,Monocytes,74,Monocytes
+TTCTGTATCTCCCAAC,Monocytes,56,Monocytes
+TTGAACGAGATACAGT,Non-classical monocytes,89,Monocytes
+TTGAACGGTAATCAAG,Macrophages,67,Monocytes
+TTGATGGCACTCGATA,Monocytes,70,Monocytes
+TTGCATTCACGGTGTC,Monocytes,54,Monocytes
+TTGCATTGTCCATCTC,Monocytes,43,Monocytes
+TTGCATTGTTGCATAC,Monocytes,59,Monocytes
+TTGCCTGAGACTTAAG,Monocytes,12,Monocytes
+TTGCGTCCACGCGTCA,Non-classical monocytes,32,Monocytes
+TTGGATGCAAGGTCTT,Monocytes,40,Monocytes
+TTGGATGGTGAGTGAC,Monocytes,50,Monocytes
+TTGGGATTCGGCAGTC,Monocytes,58,Monocytes
+TTGGGCGAGACATAAC,Monocytes,85,Monocytes
+TTGGGCGGTTGCCTAA,Monocytes,10,Monocytes
+TTGGGTAAGGCCACTC,Monocytes,87,Monocytes
+TTGGGTAAGGTGCGAT,Tem/Temra cytotoxic T cells,73,Myelocytes
+TTGGGTAAGTCGCCCA,Non-classical monocytes,49,Non-classical monocytes
+TTGTGGACACACCGAC,Monocytes,69,Monocytes
+TTGTGGATCTACGCGG,Monocytes,38,Monocytes
+TTGTGTTAGACCTTTG,Non-classical monocytes,45,Monocytes
+TTGTGTTAGTAGATCA,Mono-mac,78,Monocytes
+TTGTTCAAGCTGGCCT,Monocytes,86,Myelocytes
+TTGTTTGAGTTGGGAC,Monocytes,38,Monocytes
+TTGTTTGCACCAAATC,Monocytes,50,Monocytes
+TTGTTTGGTACCAGAG,Monocytes,5,Monocytes
+TTGTTTGGTTCTCCTG,Monocytes,17,Classical monocytes
+TTTACGTCAGGCGAAT,Myelocytes,77,Myelocytes
+TTTACGTTCATCACAG,Monocytes,65,Monocytes
+TTTAGTCCACTGAGGA,Non-classical monocytes,81,Monocytes
+TTTCACATCGGACGTC,Non-classical monocytes,86,Myelocytes
+TTTCACATCTAGGCCG,Non-classical monocytes,86,Myelocytes
+TTTCATGAGTGATTCC,Macrophages,21,Monocytes
+TTTCGATCATCCGTGG,Non-classical monocytes,77,Myelocytes
+TTTGATCAGACTCCGC,Monocytes,65,Monocytes
+TTTGATCCATCCTCAC,Non-classical monocytes,7,Monocytes
+TTTGGAGAGTAGGCCA,Monocytes,48,Monocytes
+TTTGGAGCACCGCTGA,Monocytes,15,Monocytes
+TTTGGTTCAGGGAATC,Non-classical monocytes,24,Monocytes

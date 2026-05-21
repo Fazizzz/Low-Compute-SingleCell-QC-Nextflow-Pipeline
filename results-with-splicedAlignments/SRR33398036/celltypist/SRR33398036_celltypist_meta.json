@@ -1,0 +1,7 @@
+{
+  "sample_id": "SRR33398036",
+  "status": "ok",
+  "n_cells": 12689,
+  "model": "Immune_All_Low.pkl",
+  "labels_n_unique": 50
+}

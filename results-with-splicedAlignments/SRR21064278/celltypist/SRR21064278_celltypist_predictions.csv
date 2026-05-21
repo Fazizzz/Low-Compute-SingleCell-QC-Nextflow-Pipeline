@@ -1,0 +1,1018 @@
+barcode,predicted_labels,over_clustering,majority_voting
+AAACCCACAACGTTAC,Cycling T cells,0,Mono-mac
+AAACGAAAGGGCATGT,Mono-mac,1,Mono-mac
+AAACGAACACTGGCCA,Cycling T cells,2,Mono-mac
+AAAGAACCACTGTTCC,Monocytes,3,Cycling T cells
+AAAGGATTCATTCTTG,Cycling T cells,4,Cycling T cells
+AAAGGTAAGCTGTACC,Tcm/Naive helper T cells,5,Monocytes
+AAAGGTACACCAGGTC,Mono-mac,6,Cycling T cells
+AAAGTGACAAGAGGCT,Mono-mac,7,Monocytes
+AAATGGAAGCCATTCA,Cycling T cells,8,Cycling T cells
+AAATGGAAGTTTCTTC,Macrophages,9,Cycling T cells
+AAATGGAGTCCTACAA,Mono-mac,10,Mono-mac
+AACAAAGGTATAATGG,Cycling T cells,11,Mono-mac
+AACAAAGGTTCTTGCC,Macrophages,12,Cycling T cells
+AACAACCAGGTGCCAA,Cycling T cells,6,Cycling T cells
+AACAACCCATGGCTAT,Tcm/Naive helper T cells,14,Cycling T cells
+AACAACCGTCGGTGAA,Mono-mac,13,Cycling T cells
+AACAACCTCGACCACG,Monocytes,15,Cycling T cells
+AACAAGAGTCTGTCCT,Cycling T cells,17,Cycling T cells
+AACCAACGTCGGCCTA,Cycling T cells,18,Cycling T cells
+AACCACAGTGATGTAA,Classical monocytes,19,Classical monocytes
+AACCATGAGGGCTGAT,Cycling T cells,14,Cycling T cells
+AACCTTTAGAGCTGAC,Mono-mac,20,Cycling T cells
+AACCTTTCAGTTTCAG,Tcm/Naive helper T cells,21,Tcm/Naive helper T cells
+AACCTTTTCATTTCCA,Cycling T cells,22,Cycling T cells
+AACGAAAAGCACTTTG,Cycling T cells,23,Cycling T cells
+AACTTCTGTCGTGATT,Mono-mac,16,Cycling T cells
+AACTTCTTCATACAGC,Myelocytes,24,Tcm/Naive helper T cells
+AAGACTCCAGGGTTGA,Cycling T cells,26,Cycling T cells
+AAGACTCGTACAGTCT,Pre-pro-B cells,27,Mono-mac
+AAGCATCCAGCAGATG,Monocyte precursor,28,Cycling T cells
+AAGCATCGTACCAGAG,Mono-mac,29,Mono-mac
+AAGCGAGCAGTAACGG,Monocytes,30,Cycling T cells
+AAGCGAGGTTGCGTAT,Cycling T cells,16,Cycling T cells
+AAGGTAACACCGGCTA,Mono-mac,11,Mono-mac
+AAGTACCAGAATCGAT,Cycling T cells,20,Cycling T cells
+AAGTCGTGTCCCTCAT,Mono-mac,31,Cycling T cells
+AAGTGAATCGTAGTGT,Monocytes,32,Classical monocytes
+AATAGAGAGCATTGAA,Follicular B cells,33,Mono-mac
+AATAGAGTCATTTGTC,Cycling T cells,34,Mono-mac
+AATCACGCAATCTCTT,Cycling T cells,35,Cycling T cells
+AATCACGGTCGTTTCC,Mono-mac,36,Cycling T cells
+AATCGACAGGCCACTC,Monocytes,37,Cycling T cells
+AATCGACCAAGCTGTT,Monocytes,2,Mono-mac
+AATCGTGAGAAACCCG,Monocytes,36,Cycling T cells
+AATGAAGCAGGACATG,Mono-mac,1,Mono-mac
+AATGACCTCTTTGCGC,Cycling T cells,12,Cycling T cells
+AATGCCATCGGTCGGT,Monocytes,38,Mono-mac
+AATGGAACATAACTCG,Mono-mac,39,Classical monocytes
+AATGGAAGTTTATGCG,Cycling T cells,40,Cycling T cells
+AATGGAATCAACACGT,Mono-mac,26,Cycling T cells
+AATTTCCAGCGTACAG,Cycling T cells,20,Cycling T cells
+AATTTCCCACCGTCTT,Cycling T cells,41,Cycling T cells
+ACAAAGAGTAGACAGC,Cycling T cells,43,Cycling T cells
+ACAACCACAATGAACA,Cycling T cells,44,Cycling T cells
+ACACCAACATCCTGTC,Cycling T cells,45,Cycling T cells
+ACACCAATCCAGCAAT,Cycling T cells,47,Classical monocytes
+ACACGCGTCACTGATG,Cycling T cells,48,Cycling T cells
+ACACTGACACTGTCCT,Mono-mac,33,Mono-mac
+ACAGAAACAATAACGA,Cycling T cells,26,Cycling T cells
+ACAGCCGCAGCCCACA,Mono-mac,17,Cycling T cells
+ACATCCCCAATGTGGG,Cycling T cells,36,Cycling T cells
+ACATCGACATCCTCAC,Cycling T cells,49,Cycling T cells
+ACATCGAGTATCAAGA,Classical monocytes,32,Classical monocytes
+ACATGCAAGCTGACTT,Macrophages,50,Mono-mac
+ACCAAACAGTCCTGCG,Cycling T cells,51,Cycling T cells
+ACCAAACTCCCTCATG,Mono-mac,34,Mono-mac
+ACCAACACAACACACT,Tcm/Naive helper T cells,21,Tcm/Naive helper T cells
+ACCACAAAGCGTATAA,Cycling T cells,52,Cycling T cells
+ACCACAAGTTGCGGAA,Classical monocytes,53,Classical monocytes
+ACCCTCAAGCAAGCCA,Non-classical monocytes,19,Classical monocytes
+ACCGTTCCATGACAAA,Cycling T cells,33,Mono-mac
+ACCGTTCGTTCTCCCA,Mono-mac,54,Mono-mac
+ACCGTTCTCACGGGCT,Cycling T cells,55,Cycling T cells
+ACCTACCCAGGGAGAG,Classical monocytes,33,Mono-mac
+ACCTGAATCTAGCCAA,Cycling T cells,43,Cycling T cells
+ACCTGTCAGCTGGCCT,Mono-mac,48,Cycling T cells
+ACCTGTCGTCGACTTA,Mono-mac,39,Classical monocytes
+ACGCACGAGCATACTC,Cycling T cells,56,Cycling T cells
+ACGCACGCATCTTTCA,Mono-mac,57,Cycling T cells
+ACGGGTCAGAAACTAC,Monocytes,58,Monocytes
+ACGGTCGAGCAAATCA,Mono-mac,59,Mono-mac
+ACGGTCGCAGGAATAT,Mono-mac,29,Mono-mac
+ACGTAACAGCTTCATG,Monocytes,60,Cycling T cells
+ACGTACAAGGAGGTTC,Monocytes,41,Cycling T cells
+ACGTAGTGTATGCAAA,Cycling T cells,61,Mono-mac
+ACGTCCTAGCAGCAGT,Monocytes,62,Cycling T cells
+ACGTCCTCATCAGCTA,Mono-mac,55,Cycling T cells
+ACTACGAAGCAGCGAT,Trm cytotoxic T cells,24,Tcm/Naive helper T cells
+ACTACGAGTTTGATCG,Cycling T cells,63,Cycling T cells
+ACTACGATCGCTAATG,Macrophages,25,Classical monocytes
+ACTATGGCAATAGTCC,Cycling T cells,64,Cycling T cells
+ACTATGGCAATCAGCT,Classical monocytes,23,Cycling T cells
+ACTATGGGTCGAACGA,Mono-mac,35,Cycling T cells
+ACTATGGTCGAACGAA,Classical monocytes,42,Classical monocytes
+ACTCCCAAGCATGTTC,Cycling T cells,65,Cycling T cells
+ACTCCCAGTGAGAACC,Cycling T cells,16,Cycling T cells
+ACTCCCATCACCTCTG,Monocytes,56,Cycling T cells
+ACTGATGTCCAAATGC,Mono-mac,30,Cycling T cells
+ACTGTCCGTAGCTAAA,Cycling T cells,51,Cycling T cells
+ACTTAGGGTGCCTGAC,Cycling T cells,55,Cycling T cells
+ACTTAGGTCCAGTGCG,Mono-mac,33,Mono-mac
+ACTTATCCATCAGCAT,Mono-mac,46,Cycling T cells
+ACTTATCCATGAGATA,Classical monocytes,19,Classical monocytes
+ACTTATCGTCATGGCC,Monocytes,22,Cycling T cells
+ACTTATCTCACGGGCT,NK cells,5,Monocytes
+ACTTCCGGTGCCCACA,Cycling T cells,25,Classical monocytes
+ACTTCGCAGCCTCTTC,Mono-mac,2,Mono-mac
+AGAACAACAAATAAGC,Tcm/Naive helper T cells,24,Tcm/Naive helper T cells
+AGAAGCGGTGCAACGA,Cycling T cells,66,Mono-mac
+AGAAGCGTCGCTAGCG,Macrophages,67,Cycling T cells
+AGAAGTATCTCATAGG,Cycling T cells,68,Cycling T cells
+AGACAAAGTGTTACAC,Mono-mac,49,Cycling T cells
+AGACAGGAGCTGAGTG,Monocytes,28,Cycling T cells
+AGACAGGCAGCTCTGG,Cycling T cells,25,Classical monocytes
+AGACCATTCAGGAAAT,Macrophages,48,Cycling T cells
+AGACTCAAGCGATGCA,Mono-mac,48,Cycling T cells
+AGAGAGCTCGCGTCGA,Monocytes,69,Mono-mac
+AGATAGAAGAATTCAG,Cycling T cells,12,Cycling T cells
+AGATAGATCAGATTGC,Cycling T cells,8,Cycling T cells
+AGATAGATCCGTGGGT,Tcm/Naive helper T cells,21,Tcm/Naive helper T cells
+AGATCCACACACTTAG,Monocytes,39,Classical monocytes
+AGATGAAAGAATAACC,Monocytes,17,Cycling T cells
+AGATGCTAGCACTAAA,Classical monocytes,68,Cycling T cells
+AGATGCTGTCAGACGA,NK cells,21,Tcm/Naive helper T cells
+AGCATCACAGGTGAGT,Mono-mac,19,Classical monocytes
+AGCCAGCAGGTAGGCT,Mono-mac,70,Mono-mac
+AGCGATTAGGGTTGCA,Non-classical monocytes,61,Mono-mac
+AGCGATTCACTTCTCG,Mono-mac,71,Mono-mac
+AGCGCCACAGGGAGAG,Classical monocytes,29,Mono-mac
+AGCGTATGTTGTGTAC,Cycling T cells,53,Classical monocytes
+AGCGTCGGTAGGCAAC,Monocytes,58,Monocytes
+AGCTACACAAGAGATT,Monocytes,72,Monocytes
+AGCTACATCTACTATC,Classical monocytes,24,Tcm/Naive helper T cells
+AGCTCAATCCCGAAAT,DC3,23,Cycling T cells
+AGGAAATGTTTAAGGA,Mono-mac,22,Cycling T cells
+AGGAATATCACCATGA,Classical monocytes,73,Cycling T cells
+AGGACTTAGTCAGGGT,Monocytes,25,Classical monocytes
+AGGAGGTAGACAGCTG,Macrophages,34,Mono-mac
+AGGAGGTGTACGATTC,Mono-mac,69,Mono-mac
+AGGATAACAAGACAAT,Pre-pro-B cells,74,Classical monocytes
+AGGATCTGTAGTATAG,Monocytes,45,Cycling T cells
+AGGATCTTCTCAACCC,Cycling T cells,48,Cycling T cells
+AGGGCCTCAATTCTTC,Mono-mac,11,Mono-mac
+AGGGCCTCACAGTCCG,Cycling T cells,8,Cycling T cells
+AGGGTGAAGAAGCTCG,Tem/Temra cytotoxic T cells,53,Classical monocytes
+AGGGTTTGTCGTACTA,Mono-mac,75,Cycling T cells
+AGGTCATCAGCTGGTC,Mono-mac,65,Cycling T cells
+AGGTCATTCGCCCAGA,Mono-mac,65,Cycling T cells
+AGGTCTAAGATTGGGC,Cycling T cells,64,Cycling T cells
+AGGTCTAAGGTTGAGC,Mono-mac,42,Classical monocytes
+AGGTCTATCAAGGAGC,Cycling T cells,60,Cycling T cells
+AGGTCTATCCTATGGA,Non-classical monocytes,76,Classical monocytes
+AGGTTACAGACGGTCA,Mono-mac,20,Cycling T cells
+AGGTTACCAGCGGTTC,Monocytes,27,Mono-mac
+AGGTTGTCACCAAAGG,Cycling T cells,67,Cycling T cells
+AGGTTGTTCTGAACGT,Classical monocytes,72,Monocytes
+AGTACCACATTAAGCC,Monocytes,26,Cycling T cells
+AGTCAACCAAGTCCAT,Cycling T cells,49,Cycling T cells
+AGTCATGTCTCATGCC,Cycling T cells,73,Cycling T cells
+AGTCTCCGTCCTCCTA,Cycling T cells,20,Cycling T cells
+AGTGATCTCGAGTCCG,Cycling T cells,56,Cycling T cells
+AGTGTTGAGCGTTCCG,Mono-mac,77,Mono-mac
+AGTGTTGCATCGAACT,Non-classical monocytes,32,Classical monocytes
+AGTGTTGGTCTACGAT,Mono-mac,50,Mono-mac
+AGTGTTGTCGGCCTTT,Classical monocytes,27,Mono-mac
+AGTTCCCGTTCTAACG,Cycling T cells,50,Mono-mac
+AGTTCGAAGTTAACGA,Mono-mac,23,Cycling T cells
+ATACCTTAGGCTGAAC,Mono-mac,78,Cycling T cells
+ATACCTTCAGGTATGG,Classical monocytes,71,Mono-mac
+ATAGAGACAGGCCCTA,Cycling T cells,75,Cycling T cells
+ATAGAGACAGGGATAC,Classical monocytes,47,Classical monocytes
+ATAGAGATCGTTCCCA,Cycling T cells,9,Cycling T cells
+ATAGGCTAGAAGTCTA,Macrophages,19,Classical monocytes
+ATCACGAAGAGGTATT,Cycling T cells,65,Cycling T cells
+ATCACGAAGTCTCGTA,Cycling T cells,19,Classical monocytes
+ATCACTTTCATCACTT,Cycling T cells,79,Mono-mac
+ATCAGGTCACGACAAG,DC3,57,Cycling T cells
+ATCATTCCACAAGTGG,Mono-mac,49,Cycling T cells
+ATCCATTAGACTTCAC,Classical monocytes,80,Cycling T cells
+ATCCATTAGAGTATAC,Memory B cells,14,Cycling T cells
+ATCCATTCAAGAGGTC,Mono-mac,31,Cycling T cells
+ATCCCTGTCTTCACAT,Cycling T cells,41,Cycling T cells
+ATCCGTCTCGCTCATC,NKT cells,9,Cycling T cells
+ATCGCCTAGGAAGTAG,Cycling T cells,73,Cycling T cells
+ATCGGATCACTACACA,CD16+ NK cells,24,Tcm/Naive helper T cells
+ATCGGCGAGACTCGAG,Cycling T cells,38,Mono-mac
+ATCGGCGCAGTGAGCA,Monocytes,18,Cycling T cells
+ATCGTCCAGCATCCCG,Monocytes,57,Cycling T cells
+ATCGTCCCAGCGGATA,Classical monocytes,39,Classical monocytes
+ATCTCTAGTACAGTCT,Classical monocytes,64,Cycling T cells
+ATCTCTAGTCAGCTTA,Mono-mac,64,Cycling T cells
+ATCTTCACACCCATAA,Classical monocytes,60,Cycling T cells
+ATGAAAGGTTATGACC,Mono-mac,23,Cycling T cells
+ATGAAAGTCAGACCCG,Monocytes,36,Cycling T cells
+ATGATCGTCGATTCCC,Tcm/Naive helper T cells,24,Tcm/Naive helper T cells
+ATGCGATAGGATATAC,Cycling T cells,57,Cycling T cells
+ATGCGATAGTCTGCAT,Mono-mac,56,Cycling T cells
+ATGCGATCAGCGACAA,Myelocytes,21,Tcm/Naive helper T cells
+ATGGGAGAGCGTGTCC,Mono-mac,22,Cycling T cells
+ATGGTTGAGCGCCTTG,Cycling T cells,54,Mono-mac
+ATGGTTGCAGGTCAAG,Mono-mac,17,Cycling T cells
+ATGTCCCCAGCGTTGC,Classical monocytes,75,Cycling T cells
+ATTACTCGTATTGACC,Macrophages,0,Mono-mac
+ATTATCCAGGATGCGT,Cycling T cells,68,Cycling T cells
+ATTATCCGTCGGAAAC,Mono-mac,69,Mono-mac
+ATTCAGGCAAGATGTA,Tem/Effector helper T cells,21,Tcm/Naive helper T cells
+ATTCATCCAAGCACCC,Pre-pro-B cells,68,Cycling T cells
+ATTCATCTCACCTGGG,Macrophages,54,Mono-mac
+ATTCCATTCCACATAG,Cycling T cells,19,Classical monocytes
+ATTCCCGCAGGACTTT,NK cells,24,Tcm/Naive helper T cells
+ATTCGTTAGGAGACCT,Cycling T cells,27,Mono-mac
+ATTCGTTGTAACAGGC,Classical monocytes,65,Cycling T cells
+ATTCTACAGAGCGACT,Cycling T cells,35,Cycling T cells
+ATTCTACGTTATCCAG,Cycling T cells,64,Cycling T cells
+ATTCTTGAGCGATCGA,Tcm/Naive helper T cells,24,Tcm/Naive helper T cells
+ATTCTTGTCTATCCAT,Classical monocytes,76,Classical monocytes
+ATTGGGTAGACTCCGC,Mono-mac,4,Cycling T cells
+ATTGTTCCACTAGGTT,Classical monocytes,49,Cycling T cells
+ATTGTTCGTTATGTGC,Mono-mac,33,Mono-mac
+ATTTCACGTGGATCAG,Mono-mac,9,Cycling T cells
+ATTTCTGCAAAGCTAA,Mono-mac,10,Mono-mac
+CAACCAATCCACGGGT,Cycling T cells,64,Cycling T cells
+CAACGATAGCGAGAAA,Trm cytotoxic T cells,5,Monocytes
+CAACGATCAGATACTC,Mono-mac,29,Mono-mac
+CAACGATTCATTGCGA,Classical monocytes,16,Cycling T cells
+CAACGGCAGCAACCAG,Mono-mac,69,Mono-mac
+CAACGGCAGTATCCTG,Cycling T cells,17,Cycling T cells
+CAACGGCGTGACTCTA,Cycling T cells,40,Cycling T cells
+CAAGAGGCAGACATCT,Cycling T cells,62,Cycling T cells
+CAAGCTACAGCGTTTA,Cycling T cells,17,Cycling T cells
+CAATCGAAGACGAGCT,DC3,51,Cycling T cells
+CAATCGAAGGGCTTCC,Classical monocytes,81,Cycling T cells
+CAATCGAGTCCCGCAA,Cycling T cells,11,Mono-mac
+CAATGACGTGGCAACA,Mono-mac,0,Mono-mac
+CACAACACAAACGGCA,Monocytes,18,Cycling T cells
+CACAGGCCAGATCACT,Macrophages,28,Cycling T cells
+CACATGAAGCTATCCA,Classical monocytes,75,Cycling T cells
+CACATGACAGTCCGTG,Classical monocytes,31,Cycling T cells
+CACATGATCTGGGTCG,Pre-pro-B cells,44,Cycling T cells
+CACCAAAGTGGCTTAT,DC3,34,Mono-mac
+CACGGGTAGTGCTAGG,Monocytes,16,Cycling T cells
+CACGTGGTCCCTCTCC,Cycling T cells,43,Cycling T cells
+CACGTTCTCGAACGGA,DC3,15,Cycling T cells
+CACTGAACAAGCTCTA,Mono-mac,6,Cycling T cells
+CACTGGGAGGAACTCG,NK cells,0,Mono-mac
+CACTGGGAGTTAGAAC,Cycling T cells,29,Mono-mac
+CACTGGGTCAAAGACA,Mono-mac,25,Classical monocytes
+CACTGGGTCATGACAC,Cycling T cells,15,Cycling T cells
+CACTGTCCAACGATTC,Cycling T cells,3,Cycling T cells
+CACTTCGTCCATCTAT,Mono-mac,66,Mono-mac
+CAGAGCCTCGCTCATC,Monocytes,70,Mono-mac
+CAGATACAGTATGGCG,Monocytes,64,Cycling T cells
+CAGATCATCTGCTTAT,Mono-mac,10,Mono-mac
+CAGATTGTCTCAGAAC,NK cells,25,Classical monocytes
+CAGCAATGTTTGAACC,Cycling T cells,30,Cycling T cells
+CAGCCAGCAATCAGCT,Cycling T cells,31,Cycling T cells
+CAGCCAGCAGCGGTCT,Cycling T cells,76,Classical monocytes
+CAGCCAGTCGAGAGCA,Classical monocytes,82,Classical monocytes
+CAGGGCTCACTCAAGT,Cycling T cells,62,Cycling T cells
+CAGGGCTGTTGGCTAT,Mono-mac,11,Mono-mac
+CAGGTATGTATTGGCT,Cycling T cells,52,Cycling T cells
+CAGGTATGTCCTGAAT,Monocytes,69,Mono-mac
+CAGTGCGCAATCGCAT,Tcm/Naive helper T cells,24,Tcm/Naive helper T cells
+CAGTGCGCATGACCCG,Naive B cells,77,Mono-mac
+CAGTGCGGTAGTTACC,Macrophages,34,Mono-mac
+CAGTTCCTCAAGAGTA,Cycling T cells,67,Cycling T cells
+CAGTTCCTCACCTCGT,Classical monocytes,58,Monocytes
+CATAAGCGTGCCTTCT,Cycling T cells,83,Cycling T cells
+CATAAGCTCAAGTGTC,Classical monocytes,53,Classical monocytes
+CATAAGCTCGGTCTAA,Classical monocytes,16,Cycling T cells
+CATACAGGTATCCTCC,Cycling T cells,83,Cycling T cells
+CATACCCCACTATCGA,Cycling T cells,26,Cycling T cells
+CATACCCGTCCAACGC,Monocytes,16,Cycling T cells
+CATACCCGTGTGTCCG,Monocytes,8,Cycling T cells
+CATACCCGTTCGTACA,Macrophages,26,Cycling T cells
+CATACTTAGTCCGCGT,Cycling T cells,84,Cycling T cells
+CATCAAGAGGGACTGT,Fibroblasts,85,Classical monocytes
+CATCAAGTCTTCCACG,Mono-mac,0,Mono-mac
+CATCCCAAGAGCCCAA,Cycling T cells,15,Cycling T cells
+CATCGCTCACAAGCAG,Monocytes,46,Cycling T cells
+CATGAGTAGCAATTCC,Cycling T cells,31,Cycling T cells
+CATGAGTAGGCCATAG,Mono-mac,8,Cycling T cells
+CATGAGTGTACCGTGC,Myelocytes,21,Tcm/Naive helper T cells
+CATGCAAAGCCTCAGC,DC3,55,Cycling T cells
+CATGCAAAGCGTCAAG,Myelocytes,24,Tcm/Naive helper T cells
+CATGCGGCACAAGCTT,Mono-mac,35,Cycling T cells
+CATGCGGCATATGAAG,Monocytes,20,Cycling T cells
+CATGCGGTCTTCGGAA,Classical monocytes,21,Tcm/Naive helper T cells
+CATGCTCAGATGCAGC,Mono-mac,77,Mono-mac
+CATGCTCAGTGGATTA,Mono-mac,59,Mono-mac
+CATGCTCGTGTAACGG,Mono-mac,60,Cycling T cells
+CATGCTCTCTCTCGAC,Cycling T cells,16,Cycling T cells
+CATGCTCTCTGGAAGG,DC3,24,Tcm/Naive helper T cells
+CATGGATGTCAAAGTA,Fibroblasts,80,Cycling T cells
+CATGGATTCCGTATAG,CD16+ NK cells,21,Tcm/Naive helper T cells
+CATGGTACATTCAGCA,Double-positive thymocytes,21,Tcm/Naive helper T cells
+CATTCCGAGGAAACGA,Mono-mac,10,Mono-mac
+CATTGAGTCATTGCCC,Cycling T cells,22,Cycling T cells
+CCAAGCGGTATCAGCT,Cycling T cells,77,Mono-mac
+CCAATGACAGCTCGGT,Monocytes,34,Mono-mac
+CCAATGAGTAGTGTGG,Cycling T cells,82,Classical monocytes
+CCAATGAGTTCAGCGC,Monocytes,29,Mono-mac
+CCAATTTCACCAGCTG,Mono-mac,11,Mono-mac
+CCAATTTTCGTGTCAA,Mono-mac,12,Cycling T cells
+CCACAAATCGACCCAG,Cycling T cells,49,Cycling T cells
+CCACAAATCGATTGGT,Monocytes,32,Classical monocytes
+CCACCATCACTAACCA,Classical monocytes,86,Monocytes
+CCACCATGTTCGGGTC,Tcm/Naive helper T cells,21,Tcm/Naive helper T cells
+CCACGAGTCCAACTAG,Cycling T cells,17,Cycling T cells
+CCACTTGTCAACCGAT,Mono-mac,0,Mono-mac
+CCATAAGAGGGAACAA,Tcm/Naive helper T cells,21,Tcm/Naive helper T cells
+CCATAAGCAAGATGTA,Macrophages,21,Tcm/Naive helper T cells
+CCATAAGCACGCAGTC,DC3,82,Classical monocytes
+CCATAAGGTATGTCTG,Cycling T cells,44,Cycling T cells
+CCATCACCACACGTGC,Monocyte precursor,13,Cycling T cells
+CCATCACTCACATCAG,Monocytes,58,Monocytes
+CCCAACTAGTATAGAC,Cycling T cells,10,Mono-mac
+CCCAACTCATAGATGA,Mono-mac,45,Cycling T cells
+CCCATTGGTAACGATA,Mono-mac,6,Cycling T cells
+CCCATTGGTAATCAGA,Macrophages,64,Cycling T cells
+CCCGAAGTCGACATCA,Classical monocytes,2,Mono-mac
+CCCTAACGTGTACGCC,Monocytes,13,Cycling T cells
+CCCTCAACAAATTAGG,Cycling T cells,0,Mono-mac
+CCCTCAAGTTGCTCGG,Mono-mac,33,Mono-mac
+CCCTCTCCAGCTGTCG,Cycling T cells,44,Cycling T cells
+CCCTTAGAGATGATTG,Cycling T cells,51,Cycling T cells
+CCCTTAGCAGAGTTGG,Cycling T cells,68,Cycling T cells
+CCCTTAGGTTCGAACT,Myelocytes,79,Mono-mac
+CCGATCTTCCACAGGC,Cycling T cells,10,Mono-mac
+CCGATGGTCAATCCAG,Monocytes,26,Cycling T cells
+CCGCAAGTCTCCCATG,Cycling T cells,43,Cycling T cells
+CCGGTAGCACCGTACG,Tem/Temra cytotoxic T cells,60,Cycling T cells
+CCGGTGAAGAATAGTC,Monocytes,61,Mono-mac
+CCGGTGACAAATACGA,Classical monocytes,61,Mono-mac
+CCGTGAGAGTTTCGAC,Monocytes,85,Classical monocytes
+CCTAAGAAGCAGCACA,Cycling T cells,65,Cycling T cells
+CCTAAGAGTCAAGCCC,Cycling T cells,75,Cycling T cells
+CCTACGTAGCAGGCTA,Classical monocytes,47,Classical monocytes
+CCTATCGCATCCGTTC,Mono-mac,2,Mono-mac
+CCTCAACGTACCTAAC,Mono-mac,82,Classical monocytes
+CCTCAACGTTGCTCCT,Mono-mac,43,Cycling T cells
+CCTCAGTGTTGGATCT,Mono-mac,72,Monocytes
+CCTCAGTTCGCACGAC,Mono-mac,80,Cycling T cells
+CCTCAGTTCTCACCCA,Cycling T cells,85,Classical monocytes
+CCTCATGGTCTGCGCA,Classical monocytes,77,Mono-mac
+CCTCATGGTGCTGTCG,Mono-mac,26,Cycling T cells
+CCTCATGTCACGGGAA,Mono-mac,4,Cycling T cells
+CCTCCAAAGAAAGCGA,Cycling T cells,9,Cycling T cells
+CCTCCAAGTCGTCAGC,Mono-mac,79,Mono-mac
+CCTGCATCAATAGTGA,Macrophages,82,Classical monocytes
+CCTGCATCAGACATCT,Monocytes,20,Cycling T cells
+CCTTCAGGTATGTCAC,Macrophages,75,Cycling T cells
+CCTTGTGAGGTCCCGT,Cycling T cells,37,Cycling T cells
+CCTTGTGAGTCACGCC,Mono-mac,73,Cycling T cells
+CCTTTGGAGACAACAT,Mono-mac,61,Mono-mac
+CCTTTGGCAAGCAATA,Macrophages,65,Cycling T cells
+CCTTTGGCATGAAGGC,Fibroblasts,86,Monocytes
+CGAGAAGAGGGAGGGT,Cycling T cells,60,Cycling T cells
+CGAGAAGGTGCCCACA,Cycling T cells,35,Cycling T cells
+CGAGGCTAGATATGGC,Trm cytotoxic T cells,21,Tcm/Naive helper T cells
+CGAGGCTCAGAACTCT,Classical monocytes,6,Cycling T cells
+CGAGGCTGTAGGAGGG,Monocytes,15,Cycling T cells
+CGAGTGCAGTGCGACA,Monocytes,3,Cycling T cells
+CGAGTGCTCGTTTACT,Monocytes,5,Monocytes
+CGAGTTAGTCGTCGGT,Mono-mac,13,Cycling T cells
+CGATGCGTCTTGTTAC,Myelocytes,24,Tcm/Naive helper T cells
+CGATGGCCAGACCATT,Monocytes,49,Cycling T cells
+CGCATAACAAATGAAC,Classical monocytes,21,Tcm/Naive helper T cells
+CGCATGGGTTCTGACA,Mono-mac,21,Tcm/Naive helper T cells
+CGCCATTAGCGCACAA,Classical monocytes,81,Cycling T cells
+CGCCATTAGTAGGGTC,Mono-mac,25,Classical monocytes
+CGGAACCCAGAAATCA,Mono-mac,34,Mono-mac
+CGGAACCGTCTCGGAC,Cycling T cells,43,Cycling T cells
+CGGAACCTCTTCGTAT,Macrophages,14,Cycling T cells
+CGGAATTAGGGTCAAC,Classical monocytes,1,Mono-mac
+CGGAATTCACCTGCTT,Monocytes,15,Cycling T cells
+CGGAGAAGTATGACAA,DC2,5,Monocytes
+CGGGACTCAATGCAGG,Mono-mac,46,Cycling T cells
+CGGGTCAAGATGAACT,Cycling T cells,31,Cycling T cells
+CGGGTCAGTCTGTAAC,Cycling T cells,15,Cycling T cells
+CGGGTCATCACCACAA,Mono-mac,44,Cycling T cells
+CGGGTGTCAGGGTCTC,Classical monocytes,14,Cycling T cells
+CGGTCAGCATTCACAG,Mono-mac,2,Mono-mac
+CGGTCAGGTCCTCATC,Cycling T cells,80,Cycling T cells
+CGTAAGTAGGTAGTCG,Cycling T cells,25,Classical monocytes
+CGTAAGTTCAAGTCTG,Macrophages,38,Mono-mac
+CGTAATGGTCTACAAC,Monocytes,66,Mono-mac
+CGTCAAACACAACGAG,Mono-mac,20,Cycling T cells
+CGTGAATCAGGTCCCA,Monocytes,1,Mono-mac
+CGTGATACAATTGAAG,Classical monocytes,12,Cycling T cells
+CGTGCTTGTCATATGC,Monocytes,50,Mono-mac
+CGTTAGACATCTAACG,Macrophages,60,Cycling T cells
+CGTTAGAGTGTGTGTT,Macrophages,63,Cycling T cells
+CGTTAGATCGTGAGAG,Monocytes,22,Cycling T cells
+CTAACCCCAGCAGAAC,Macrophages,14,Cycling T cells
+CTAACCCGTTACGCCG,Classical monocytes,32,Classical monocytes
+CTAACTTGTACTCGTA,Cycling T cells,51,Cycling T cells
+CTACATTAGACTGGGT,Myelocytes,21,Tcm/Naive helper T cells
+CTACCCAAGGGAACAA,Classical monocytes,24,Tcm/Naive helper T cells
+CTACCCAGTCTCGGGT,Mono-mac,40,Cycling T cells
+CTACCTGCAGGGTCTC,Cycling T cells,78,Cycling T cells
+CTACCTGGTCTAGGCC,Cycling T cells,15,Cycling T cells
+CTACGGGTCATGGGAG,Cycling T cells,3,Cycling T cells
+CTACTATCACGACGCT,Mono-mac,28,Cycling T cells
+CTAGGTAAGCCGTTGC,Classical monocytes,39,Classical monocytes
+CTATAGGTCAAAGGAT,Mono-mac,79,Mono-mac
+CTATCCGAGAGCATCG,Cycling T cells,67,Cycling T cells
+CTATCCGAGCTCTATG,Mono-mac,60,Cycling T cells
+CTATCTAAGCGCCATC,Monocytes,0,Mono-mac
+CTATCTACACGACGAA,NK cells,21,Tcm/Naive helper T cells
+CTATCTATCGACGTCG,Mono-mac,67,Cycling T cells
+CTCAACCGTGCAATGG,Classical monocytes,85,Classical monocytes
+CTCAACCGTGGTGATG,DC3,86,Monocytes
+CTCAATTAGGCATCTT,Monocytes,42,Classical monocytes
+CTCAATTTCGGTAGAG,Cycling T cells,81,Cycling T cells
+CTCACTGTCCACGGGT,Monocyte precursor,49,Cycling T cells
+CTCAGAACATGACTCA,Mono-mac,56,Cycling T cells
+CTCAGTCAGCGCACAA,Tcm/Naive helper T cells,24,Tcm/Naive helper T cells
+CTCAGTCGTCGTGCCA,DC2,18,Cycling T cells
+CTCAGTCTCAGCTTGA,Classical monocytes,80,Cycling T cells
+CTCATCGCACAGCTTA,Pre-pro-B cells,12,Cycling T cells
+CTCATCGCATATAGCC,Cycling T cells,29,Mono-mac
+CTCATGCTCATTCTTG,NK cells,1,Mono-mac
+CTCCAACCAGCGTAGA,Cycling T cells,8,Cycling T cells
+CTCCACAGTCCGGCAT,Cycling T cells,46,Cycling T cells
+CTCCACATCCATACAG,Follicular B cells,24,Tcm/Naive helper T cells
+CTCCATGGTGCTGTCG,Non-classical monocytes,47,Classical monocytes
+CTCCCAAAGTTATGGA,Monocytes,27,Mono-mac
+CTCCCTCCAAGCACAG,Cycling T cells,6,Cycling T cells
+CTCCCTCCAATAGTAG,Mono-mac,27,Mono-mac
+CTCCGATGTTGTGTTG,Monocyte precursor,78,Cycling T cells
+CTCCGATTCATCACAG,Mono-mac,48,Cycling T cells
+CTCCTCCGTATGCGGA,Cycling T cells,15,Cycling T cells
+CTCCTCCGTCAACCAT,Cycling T cells,41,Cycling T cells
+CTCCTTTTCAATGTCG,Cycling T cells,28,Cycling T cells
+CTCCTTTTCGCCGTGA,Classical monocytes,25,Classical monocytes
+CTCCTTTTCTCTCCTC,CD16+ NK cells,24,Tcm/Naive helper T cells
+CTCGAGGGTAATCAGA,Cycling T cells,45,Cycling T cells
+CTCTCGATCGGCTGAC,Classical monocytes,32,Classical monocytes
+CTGAATGTCAGATGCT,Tcm/Naive helper T cells,21,Tcm/Naive helper T cells
+CTGAGCGCATAGGTTC,Monocytes,60,Cycling T cells
+CTGAGGCCAATCTCTT,Cycling T cells,20,Cycling T cells
+CTGATCCAGGTCGCCT,Monocytes,13,Cycling T cells
+CTGCAGGTCCTGGTCT,Myelocytes,21,Tcm/Naive helper T cells
+CTGCATCAGCCAAGGT,Classical monocytes,52,Cycling T cells
+CTGCATCGTGTAAACA,Mono-mac,60,Cycling T cells
+CTGGCAGTCGATGGAG,Macrophages,10,Mono-mac
+CTGGTCTAGACATATG,Mono-mac,59,Mono-mac
+CTGGTCTAGCCTGTCG,Monocytes,86,Monocytes
+CTGGTCTTCTAGCAAC,Classical monocytes,10,Mono-mac
+CTGGTCTTCTCTGGTC,Tcm/Naive helper T cells,21,Tcm/Naive helper T cells
+CTGTAGAAGGTGAGAA,Cycling T cells,18,Cycling T cells
+CTGTAGACAACGTTAC,Cycling T cells,63,Cycling T cells
+CTGTAGAGTAGAGTTA,DC3,84,Cycling T cells
+CTGTCGTCACCGTCTT,Mono-mac,79,Mono-mac
+CTGTCGTGTTCCTAGA,Classical monocytes,32,Classical monocytes
+CTGTCGTGTTGGGACA,Monocytes,21,Tcm/Naive helper T cells
+CTGTGGGAGGATGAGA,Memory B cells,24,Tcm/Naive helper T cells
+CTGTGGGGTTGCAACT,Monocytes,12,Cycling T cells
+CTTACCGTCTCTCGAC,Fibroblasts,12,Cycling T cells
+CTTCAATTCAGCAATC,Mono-mac,84,Cycling T cells
+CTTCCGAAGTCCCAAT,Monocytes,86,Monocytes
+CTTCCTTGTGCAAGAC,Mono-mac,28,Cycling T cells
+CTTCGGTCACAGAAGC,Classical monocytes,38,Mono-mac
+CTTCTCTGTACAGGTG,Mono-mac,12,Cycling T cells
+CTTGATTGTTCCTTGC,Mono-mac,86,Monocytes
+CTTTCAATCATTGAGC,Monocytes,32,Classical monocytes
+CTTTCAATCCATGAGT,Cycling T cells,37,Cycling T cells
+GAAACCTTCTGGGCAC,Mono-mac,38,Mono-mac
+GAACACTAGTATAACG,Cycling T cells,17,Cycling T cells
+GAACACTGTACTCAAC,Cycling T cells,6,Cycling T cells
+GAACACTTCGGATTAC,Cycling T cells,64,Cycling T cells
+GAACGTTAGACAACTA,Mono-mac,71,Mono-mac
+GAACGTTCAGTTAGGG,Macrophages,24,Tcm/Naive helper T cells
+GAACGTTGTAAGGAGA,Monocytes,78,Cycling T cells
+GAACGTTTCGCCTCTA,Cycling T cells,45,Cycling T cells
+GAACTGTCAAACCATC,Tcm/Naive helper T cells,19,Classical monocytes
+GAAGAATAGCTAGAAT,Cycling T cells,63,Cycling T cells
+GAAGAATCAGAGTCTT,Monocytes,14,Cycling T cells
+GAAGCGAAGTGGTCAG,Classical monocytes,76,Classical monocytes
+GAAGCGATCATTACGG,Classical monocytes,66,Mono-mac
+GAAGGGTCACAATGAA,Cycling T cells,54,Mono-mac
+GAAGGGTGTACACTCA,Mono-mac,61,Mono-mac
+GAAGTAAGTCAGTCTA,DC3,67,Cycling T cells
+GAATAGAGTGTGTACT,Mono-mac,4,Cycling T cells
+GAATCACAGCACCTGC,Cycling T cells,67,Cycling T cells
+GAATCACCAGCGATTT,Monocytes,80,Cycling T cells
+GACACGCAGGATACCG,Mono-mac,36,Cycling T cells
+GACACGCAGTCCCGAC,Alveolar macrophages,21,Tcm/Naive helper T cells
+GACAGCCGTTCCGTTC,Mono-mac,73,Cycling T cells
+GACAGCCTCCATACAG,Cycling T cells,31,Cycling T cells
+GACAGCCTCGTAATGC,Cycling T cells,39,Classical monocytes
+GACCAATGTAGTTAGA,Cycling T cells,83,Cycling T cells
+GACCCAGTCAAGGAGC,Mono-mac,71,Mono-mac
+GACCCTTTCGTTATCT,Classical monocytes,40,Cycling T cells
+GACCCTTTCTGACCCT,Classical monocytes,21,Tcm/Naive helper T cells
+GACCTTCAGCGCTGAA,Cycling T cells,62,Cycling T cells
+GACCTTCAGTCGCGAA,Mast cells,50,Mono-mac
+GACCTTCAGTTAGAAC,Cycling T cells,76,Classical monocytes
+GACGCTGAGGATTCCT,Cycling T cells,16,Cycling T cells
+GACGCTGCAGTATTCG,Classical monocytes,76,Classical monocytes
+GACTATGAGTCGCGAA,Mono-mac,16,Cycling T cells
+GACTCAAAGCATGCAG,Mono-mac,5,Monocytes
+GACTCAAAGCTAGTTC,Cycling T cells,12,Cycling T cells
+GAGAAATGTACGGTTT,Mono-mac,45,Cycling T cells
+GAGAAATGTGACTGAG,Cycling T cells,35,Cycling T cells
+GAGAAATTCACGACTA,Fibroblasts,24,Tcm/Naive helper T cells
+GAGACCCAGCTGCGAA,Monocytes,39,Classical monocytes
+GAGACTTAGAAGTGTT,Mono-mac,75,Cycling T cells
+GAGAGGTCATTGGGAG,Cycling T cells,79,Mono-mac
+GAGCTGCTCCGGCTTT,Mono-mac,79,Mono-mac
+GAGGCCTGTCACAGTT,Cycling T cells,37,Cycling T cells
+GAGGCCTGTTGTGTTG,Mono-mac,30,Cycling T cells
+GAGGGATGTTCGGGTC,Macrophages,44,Cycling T cells
+GAGTCATGTAAGCTCT,Monocytes,5,Monocytes
+GAGTCATTCTTCCTAA,Mono-mac,81,Cycling T cells
+GAGTCTAAGACCTTTG,Cycling T cells,80,Cycling T cells
+GAGTCTACAGCCGTTG,Cycling T cells,23,Cycling T cells
+GAGTGAGCAGTCAGCC,Non-classical monocytes,42,Classical monocytes
+GAGTGAGTCAGTCCGG,Cycling T cells,59,Mono-mac
+GAGTGTTCAAGACTGG,Macrophages,40,Cycling T cells
+GAGTTGTCAAACGGCA,Classical monocytes,67,Cycling T cells
+GAGTTGTCATCGGTTA,Cycling T cells,51,Cycling T cells
+GAGTTTGCACAAGGTG,Cycling T cells,11,Mono-mac
+GATCAGTGTCTGCCTT,Cycling T cells,7,Monocytes
+GATCATGGTGGTGATG,Classical monocytes,59,Mono-mac
+GATCCCTGTAACGGTG,Cycling T cells,81,Cycling T cells
+GATCCCTTCACTCGAA,Cycling T cells,36,Cycling T cells
+GATCGTATCAGCGCAC,Classical monocytes,32,Classical monocytes
+GATGAGGGTCTAGGTT,Classical monocytes,31,Cycling T cells
+GATGAGGTCAATCGGT,Mono-mac,16,Cycling T cells
+GATGATCTCCATTTCA,DC3,76,Classical monocytes
+GATGGAGCACGACCTG,Classical monocytes,85,Classical monocytes
+GATGGAGGTGAAGCGT,Cycling T cells,67,Cycling T cells
+GATTCGACAGCGTTGC,Cycling T cells,26,Cycling T cells
+GATTTCTAGTGAGGCT,Cycling T cells,13,Cycling T cells
+GATTTCTCACCAACAT,Cycling T cells,61,Mono-mac
+GATTTCTCAGCCTATA,Cycling T cells,23,Cycling T cells
+GCAACATAGTTGTACC,Mono-mac,40,Cycling T cells
+GCAACCGCAGTATTCG,Cycling T cells,51,Cycling T cells
+GCACGGTCACCCTGTT,Tcm/Naive helper T cells,21,Tcm/Naive helper T cells
+GCACGTGCAACACAGG,Classical monocytes,36,Cycling T cells
+GCACGTGGTTGGTAGG,Classical monocytes,71,Mono-mac
+GCACTAACAAGTATCC,Cycling T cells,73,Cycling T cells
+GCAGCCACAAGGTACG,Cycling T cells,48,Cycling T cells
+GCAGCCACATGTTCGA,Monocytes,34,Mono-mac
+GCAGCTGTCCCAGTGG,Mono-mac,43,Cycling T cells
+GCAGGCTTCGATTCCC,Classical monocytes,19,Classical monocytes
+GCAGTTAGTGAGTGAC,Monocyte precursor,27,Mono-mac
+GCATCGGGTGCTATTG,DC3,33,Mono-mac
+GCATCGGTCGACCTAA,Cycling T cells,56,Cycling T cells
+GCATCGGTCGCTAATG,Tcm/Naive helper T cells,21,Tcm/Naive helper T cells
+GCATCGGTCGGACGTC,Classical monocytes,79,Mono-mac
+GCATGATTCAAGGCTT,Mono-mac,29,Mono-mac
+GCCAACGGTACCGTCG,Classical monocytes,19,Classical monocytes
+GCCAGCACAAAGCTAA,Cycling T cells,43,Cycling T cells
+GCCAGCACAACTCATG,Monocytes,5,Monocytes
+GCCAGCAGTGAAGCGT,NK cells,5,Monocytes
+GCCAGCAGTTAAGAAC,Mono-mac,67,Cycling T cells
+GCCAGCATCCACCTCA,Non-classical monocytes,24,Tcm/Naive helper T cells
+GCCAGGTCAATAACGA,Tcm/Naive helper T cells,21,Tcm/Naive helper T cells
+GCCAGGTCAGGACGAT,Mono-mac,20,Cycling T cells
+GCCAGTGCAGAACATA,Monocyte precursor,20,Cycling T cells
+GCCAGTGGTGTTCATG,Mono-mac,27,Mono-mac
+GCCAGTGTCCGTAGTA,Mono-mac,72,Monocytes
+GCCATGGAGCCTCTGG,Classical monocytes,37,Cycling T cells
+GCCATTCCACGACGCT,Early lymphoid/T lymphoid,41,Cycling T cells
+GCCCAGACAATGACCT,Non-classical monocytes,7,Monocytes
+GCCCAGAGTGACCGTC,DC3,68,Cycling T cells
+GCCCGAAAGCTCGACC,Pre-pro-B cells,9,Cycling T cells
+GCCGATGAGCTCCCTT,Mono-mac,55,Cycling T cells
+GCCGTGAAGTTAGTAG,Classical monocytes,69,Mono-mac
+GCCGTGAGTTATGTGC,Mono-mac,45,Cycling T cells
+GCCTGTTTCTGGAGAG,Classical monocytes,21,Tcm/Naive helper T cells
+GCGAGAAGTACTGTTG,Monocytes,32,Classical monocytes
+GCGAGAATCACTGGTA,Cycling T cells,11,Mono-mac
+GCGAGAATCATTCCTA,Follicular helper T cells,5,Monocytes
+GCGATCGGTAGATTGA,Classical monocytes,28,Cycling T cells
+GCGATCGGTCTCGACG,Cycling T cells,77,Mono-mac
+GCGGAAAGTGTAACGG,Mono-mac,71,Mono-mac
+GCGGAAATCAGACAAA,Cycling T cells,65,Cycling T cells
+GCGTGCAAGACCTCCG,Cycling T cells,60,Cycling T cells
+GCGTGCACAGTAGTTC,Mono-mac,55,Cycling T cells
+GCTACCTAGTCATGGG,Classical monocytes,23,Cycling T cells
+GCTACCTTCTCGGGAC,Cycling T cells,65,Cycling T cells
+GCTCAAAAGGCCCGTT,Mono-mac,76,Classical monocytes
+GCTCAAAAGTGACCTT,Cycling T cells,81,Cycling T cells
+GCTCAAATCGGTTCAA,Cycling T cells,73,Cycling T cells
+GCTGAATGTGGTTTGT,Cycling T cells,8,Cycling T cells
+GCTGCAGCACCGGCTA,Pre-pro-B cells,11,Mono-mac
+GCTTGGGAGCAGATAT,Mono-mac,29,Mono-mac
+GCTTGGGCAGGTCAAG,Non-classical monocytes,52,Cycling T cells
+GCTTTCGCAGCACACC,Mono-mac,82,Classical monocytes
+GCTTTCGGTACTAAGA,Classical monocytes,6,Cycling T cells
+GGAAGTGCAAGATTGA,Tcm/Naive helper T cells,24,Tcm/Naive helper T cells
+GGAATCTGTGATTAGA,Mono-mac,23,Cycling T cells
+GGAATGGAGGGCAATC,Monocytes,2,Mono-mac
+GGAATGGCAAGGTACG,Cycling T cells,25,Classical monocytes
+GGAATGGCAGTCGGAA,Monocytes,70,Mono-mac
+GGACGTCGTCGTGATT,Mono-mac,69,Mono-mac
+GGAGAACCAGGCTATT,Classical monocytes,79,Mono-mac
+GGAGCAAAGAGTGTTA,Monocytes,50,Mono-mac
+GGAGCAAAGTACCCTA,Cycling T cells,23,Cycling T cells
+GGAGGATAGACTCTAC,Cycling T cells,7,Monocytes
+GGAGGATAGATCGGTG,Cycling T cells,40,Cycling T cells
+GGAGGTACAAGAGATT,DC2,25,Classical monocytes
+GGAGGTACAAGTTCGT,Monocytes,23,Cycling T cells
+GGATGTTAGTTAGAAC,Classical monocytes,13,Cycling T cells
+GGCACGTAGAGCAACC,Mono-mac,61,Mono-mac
+GGCGTCAAGTGATCGG,Monocytes,19,Classical monocytes
+GGCTGTGTCGTGTGGC,Mono-mac,73,Cycling T cells
+GGCTTGGCACGTGAGA,Monocytes,7,Monocytes
+GGCTTTCTCACTTTGT,Mono-mac,6,Cycling T cells
+GGCTTTCTCTCTGGTC,Naive B cells,21,Tcm/Naive helper T cells
+GGGAAGTCAAGACTGG,Classical monocytes,11,Mono-mac
+GGGACAACATTCTCTA,Monocytes,15,Cycling T cells
+GGGACAATCGGCTGAC,Fibroblasts,34,Mono-mac
+GGGACCTAGCATGCAG,Monocyte precursor,67,Cycling T cells
+GGGACCTGTACCCAGC,Cycling T cells,14,Cycling T cells
+GGGACCTTCTTGGATG,Mono-mac,59,Mono-mac
+GGGACTCAGTCAATCC,Cycling T cells,13,Cycling T cells
+GGGACTCCACAACCGC,Cycling T cells,41,Cycling T cells
+GGGACTCGTGCCCTTT,Cycling T cells,14,Cycling T cells
+GGGAGTACAGCTGTGC,Classical monocytes,82,Classical monocytes
+GGGAGTACATGACAGG,Mono-mac,11,Mono-mac
+GGGAGTAGTGTAGGAC,Cycling T cells,60,Cycling T cells
+GGGAGTAGTGTTTGCA,Mono-mac,0,Mono-mac
+GGGATCCCACAATCTG,Monocytes,58,Monocytes
+GGGATCCTCACTCGAA,Cycling T cells,10,Mono-mac
+GGGCCATCAAAGACTA,Mono-mac,62,Cycling T cells
+GGGCCATCAGAGGCAT,Classical monocytes,42,Classical monocytes
+GGGCGTTCAGAACTTC,Mono-mac,84,Cycling T cells
+GGGCGTTTCGACATAC,Mono-mac,81,Cycling T cells
+GGGTATTAGGTTTACC,NK cells,21,Tcm/Naive helper T cells
+GGGTCACTCAATCAGC,Mono-mac,17,Cycling T cells
+GGGTGAACAGTCTGGC,Mono-mac,59,Mono-mac
+GGGTGTCCATTAAGCC,Mono-mac,70,Mono-mac
+GGGTTATTCGACGAGA,Monocyte precursor,5,Monocytes
+GGTAACTAGCAGATAT,Mono-mac,76,Classical monocytes
+GGTAACTCATGCCATA,Monocytes,83,Cycling T cells
+GGTAACTGTGCGACAA,Classical monocytes,79,Mono-mac
+GGTAATCGTCTGCATA,Mono-mac,46,Cycling T cells
+GGTAGAGAGATTAGTG,Cycling T cells,73,Cycling T cells
+GGTCACGTCTGCTGAA,Cycling T cells,9,Cycling T cells
+GGTCTGGAGCTAGTTC,Cycling T cells,39,Classical monocytes
+GGTCTGGTCCCGAAAT,Cycling T cells,64,Cycling T cells
+GGTGAAGCAAATGAGT,Monocytes,35,Cycling T cells
+GGTGAAGGTTGTCAGT,Cycling T cells,12,Cycling T cells
+GGTGATTCACGAGAAC,Monocytes,4,Cycling T cells
+GGTGATTTCTATACGG,Monocytes,86,Monocytes
+GGTGTCGCATAGCTGT,Macrophages,82,Classical monocytes
+GGTGTCGTCGAACGGA,Macrophages,20,Cycling T cells
+GGTTGTACAGTGCCTG,Cycling T cells,46,Cycling T cells
+GGTTGTATCCATTCGC,Memory B cells,21,Tcm/Naive helper T cells
+GTAACACGTCCTCATC,Cycling T cells,4,Cycling T cells
+GTAAGTCGTTACCCAA,Monocytes,66,Mono-mac
+GTAAGTCTCGATACTG,Monocytes,31,Cycling T cells
+GTAATCGAGACATAGT,Cycling T cells,28,Cycling T cells
+GTAATCGAGACGCCCT,Tcm/Naive helper T cells,76,Classical monocytes
+GTAATCGCAGGTCAAG,Cycling T cells,31,Cycling T cells
+GTAATCGTCCCTCTAG,DC3,85,Classical monocytes
+GTAATGCGTTTCGTGA,Cycling T cells,45,Cycling T cells
+GTAATGCTCTAGCCAA,Cycling T cells,16,Cycling T cells
+GTACAACGTAGACAGC,Mono-mac,76,Classical monocytes
+GTAGAAAAGCTCTTCC,Cycling T cells,3,Cycling T cells
+GTAGAGGCACGTACAT,Myelocytes,21,Tcm/Naive helper T cells
+GTAGAGGCAGGTCAGA,Classical monocytes,12,Cycling T cells
+GTAGCTAAGCACACCC,Follicular B cells,24,Tcm/Naive helper T cells
+GTAGCTATCAGGTGTT,Mono-mac,54,Mono-mac
+GTAGGAGGTGGAGAAA,Mono-mac,78,Cycling T cells
+GTAGTACGTATCGCTA,Myelocytes,21,Tcm/Naive helper T cells
+GTATTTCAGCGTTGTT,Mono-mac,66,Mono-mac
+GTATTTCTCGCAATTG,Mono-mac,50,Mono-mac
+GTCAAACAGGAATTAC,Mono-mac,22,Cycling T cells
+GTCAAACCACGTAGTT,Myelocytes,21,Tcm/Naive helper T cells
+GTCAAACGTGCCTATA,Mono-mac,70,Mono-mac
+GTCAAGTCACTGAGGA,Monocytes,38,Mono-mac
+GTCACTCTCGAGCCTG,Cycling T cells,30,Cycling T cells
+GTCAGCGAGTGAGGTC,Monocytes,25,Classical monocytes
+GTCAGCGCACACACTA,Cycling T cells,55,Cycling T cells
+GTCATGACAATACAGA,Tcm/Naive helper T cells,24,Tcm/Naive helper T cells
+GTCATTTCAGACCTGC,Mono-mac,41,Cycling T cells
+GTCATTTCAGATCCAT,Cycling T cells,0,Mono-mac
+GTCCACTCACCGTACG,Cycling T cells,51,Cycling T cells
+GTCCCATAGCGCCTAC,Cycling T cells,48,Cycling T cells
+GTCCTCACATCGCCTT,Mono-mac,86,Monocytes
+GTCCTCAGTCACAATC,Monocytes,18,Cycling T cells
+GTCGAATAGCGCCTCA,Cycling T cells,20,Cycling T cells
+GTCGAATAGGTCATTC,Cycling T cells,30,Cycling T cells
+GTCGCGACAGCGTGAA,Monocytes,9,Cycling T cells
+GTCGTAAAGATGCTTC,Monocytes,71,Mono-mac
+GTCGTTCAGGCATGGT,DC3,72,Monocytes
+GTCGTTCGTCAGTCTA,Monocytes,51,Cycling T cells
+GTCTAGATCCCTTGGT,Classical monocytes,43,Cycling T cells
+GTCTTTACACTGAGGA,Monocytes,42,Classical monocytes
+GTCTTTACATCTCATT,Cycling T cells,28,Cycling T cells
+GTGAGTTGTTTGGCTA,Monocytes,66,Mono-mac
+GTGATGTCAGTTAGGG,Cycling T cells,61,Mono-mac
+GTGCAGCCAAAGACTA,Cycling T cells,31,Cycling T cells
+GTGCTTCAGCGTGTTT,Mono-mac,67,Cycling T cells
+GTGGCGTGTCGTATGT,Classical monocytes,18,Cycling T cells
+GTGGGAAAGTTCTCTT,Classical monocytes,42,Classical monocytes
+GTGGTTACAATAGTAG,Cycling T cells,56,Cycling T cells
+GTGGTTACATGTGGCC,Classical monocytes,24,Tcm/Naive helper T cells
+GTGGTTATCAACACCA,Monocytes,25,Classical monocytes
+GTGGTTATCATCGACA,Monocyte precursor,15,Cycling T cells
+GTGTAACAGATCCCAT,Monocytes,2,Mono-mac
+GTGTAACCAGCAGGAT,Mono-mac,56,Cycling T cells
+GTGTAACTCTTGCGCT,Macrophages,65,Cycling T cells
+GTGTCCTAGAATTCAG,Mono-mac,15,Cycling T cells
+GTGTCCTCACATCATG,Cycling T cells,74,Classical monocytes
+GTGTGGCAGGCCTGCT,Classical monocytes,47,Classical monocytes
+GTGTGGCGTTCGGACC,Trm cytotoxic T cells,32,Classical monocytes
+GTGTTAGAGTAATACG,Macrophages,7,Monocytes
+GTGTTCCAGACAACAT,Mono-mac,10,Mono-mac
+GTGTTCCGTCGTAATC,Mono-mac,69,Mono-mac
+GTTACCCGTAACCCGC,NK cells,14,Cycling T cells
+GTTACCCGTTATAGCC,Cycling T cells,13,Cycling T cells
+GTTACCCTCCTGATAG,Follicular B cells,81,Cycling T cells
+GTTACGAGTGCAACAG,Cycling T cells,52,Cycling T cells
+GTTACGATCTTGGTCC,Monocytes,7,Monocytes
+GTTAGTGCAATGAGCG,Macrophages,61,Mono-mac
+GTTAGTGGTGTTATCG,Monocytes,10,Mono-mac
+GTTATGGAGCCGTAAG,Monocytes,68,Cycling T cells
+GTTATGGCAGCAGATG,Classical monocytes,51,Cycling T cells
+GTTCATTAGCACTCAT,Classical monocytes,74,Classical monocytes
+GTTCCGTGTCAACACT,Cycling T cells,43,Cycling T cells
+GTTCCGTTCTTAGCAG,Cycling T cells,79,Mono-mac
+GTTCTATCAGGTCCGT,Cycling T cells,31,Cycling T cells
+GTTGAACCACGCCAGT,Mono-mac,15,Cycling T cells
+GTTGAACTCGAGAAAT,Cycling T cells,59,Mono-mac
+GTTGCGGGTGCCCAGT,Mono-mac,26,Cycling T cells
+GTTGCTCTCATTACTC,Macrophages,28,Cycling T cells
+GTTGCTCTCTGTCGCT,Tcm/Naive helper T cells,24,Tcm/Naive helper T cells
+GTTGTAGAGAAGCGCT,Monocytes,42,Classical monocytes
+GTTGTCCAGTCAATCC,Cycling T cells,2,Mono-mac
+GTTTACTCAAGCTACT,Cycling T cells,2,Mono-mac
+GTTTGGATCCGTCAAA,Cycling T cells,82,Classical monocytes
+TAACGACAGGTGAGCT,Mono-mac,9,Cycling T cells
+TAACGACCAGGTAGTG,Mono-mac,69,Mono-mac
+TAAGCACAGTGAACAT,Cycling T cells,36,Cycling T cells
+TAAGCACCAAATCAGA,Monocytes,48,Cycling T cells
+TAAGCCAAGGTTGCCC,Cycling T cells,45,Cycling T cells
+TAAGCGTGTCAAAGTA,Cycling T cells,71,Mono-mac
+TAAGCGTGTTGGGTAG,Non-classical monocytes,67,Cycling T cells
+TAAGTCGAGAAAGTCT,Classical monocytes,12,Cycling T cells
+TAATCTCAGAAACCCG,Classical monocytes,9,Cycling T cells
+TAATTCCGTAACACCT,Cycling T cells,54,Mono-mac
+TACAACGGTGTCGATT,Mono-mac,43,Cycling T cells
+TACACCCAGCAAGGAA,Classical monocytes,5,Monocytes
+TACCGAAGTCGCAGTC,Cycling T cells,60,Cycling T cells
+TACCGGGGTTCTTGCC,Monocyte precursor,0,Mono-mac
+TACCGGGTCACCTGTC,Monocytes,55,Cycling T cells
+TACCTCGAGACCTGGA,CD16+ NK cells,24,Tcm/Naive helper T cells
+TACCTCGGTATCGAGG,Mono-mac,54,Mono-mac
+TACCTGCCAGTAGTGG,Cycling T cells,65,Cycling T cells
+TACCTGCTCTAGCCAA,Mono-mac,72,Monocytes
+TACGCTCGTACTCAAC,Cycling T cells,9,Cycling T cells
+TACGGTAAGCGATGCA,Cycling T cells,57,Cycling T cells
+TACGGTACAGCTCCTT,Monocytes,45,Cycling T cells
+TACTGCCCACGCGCTA,Mono-mac,12,Cycling T cells
+TACTTCACAGTTGGTT,Mono-mac,32,Classical monocytes
+TACTTGTAGGTCACAG,Cycling T cells,18,Cycling T cells
+TACTTGTCATCGAACT,Cycling T cells,22,Cycling T cells
+TAGACCAGTCGTGATT,Monocytes,20,Cycling T cells
+TAGAGTCCAACCGCCA,DC3,19,Classical monocytes
+TAGAGTCGTACCGGCT,Cycling T cells,46,Cycling T cells
+TAGAGTCGTCCATAGT,Cycling T cells,1,Mono-mac
+TAGATCGAGAGAGCCT,Mono-mac,56,Cycling T cells
+TAGATCGCAGCCGGTT,Cycling T cells,43,Cycling T cells
+TAGATCGGTGGAAATT,Classical monocytes,77,Mono-mac
+TAGCACACAGGAATCG,Monocytes,37,Cycling T cells
+TAGCACAGTGATGGCA,Cycling T cells,62,Cycling T cells
+TAGGAGGCATAATCGC,Monocytes,18,Cycling T cells
+TAGGAGGGTTAGGCTT,Cycling T cells,54,Mono-mac
+TAGGTTGCATGGGTTT,Mono-mac,58,Monocytes
+TAGGTTGGTCCATAGT,Cycling T cells,29,Mono-mac
+TAGTGCACAAGAAACT,Mono-mac,26,Cycling T cells
+TAGTGCATCGACATAC,Cycling T cells,6,Cycling T cells
+TATACCTTCGTGCGAC,Cycling T cells,8,Cycling T cells
+TATATCCAGGTAAAGG,Cycling T cells,75,Cycling T cells
+TATATCCCATCATCCC,Classical monocytes,6,Cycling T cells
+TATCTGTCACTGAGGA,Mono-mac,69,Mono-mac
+TATGTTCTCCGTCAAA,Cycling T cells,86,Monocytes
+TATTGCTCAGTGTGGA,Monocytes,6,Cycling T cells
+TCAAGCATCCGCTGTT,Cycling T cells,49,Cycling T cells
+TCAATCTGTGTTGATC,Classical monocytes,28,Cycling T cells
+TCAATCTTCTCTGGTC,Cycling T cells,85,Classical monocytes
+TCAATTCTCCCTAGGG,Mono-mac,19,Classical monocytes
+TCACACCGTCGAGCTC,Cycling T cells,18,Cycling T cells
+TCACGCTAGCTTACGT,Cycling T cells,48,Cycling T cells
+TCACGCTGTGACAGGT,Mono-mac,12,Cycling T cells
+TCACTCGGTGGGAGAG,Mono-mac,54,Mono-mac
+TCACTCGGTTGCCGAC,Alveolar macrophages,42,Classical monocytes
+TCAGCAACAGGAATCG,Mono-mac,22,Cycling T cells
+TCAGCCTAGGATCACG,Cycling T cells,33,Mono-mac
+TCAGGGCTCAGAGTGG,Mono-mac,82,Classical monocytes
+TCAGGTAAGGACAGCT,Classical monocytes,82,Classical monocytes
+TCAGTCCCAGACCTGC,Classical monocytes,79,Mono-mac
+TCAGTGACAAGCAGGT,Cycling T cells,81,Cycling T cells
+TCAGTTTCAGCCGTTG,Cycling T cells,81,Cycling T cells
+TCATACTTCGGCATTA,Mono-mac,53,Classical monocytes
+TCATATCAGACCAACG,CD16+ NK cells,24,Tcm/Naive helper T cells
+TCATCCGAGAAGGATG,Macrophages,46,Cycling T cells
+TCATCCGCAAATGCTC,Cycling T cells,78,Cycling T cells
+TCATCCGCAATACAGA,Cycling T cells,67,Cycling T cells
+TCATGAGAGTCAGCCC,DC2,24,Tcm/Naive helper T cells
+TCATGCCAGGGTTAAT,GMP,81,Cycling T cells
+TCATGCCGTGGAACAC,Monocytes,26,Cycling T cells
+TCATGCCTCTGAATCG,Classical monocytes,20,Cycling T cells
+TCATGTTCACCGTGAC,Monocytes,38,Mono-mac
+TCATTCACAACGGCTC,Cycling T cells,3,Cycling T cells
+TCATTCAGTCTCGCGA,Mono-mac,27,Mono-mac
+TCATTGTCACAAATCC,Tcm/Naive helper T cells,53,Classical monocytes
+TCATTTGCATCTTCGC,Classical monocytes,21,Tcm/Naive helper T cells
+TCATTTGGTCTACGAT,Mono-mac,48,Cycling T cells
+TCCAGAAGTTAGGACG,Cycling T cells,27,Mono-mac
+TCCATCGCACATTCGA,Mono-mac,82,Classical monocytes
+TCCATCGTCAAACGTC,Monocytes,33,Mono-mac
+TCCATGCGTTAAGCAA,Cycling T cells,3,Cycling T cells
+TCCCACAAGTCATCGT,Monocytes,71,Mono-mac
+TCCCATGCACAGTATC,Cycling T cells,51,Cycling T cells
+TCCCATGGTTGTGCCG,Cycling T cells,67,Cycling T cells
+TCCCATGGTTTAGTCG,Mono-mac,8,Cycling T cells
+TCCGAAACACGTGTGC,Classical monocytes,61,Mono-mac
+TCCGAAATCAGAACCT,Cycling T cells,36,Cycling T cells
+TCCGAAATCTCTCGAC,Mono-mac,61,Mono-mac
+TCCGATCTCGGTTCAA,DC3,51,Cycling T cells
+TCCGGGACACTATCGA,Memory B cells,21,Tcm/Naive helper T cells
+TCCTCCCTCACACGAT,DC3,0,Mono-mac
+TCCTCCCTCGAGTTGT,Classical monocytes,15,Cycling T cells
+TCCTCCCTCTTCTTCC,Tcm/Naive helper T cells,21,Tcm/Naive helper T cells
+TCCTCGACACGTGTGC,Mono-mac,55,Cycling T cells
+TCCTCGACATAAGCGG,Cycling T cells,83,Cycling T cells
+TCCTCGAGTTATCTTC,Cycling T cells,51,Cycling T cells
+TCCTCTTAGGGTTTCT,Mono-mac,40,Cycling T cells
+TCCTCTTGTCGAATGG,Mono-mac,13,Cycling T cells
+TCCTCTTGTTCTAACG,Cycling T cells,57,Cycling T cells
+TCCTGCACAGCAGGAT,Cycling T cells,4,Cycling T cells
+TCCTTCTAGCGATTCT,Monocytes,80,Cycling T cells
+TCCTTTCCATTAAAGG,Monocytes,72,Monocytes
+TCGAACACAAGCTGTT,Mono-mac,43,Cycling T cells
+TCGAACATCCCTCGAT,Monocytes,53,Classical monocytes
+TCGAAGTGTTGCGAAG,Non-classical monocytes,25,Classical monocytes
+TCGACGGCAGAAGCGT,Macrophages,42,Classical monocytes
+TCGACGGGTGACTCTA,Monocyte precursor,55,Cycling T cells
+TCGATTTAGTCAGAGC,Monocytes,43,Cycling T cells
+TCGCAGGCACGGAAGT,Mono-mac,38,Mono-mac
+TCGCTCAGTTTGGAGG,Cycling T cells,31,Cycling T cells
+TCGGATACAGGTGTGA,Monocyte precursor,12,Cycling T cells
+TCGGATATCAGGACAG,Cycling T cells,72,Monocytes
+TCGGGTGCAGACAAAT,Tcm/Naive helper T cells,21,Tcm/Naive helper T cells
+TCGGTCTTCACCGGGT,DC3,70,Mono-mac
+TCGTAGATCGTGAGAG,Myelocytes,21,Tcm/Naive helper T cells
+TCGTGCTCACTGTGAT,Monocytes,77,Mono-mac
+TCTAACTTCCTCAGGG,Cycling T cells,13,Cycling T cells
+TCTACATCACAGCATT,Classical monocytes,2,Mono-mac
+TCTACATCACTTCATT,Mono-mac,33,Mono-mac
+TCTACCGTCCACGGAC,Mono-mac,73,Cycling T cells
+TCTATACCATCGCTCT,Mono-mac,85,Classical monocytes
+TCTATACTCGACCATA,Monocytes,65,Cycling T cells
+TCTATCAAGAGTGTGC,Cycling T cells,82,Classical monocytes
+TCTCACGTCACGGGAA,Mono-mac,83,Cycling T cells
+TCTCAGCGTAGTCCTA,Monocytes,39,Classical monocytes
+TCTCAGCTCAGTCAGT,Monocytes,30,Cycling T cells
+TCTCTGGAGCACTCTA,Cycling T cells,47,Classical monocytes
+TCTGGCTGTAGTCTGT,Mono-mac,28,Cycling T cells
+TCTGTCGCATACTTTC,Mono-mac,67,Cycling T cells
+TCTTAGTTCATGACAC,Cycling T cells,57,Cycling T cells
+TCTTCCTAGCTTCGTA,Mono-mac,73,Cycling T cells
+TCTTCCTGTGTGTGGA,Cycling T cells,65,Cycling T cells
+TGAACGTCAGTGTATC,DC3,69,Mono-mac
+TGAATCGTCCGTAGGC,Monocytes,23,Cycling T cells
+TGAATGCGTAGCGCTC,Monocytes,77,Mono-mac
+TGAATGCTCGCCTATC,DC3,43,Cycling T cells
+TGACAGTAGCACACCC,Cycling T cells,6,Cycling T cells
+TGACAGTTCATGCGGC,Classical monocytes,27,Mono-mac
+TGACAGTTCTTCCTAA,Cycling T cells,84,Cycling T cells
+TGACCCTGTAACCCGC,Macrophages,40,Cycling T cells
+TGACCCTTCGCCGAAC,Mono-mac,35,Cycling T cells
+TGACGCGCAAGGCAAC,Classical monocytes,25,Classical monocytes
+TGACTCCCACACACTA,Tcm/Naive helper T cells,24,Tcm/Naive helper T cells
+TGAGGAGGTCATCAGT,Non-classical monocytes,25,Classical monocytes
+TGAGGGATCTCATGGA,DC3,63,Cycling T cells
+TGAGGTTTCCATTGGA,Classical monocytes,26,Cycling T cells
+TGAGTCATCATCAGTG,Cycling T cells,51,Cycling T cells
+TGATCAGCACTGCACG,Cycling T cells,60,Cycling T cells
+TGATCAGTCGGCTTCT,Cycling T cells,58,Monocytes
+TGATCTTGTCGTTTCC,Classical monocytes,82,Classical monocytes
+TGATGCAAGGTCGTGA,DC3,78,Cycling T cells
+TGATGCATCGTCGCTT,Cycling T cells,33,Mono-mac
+TGATGGTAGACTCTTG,DC3,14,Cycling T cells
+TGATGGTCACATGTTG,Mono-mac,18,Cycling T cells
+TGATTTCCACATGGTT,Cycling T cells,28,Cycling T cells
+TGCACGGAGCGTCAAG,Cycling T cells,37,Cycling T cells
+TGCAGATTCCATTTCA,Cycling T cells,84,Cycling T cells
+TGCAGATTCGACCAAT,Cycling T cells,80,Cycling T cells
+TGCAGGCCATCCGATA,Classical monocytes,6,Cycling T cells
+TGCAGGCTCCGGTAGC,Mono-mac,2,Mono-mac
+TGCAGTATCGTGTCAA,Cycling T cells,61,Mono-mac
+TGCATCCGTGTTCCAA,Classical monocytes,61,Mono-mac
+TGCATGAAGTTTGCTG,Classical monocytes,70,Mono-mac
+TGCATGAGTCTTGAAC,Mono-mac,52,Cycling T cells
+TGCGACGCAATTGCAC,Classical monocytes,54,Mono-mac
+TGCGGGTAGTAGAATC,Monocytes,1,Mono-mac
+TGCGGGTGTATTTCTC,Mono-mac,39,Classical monocytes
+TGCTCCAAGACGACTG,Non-classical monocytes,86,Monocytes
+TGCTCCACATTCTGTT,Mono-mac,37,Cycling T cells
+TGCTCCAGTTGCTAGT,Myelocytes,21,Tcm/Naive helper T cells
+TGCTGAAAGTAGACAT,Monocytes,72,Monocytes
+TGGAGAGAGGCAATGC,Fibroblasts,25,Classical monocytes
+TGGAGGACACGGCGTT,Mono-mac,66,Mono-mac
+TGGAGGAGTCCATCTC,Mono-mac,45,Cycling T cells
+TGGATCACATCAGCGC,Classical monocytes,31,Cycling T cells
+TGGATGTGTTAAGAAC,Mono-mac,34,Mono-mac
+TGGCGTGGTTTAGACC,Mono-mac,54,Mono-mac
+TGGGAGAGTCCTGTCT,Monocytes,47,Classical monocytes
+TGGGAGATCACCTACC,Mono-mac,79,Mono-mac
+TGGGATTTCTCGTCGT,Non-classical monocytes,74,Classical monocytes
+TGGGCGTAGAGGGTAA,Monocytes,54,Mono-mac
+TGGGCGTTCTCTTGCG,Mono-mac,70,Mono-mac
+TGGGCTGAGACATGCG,Cycling T cells,22,Cycling T cells
+TGGTACAAGGCGTCCT,Classical monocytes,22,Cycling T cells
+TGGTAGTGTTATCCAG,DC3,70,Mono-mac
+TGGTGATCAGATTAAG,Monocytes,85,Classical monocytes
+TGGTTAGCACCCTAGG,Cycling T cells,86,Monocytes
+TGTAAGCGTTGCTCAA,Cycling B cells,44,Cycling T cells
+TGTACAGAGCCGAATG,Classical monocytes,13,Cycling T cells
+TGTACAGAGCGCCTCA,Macrophages,13,Cycling T cells
+TGTCCACGTCGAAACG,Monocytes,15,Cycling T cells
+TGTCCACTCGTCGGGT,Cycling T cells,56,Cycling T cells
+TGTCCTGAGAGGTTTA,Cycling T cells,14,Cycling T cells
+TGTCCTGGTGCGAGTA,Classical monocytes,9,Cycling T cells
+TGTCCTGGTGGCTTGC,Monocytes,72,Monocytes
+TGTGAGTGTTAAGTCC,Cycling T cells,79,Mono-mac
+TGTGCGGCAAGACGGT,Cycling T cells,34,Mono-mac
+TGTGGCGCACTGTGTA,Monocytes,64,Cycling T cells
+TGTGGCGGTACGCTAT,Mono-mac,61,Mono-mac
+TGTGTGACATTCCTAT,Cycling T cells,55,Cycling T cells
+TGTTCATCAGAGGACT,Classical monocytes,18,Cycling T cells
+TGTTCCGAGTGGTTGG,Monocytes,33,Mono-mac
+TGTTCCGGTGGTATGG,Mono-mac,15,Cycling T cells
+TGTTCTACAGTTACCA,Tcm/Naive helper T cells,24,Tcm/Naive helper T cells
+TGTTGGAGTTCGAACT,Mono-mac,18,Cycling T cells
+TTAATCCCATGCGGTC,Tcm/Naive helper T cells,21,Tcm/Naive helper T cells
+TTACAGGAGAGGCGTT,Fibroblasts,7,Monocytes
+TTACAGGCACCGCTAG,Classical monocytes,33,Mono-mac
+TTACAGGGTCCTCCTA,Monocytes,84,Cycling T cells
+TTACCATCAAGAAACT,Cycling T cells,80,Cycling T cells
+TTACCATGTGAGGAAA,Mono-mac,27,Mono-mac
+TTACGCCGTTACGTAC,Cycling T cells,40,Cycling T cells
+TTACGTTGTAAGGCCA,Double-negative thymocytes,21,Tcm/Naive helper T cells
+TTAGTCTAGACGATAT,Cycling T cells,36,Cycling T cells
+TTAGTCTGTACTCGCG,Cycling T cells,85,Classical monocytes
+TTCAATCAGCCATGCC,Cycling T cells,57,Cycling T cells
+TTCACCGAGACTTCGT,Mono-mac,25,Classical monocytes
+TTCACGCTCCAAATGC,Mono-mac,3,Cycling T cells
+TTCAGGAAGCATATGA,Mono-mac,33,Mono-mac
+TTCAGGACATGAATAG,Cycling T cells,69,Mono-mac
+TTCATGTCACTTGAAC,Cycling T cells,27,Mono-mac
+TTCCACGGTCGCCACA,Monocytes,58,Monocytes
+TTCCGGTCAGTGTACT,Classical monocytes,25,Classical monocytes
+TTCCGGTTCCCATGGG,Cycling T cells,62,Cycling T cells
+TTCCGGTTCCGTAATG,Monocytes,75,Cycling T cells
+TTCCTAAAGACTTCAC,Trm cytotoxic T cells,21,Tcm/Naive helper T cells
+TTCCTCTCATACCATG,Classical monocytes,86,Monocytes
+TTCCTCTGTACAGGTG,Cycling T cells,62,Cycling T cells
+TTCCTCTGTATCACGT,Classical monocytes,68,Cycling T cells
+TTCCTTCAGGTTTACC,Cycling T cells,45,Cycling T cells
+TTCGATTAGTGGTCAG,Tcm/Naive helper T cells,21,Tcm/Naive helper T cells
+TTCGATTGTCCGATCG,DC3,17,Cycling T cells
+TTCGCTGTCGATACTG,Monocytes,9,Cycling T cells
+TTCGGTCTCGAGAATA,Classical monocytes,14,Cycling T cells
+TTCTAACTCCGTGGTG,Monocytes,7,Monocytes
+TTCTAGTGTGTCGCTG,Monocyte precursor,72,Monocytes
+TTCTCTCCATAAGCAA,Cycling T cells,37,Cycling T cells
+TTCTGTAAGCGATTCT,Classical monocytes,25,Classical monocytes
+TTCTGTATCTCCCAAC,Classical monocytes,53,Classical monocytes
+TTGAACGAGATACAGT,Classical monocytes,76,Classical monocytes
+TTGAACGGTAATCAAG,Monocytes,77,Mono-mac
+TTGATGGCACTCGATA,Monocytes,85,Classical monocytes
+TTGCATTCACGGTGTC,Mono-mac,45,Cycling T cells
+TTGCATTGTCCATCTC,Cycling T cells,8,Cycling T cells
+TTGCATTGTTGCATAC,Follicular B cells,59,Mono-mac
+TTGCCTGAGACTTAAG,Mono-mac,17,Cycling T cells
+TTGCCTGCAAACACGG,Tcm/Naive helper T cells,21,Tcm/Naive helper T cells
+TTGCGTCCACGCGTCA,Classical monocytes,39,Classical monocytes
+TTGGATGCAAGGTCTT,Cycling T cells,39,Classical monocytes
+TTGGATGGTGAGTGAC,Mono-mac,38,Mono-mac
+TTGGGATTCGGCAGTC,Macrophages,82,Classical monocytes
+TTGGGCGAGACATAAC,Cycling T cells,57,Cycling T cells
+TTGGGCGGTTGCCTAA,Monocytes,48,Cycling T cells
+TTGGGTAAGGCCACTC,Cycling T cells,23,Cycling T cells
+TTGGGTAAGGTGCGAT,Monocytes,55,Cycling T cells
+TTGGGTAAGTCGCCCA,Classical monocytes,41,Cycling T cells
+TTGTGGACACACCGAC,Monocytes,55,Cycling T cells
+TTGTGGATCTACGCGG,Cycling T cells,42,Classical monocytes
+TTGTGTTAGACCTTTG,Mono-mac,67,Cycling T cells
+TTGTGTTAGTAGATCA,Classical monocytes,85,Classical monocytes
+TTGTTCAAGCTGGCCT,Mono-mac,77,Mono-mac
+TTGTTTGAGTTGGGAC,Monocytes,75,Cycling T cells
+TTGTTTGCACCAAATC,Cycling T cells,60,Cycling T cells
+TTGTTTGGTACCAGAG,Monocytes,56,Cycling T cells
+TTGTTTGGTTCTCCTG,Mono-mac,16,Cycling T cells
+TTGTTTGTCGTTGTTT,Tcm/Naive helper T cells,21,Tcm/Naive helper T cells
+TTTACGTCAGGCGAAT,CD16- NK cells,24,Tcm/Naive helper T cells
+TTTACGTTCATCACAG,Classical monocytes,38,Mono-mac
+TTTAGTCCACTGAGGA,Macrophages,31,Cycling T cells
+TTTCACATCGGACGTC,Mono-mac,76,Classical monocytes
+TTTCACATCTAGGCCG,Classical monocytes,14,Cycling T cells
+TTTCATGAGTGATTCC,Macrophages,13,Cycling T cells
+TTTCGATCATCCGTGG,Mono-mac,77,Mono-mac
+TTTGATCAGACTCCGC,Macrophages,68,Cycling T cells
+TTTGATCCATCCTCAC,Mono-mac,13,Cycling T cells
+TTTGGAGAGTAGGCCA,Classical monocytes,67,Cycling T cells
+TTTGGAGCACCGCTGA,Cycling T cells,73,Cycling T cells
+TTTGGTTCAGGGAATC,Cycling T cells,82,Classical monocytes

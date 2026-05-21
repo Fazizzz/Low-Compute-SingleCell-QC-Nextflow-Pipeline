@@ -1,0 +1,14 @@
+{
+	"n_targets": 509650,
+	"n_bootstraps": 0,
+	"n_processed": 310000000,
+	"n_pseudoaligned": 169880146,
+	"n_unique": 19780877,
+	"p_pseudoaligned": 54.8,
+	"p_unique": 6.4,
+	"kallisto_version": "0.51.1",
+	"index_version": 13,
+	"k-mer length": 31,
+	"start_time": "Tue May 19 05:17:16 2026",
+	"call": "/Users/m.faizankh/anaconda3/envs/SingleCell/bin/kallisto bus -i index.idx -o kb_out -x 10xv3 -t 8 SRR33398036_R1.fastq.gz SRR33398036_R2.fastq.gz"
+}

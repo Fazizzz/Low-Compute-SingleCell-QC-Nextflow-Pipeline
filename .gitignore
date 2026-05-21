@@ -1,0 +1,23 @@
+# User-generated run artefacts (never in repo)
+test_data/
+ref/
+results/
+work/
+.nextflow/
+.nextflow.log*
+
+# Heavy intermediates inside demo result dirs (kb_out has multi-GB MTX/BUS
+# files; matrix.ec / output.bus are large kallisto bus intermediates). Reports
+# + JSON metadata + a small filtered_matrix example ARE tracked, and live in:
+#   results-with-cDNA-onlyAlignments/      (quick mode demo)
+#   results-with-splicedAlignments/        (full mode demo)
+.claude/
+**/kb_out/
+**/matrix.ec
+**/output.bus
+**/output.unfiltered.bus
+
+# Python / macOS noise
+__pycache__/
+*.pyc
+.DS_Store

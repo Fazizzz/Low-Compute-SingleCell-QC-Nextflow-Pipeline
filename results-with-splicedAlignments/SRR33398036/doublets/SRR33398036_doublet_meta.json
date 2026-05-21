@@ -1,0 +1,10 @@
+{
+  "sample_id": "SRR33398036",
+  "status": "ok",
+  "reason": null,
+  "n_cells": 12689,
+  "doublet_rate": 0.05248640554811254,
+  "expected_doublet_rate": 0.06,
+  "threshold": 0.21484940461586716,
+  "backend": "scanpy.pp.scrublet"
+}

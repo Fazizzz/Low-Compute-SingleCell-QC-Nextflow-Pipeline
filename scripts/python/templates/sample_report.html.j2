@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>SingleCell Quick QC sample report: {{ sample_id }}</title>
+<script>{{ plotly_js | safe }}</script>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; background: #f3f7f5; color: #1a1f2e; }
+  header { background: #2E8B57; color: white; padding: 18px 28px; border-bottom: 3px solid #1f6e44; }
+  header h1 { margin: 0; font-size: 22px; font-weight: 500; }
+  header .meta { font-size: 12px; opacity: 0.9; margin-top: 4px; }
+  main { max-width: 1100px; margin: 24px auto; padding: 0 24px; }
+  section { background: white; border-radius: 6px; padding: 18px 22px; margin-bottom: 18px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); border: 1px solid #d8e4dd; }
+  section h2 { margin: 0 0 12px; font-size: 16px; color: #1f6e44; border-bottom: 1px solid #cfe0d6; padding-bottom: 6px; }
+  table.kv { border-collapse: collapse; }
+  table.kv td { padding: 4px 12px 4px 0; vertical-align: top; font-size: 13px; }
+  table.kv td:first-child { color: #4d5b54; font-weight: 500; min-width: 180px; }
+  table.compute { border-collapse: collapse; font-size: 12px; width: 100%; }
+  table.compute th, table.compute td { padding: 5px 8px; border-bottom: 1px solid #eef1f5; text-align: left; }
+  table.compute th { background: #e9f1ec; color: #1f6e44; font-weight: 600; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 11px; font-weight: 600; }
+  .pass { background: #d4edda; color: #155724; }
+  .warn { background: #fff3cd; color: #856404; }
+  .fail { background: #f8d7da; color: #721c24; }
+  .unknown { background: #e2e3e5; color: #383d41; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .plot { min-height: 320px; }
+  .skip-box { background: #fff3cd; border-left: 4px solid #ffc107; padding: 10px 14px; font-size: 13px; }
+  .note { font-size: 12px; color: #4d5b54; margin-top: 8px; }
+  .note .star { color: #e67e22; font-weight: 700; }
+  footer { color: #4d5b54; font-size: 11px; padding: 12px 28px 24px; text-align: center; }
+</style>
+</head>
+<body>
+<header>
+  <h1>SingleCell Quick QC sample report: {{ sample_id }}</h1>
+  <div class="meta">generated {{ generated_at }} &middot; pipeline {{ pipeline_version }} &middot; workflow: <strong>{{ scq_workflow }}</strong></div>
+</header>
+<main>
+
+<section>
+  <h2>Summary</h2>
+  <table class="kv">
+    <tr><td>Sample ID</td><td>{{ sample_id }}</td></tr>
+    <tr><td>Species</td><td>{{ species }}</td></tr>
+    <tr><td>Chemistry (specified)</td><td>{{ chemistry.specified_chemistry }}</td></tr>
+    <tr><td>Chemistry (detected)</td>
+        <td>{{ chemistry.detected_chemistry }}
+            <span class="badge {{ chemistry.status | lower }}">{{ chemistry.status }}</span></td></tr>
+    <tr><td>Cells called</td><td>{{ cell_calling.cells_called }}</td></tr>
+    <tr><td>UMI threshold used</td><td>{{ cell_calling.threshold_used }}</td></tr>
+    <tr><td>Auto-detected knee UMI</td><td>{{ cell_calling.auto_knee_umi or '-' }} ({{ cell_calling.knee_status }})</td></tr>
+    <tr><td>Median UMI / cell</td><td>{{ qc.median_umi }}</td></tr>
+    <tr><td>Median genes / cell</td><td>{{ qc.median_genes }}</td></tr>
+    <tr><td>Median % MT</td><td>{{ '%.2f' % qc.median_pct_mt }}%</td></tr>
+    <tr><td>Pseudoalignment (%){% if scq_workflow == 'quick' %} <span class="note star">*</span>{% endif %}</td>
+        <td>{{ '%.2f' % alignment.p_pseudoaligned }}%</td></tr>
+  </table>
+</section>
+
+<section>
+  <h2>Read QC (fastp)</h2>
+  <table class="kv">
+    <tr><td>Total reads (before)</td><td>{{ fastp.before_total_reads }}</td></tr>
+    <tr><td>Q30 rate (before)</td><td>{{ '%.2f' % (fastp.before_q30 * 100) }}%</td></tr>
+    <tr><td>Duplication rate</td><td>{{ '%.2f' % (fastp.duplication * 100) }}%</td></tr>
+  </table>
+</section>
+
+<section>
+  <h2>Alignment</h2>
+  <table class="kv">
+    <tr><td>Workflow mode</td><td><strong>{{ scq_workflow }}</strong></td></tr>
+    <tr><td>Reads processed</td><td>{{ alignment.n_processed }}</td></tr>
+    <tr><td>Reads pseudoaligned</td><td>{{ alignment.n_pseudoaligned }}</td></tr>
+    <tr><td>Pseudoalignment (%)</td><td>{{ '%.2f' % alignment.p_pseudoaligned }}%</td></tr>
+  </table>
+  {% if scq_workflow == 'quick' %}
+  <div class="note"><span class="star">*</span> Quick mode uses a cDNA-only kallisto index. Reads coming from
+    pre-mRNA (intronic) cannot pseudoalign, so 49 to 65 percent is the expected range.
+    For higher recovery (~80 to 95 percent) re-run with <code>--workflow full</code>,
+    which builds an index over both spliced and nascent sequences and sums the two
+    count matrices. See README for full vs quick mode details.</div>
+  {% endif %}
+</section>
+
+<section>
+  <h2>Barcode rank plot</h2>
+  <div id="knee" class="plot"></div>
+</section>
+
+<section>
+  <h2>Per-cell distributions</h2>
+  <div class="grid">
+    <div id="umi_hist" class="plot"></div>
+    <div id="genes_hist" class="plot"></div>
+    <div id="mt_violin" class="plot"></div>
+    <div id="doublet_plot" class="plot"></div>
+  </div>
+</section>
+
+{% if celltypist.status == 'ok' %}
+<section>
+  <h2>Cell-type composition <span class="badge pass">CellTypist</span></h2>
+  <table class="kv">
+    <tr><td>Cells annotated</td><td>{{ celltypist_total_cells }}</td></tr>
+    <tr><td>Unique labels</td><td>{{ celltypist_n_labels }}</td></tr>
+    <tr><td>Model</td><td><code>{{ celltypist.model }}</code></td></tr>
+  </table>
+  <div id="celltypist_plot" class="plot"></div>
+</section>
+{% elif celltypist.status == 'skipped' %}
+<section>
+  <h2>Cell-type composition</h2>
+  <div class="skip-box">CellTypist skipped: {{ celltypist.reason }}</div>
+</section>
+{% endif %}
+
+{% if doublet.status == 'skipped' %}
+<section>
+  <h2>Doublet detection</h2>
+  <div class="skip-box">Scrublet skipped: {{ doublet.reason }}</div>
+</section>
+{% else %}
+<section>
+  <h2>Doublet detection
+    {% if doublet.status == 'unreliable' %}
+      <span class="badge warn">UNRELIABLE</span>
+    {% endif %}
+  </h2>
+  {% if doublet.status == 'unreliable' %}
+  <div class="skip-box"><strong>Treat with caution.</strong> {{ doublet.reason }}</div>
+  {% endif %}
+  <table class="kv">
+    <tr><td>Backend</td><td>{{ doublet.backend or 'scrublet' }}</td></tr>
+    <tr><td>Cells analyzed</td><td>{{ doublet.n_cells }}</td></tr>
+    <tr><td>Doublet rate</td><td>{{ '%.2f' % (doublet.doublet_rate * 100) }}%</td></tr>
+    <tr><td>Threshold</td><td>{{ '%.3f' % doublet.threshold if doublet.threshold is not none else '-' }}</td></tr>
+  </table>
+</section>
+{% endif %}
+
+{% if step_times %}
+<section>
+  <h2>Compute &amp; resource usage</h2>
+  <table class="compute">
+    <thead><tr><th>Step</th><th>Wall time</th><th>CPUs</th><th>Memory</th></tr></thead>
+    <tbody>
+    {% for r in step_times %}
+      <tr><td>{{ r.name }}</td><td>{{ r.realtime }}</td><td>{{ r.cpus }}</td><td>{{ r.memory }}</td></tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</section>
+{% endif %}
+
+</main>
+<footer>SingleCell Quick QC &middot; report rendered on {{ generated_at }}</footer>
+
+<script>
+const knee = {{ knee_json | safe }};
+const umiHist = {{ umi_hist_json | safe }};
+const genesHist = {{ genes_hist_json | safe }};
+const mtViolin = {{ mt_violin_json | safe }};
+const doubletPlot = {{ doublet_plot_json | safe }};
+const celltypistPlot = {{ celltypist_plot_json | safe }};
+
+if (knee) Plotly.newPlot('knee', knee.data, knee.layout, {responsive: true});
+if (umiHist) Plotly.newPlot('umi_hist', umiHist.data, umiHist.layout, {responsive: true});
+if (genesHist) Plotly.newPlot('genes_hist', genesHist.data, genesHist.layout, {responsive: true});
+if (mtViolin) Plotly.newPlot('mt_violin', mtViolin.data, mtViolin.layout, {responsive: true});
+if (doubletPlot) Plotly.newPlot('doublet_plot', doubletPlot.data, doubletPlot.layout, {responsive: true});
+if (celltypistPlot && document.getElementById('celltypist_plot')) {
+  Plotly.newPlot('celltypist_plot', celltypistPlot.data, celltypistPlot.layout, {responsive: true});
+}
+</script>
+</body>
+</html>

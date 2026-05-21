@@ -1,0 +1,15 @@
+{
+  "sample_id": "SRR21064278",
+  "species": "human",
+  "n_cells": 979,
+  "n_genes_detected": 28780,
+  "median_umi": 23734,
+  "mean_umi": 26809.56179775281,
+  "p25_umi": 14652.5,
+  "p75_umi": 33788.0,
+  "median_genes": 5236,
+  "mean_pct_mt": 8.17247973794992,
+  "median_pct_mt": 8.172896846205708,
+  "mt_genes_in_features": 37,
+  "mt_detection_warning": false
+}

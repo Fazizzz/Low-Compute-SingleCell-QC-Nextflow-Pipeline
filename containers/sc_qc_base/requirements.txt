@@ -1,0 +1,3 @@
+kb-python==0.29.5
+scrublet>=0.2.3
+kneed>=0.8

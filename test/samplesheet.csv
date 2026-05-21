@@ -1,0 +1,7 @@
+sample_id,fastq_r1,fastq_r2,chemistry,species
+SRR21064278,test_data/SRR21064278_R1.fastq.gz,test_data/SRR21064278_R2.fastq.gz,10xv3,human
+SRR21064279,test_data/SRR21064279_R1.fastq.gz,test_data/SRR21064279_R2.fastq.gz,10xv3,human
+SRR31131527,test_data/SRR31131527_R1.fastq.gz,test_data/SRR31131527_R2.fastq.gz,10xv3,human
+SRR31131525,test_data/SRR31131525_R1.fastq.gz,test_data/SRR31131525_R2.fastq.gz,10xv3,human
+SRR33398039,test_data/SRR33398039_R1.fastq.gz,test_data/SRR33398039_R2.fastq.gz,10xv3,human
+SRR33398036,test_data/SRR33398036_R1.fastq.gz,test_data/SRR33398036_R2.fastq.gz,10xv3,human

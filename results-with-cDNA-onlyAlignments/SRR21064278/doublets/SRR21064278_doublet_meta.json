@@ -1,0 +1,10 @@
+{
+  "sample_id": "SRR21064278",
+  "status": "unreliable",
+  "reason": "doublet rate 90.0% implausibly high; scrublet threshold likely picked noise floor (poor bimodal structure)",
+  "n_cells": 979,
+  "doublet_rate": 0.8998978549540347,
+  "expected_doublet_rate": 0.06,
+  "threshold": 0.05148370599429109,
+  "backend": "scanpy.pp.scrublet"
+}
