@@ -6,7 +6,7 @@
 
 Low-compute Nextflow DSL2 pipeline for fast quality control of single-cell RNA-seq libraries. Runs on a laptop in quick mode for integrity checks and compute-cost prediction, scales to HPC or cloud in full mode for 10x Cell Ranger comparable count matrices. Outputs self-contained interactive HTML reports plus Cell Ranger style MTX matrices ready for scanpy or Seurat.
 
-The pipeline has been validated on Element AVITI and Illumina HiSeq output from a published 10x Genomics 3' v3 dataset, demonstrating both multi-platform chemistry detection and a depletion experiment using the scCLEAN (Jumpcode) protocol.
+The pipeline has been validated on Element AVITI and Illumina NextSeq 2000 outputs using published 10x Genomics 3' v3 dataset, demonstrating both multi-platform chemistry detection and a depletion experiment using the scCLEAN (Jumpcode) protocol.
 
 ## Contents
 
