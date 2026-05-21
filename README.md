@@ -6,7 +6,7 @@
 
 Low-compute Nextflow DSL2 pipeline for fast quality control of single-cell RNA-seq libraries. Runs on a laptop in quick mode for integrity checks and compute-cost prediction, scales to HPC or cloud in full mode for 10x Cell Ranger comparable count matrices. Outputs self-contained interactive HTML reports plus Cell Ranger style MTX matrices ready for scanpy or Seurat.
 
-The pipeline has been validated on Element AVITI and Illumina NextSeq 2000 outputs using published 10x Genomics 3' v3 dataset, demonstrating both multi-platform chemistry detection and a depletion experiment using the scCLEAN (Jumpcode) protocol.
+The pipeline is validated on public 10x Genomics 3' v3 datasets generated on both Element AVITI and Illumina NextSeq 2000 instruments, exercising multi-platform pseudoalignment, automatic chemistry detection, and reproducing the published scCLEAN (Jumpcode) CRISPR-Cas9 transcript depletion signal in PBMC samples. Library scales from 1,000 to 10,000 cells per sample (65 to 520 million reads) run end-to-end in quick mode on a 16 GB laptop. Full mode produces Cell Ranger comparable count matrices on AWS m6i.4xlarge for roughly one US dollar per sample.
 
 ## Contents
 
@@ -44,7 +44,7 @@ flowchart LR
 - Cell Ranger style outputs (MTX, barcodes, genes) compatible with scanpy and Seurat without conversion.
 - Self-contained interactive HTML reports with Plotly figures, no static asset hosting needed.
 - Automatic chemistry detection across 10x 3' v3, 10x 3' v2, and Drop-seq layouts.
-- Validated on multiple sequencing platforms (Element AVITI, Illumina HiSeq) using shared chemistry.
+- Validated on multiple sequencing platforms (Element AVITI, Illumina NextSeq 2000) using shared 10x 3' v3 chemistry.
 - Two compute envelopes from the same codebase: laptop friendly quick mode for integrity checks, HPC or cloud full mode for production-grade matrices.
 - Resilient by default: per-task retry and graceful skip for FASTP failures, so one bad fastq does not block other samples.
 - Profile based resource model so the same `nextflow run` invocation works on a 16 GB laptop, a 64 GB HPC node, or a tuned AWS instance.

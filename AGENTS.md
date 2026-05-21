@@ -125,8 +125,8 @@ The pipeline is validated against four public samples that exercise the chemistr
 |---|---|---|---|
 | SRR21064278 | Element AVITI, 10x 3' v3 | ~1K | PBMC, demonstrator |
 | SRR21064279 | Element AVITI, 10x 3' v3 | ~10K | PBMC, demonstrator |
-| SRR33398036 | Illumina HiSeq, 10x 3' v3 | ~13K | "scCLEAN" Jumpcode-depleted (from *A CRISPR/Cas9-based enhancement of high-throughput single-cell transcriptomics*) |
-| SRR33398039 | Illumina HiSeq, 10x 3' v3 | ~13K | Control matched to SRR33398036 |
+| SRR33398036 | Illumina NextSeq 2000, 10x 3' v3 | ~13K | "scCLEAN" Jumpcode-depleted (from *A CRISPR/Cas9-based enhancement of high-throughput single-cell transcriptomics*) |
+| SRR33398039 | Illumina NextSeq 2000, 10x 3' v3 | ~13K | Control matched to SRR33398036 |
 
 **What this dataset proves:**
 - The chemistry detector works on both Element AVITI and Illumina output (chemistry is identical 10x 3' v3, but read-length and quality profiles differ).
