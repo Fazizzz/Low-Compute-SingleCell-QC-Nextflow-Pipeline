@@ -6,9 +6,11 @@
 
 ## Overview
 
-`scq` is a low-compute Nextflow DSL2 pipeline for fast quality control of single-cell RNA-seq libraries. It replaces the heavy genome-alignment step at the core of Cell Ranger and STARsolo with [kallisto](https://pachterlab.github.io/kallisto/) pseudoalignment. Pseudoalignment matches k-mers from each read against a transcript index rather than computing a full base-by-base alignment, which is roughly an order of magnitude faster and small enough to fit a 16 GB laptop. The tradeoff is a small loss of base-level resolution: pseudoalignment is appropriate for transcript quantification and the QC metrics in this pipeline, but not for tasks that need exact alignment coordinates (variant calling, allele-specific expression, etc.).
+`scq` is a low-compute Nextflow DSL2 pipeline for fast quality control of single-cell RNA-seq libraries. It replaces the heavy genome-alignment step at the core of Cell Ranger and STARsolo with [kallisto](https://pachterlab.github.io/kallisto/) **pseudoalignment using k-mers**. Pseudoalignment breaks each read into short fixed-length substrings (k-mers), looks those k-mers up in a pre-built transcript index, and assigns the read to the set of transcripts whose k-mers it is compatible with. The read is never matched base-by-base to the genome; only its k-mer composition is. This is roughly an order of magnitude faster than full alignment and small enough to fit a 16 GB laptop.
 
-The kallisto layer is also chemistry-agnostic. Because reads are matched as k-mers and barcodes are parsed from the read structure rather than from a kit-specific demultiplexer, the same pipeline can in principle ingest any single-cell chemistry that exposes a paired-read layout (10x Genomics 3' v2/v3, BD Rhapsody, Drop-seq, sci-seq, etc.) without being locked into the 10x ecosystem the way Cell Ranger is. At the moment this has only been **validated end-to-end on 10x Genomics 3' v3 chemistry and human / mouse genomes**, but the chemistry detector and the kallisto+bustools backend are not 10x specific.
+The tradeoff is that pseudoalignment **does not produce base-level resolution and does not provide a position (alignment coordinate) for the read on the genome or transcript**. You get the assignment to a transcript or set of transcripts and the count of UMIs that landed on each, which is exactly what is needed for transcript quantification, cell calling, doublet detection, and the rest of the QC metrics in this pipeline. It is not appropriate for tasks that need where-on-the-sequence-the-read-aligned information (variant calling, allele-specific expression, splice-junction discovery, etc.).
+
+The kallisto layer is also chemistry-agnostic. Because reads are matched as k-mers and the cell barcode and UMI are parsed positionally from the R1 read structure rather than by a kit-specific demultiplexer, kallisto+bustools support every major single-cell chemistry: 10x Genomics 3' v2 / v3 / v3.1 / v4, BD Rhapsody, Drop-seq, inDrop, sci-RNA-seq, Smart-seq3, and others. This pipeline currently accepts `10xv2`, `10xv3`, `10xv3.1`, and `dropseq` in its samplesheet validator (the others are a schema-only addition away). End-to-end QC validation has so far been performed on **10x Genomics 3' v3 chemistry and the human genome**; mouse should work as a drop-in given the pipeline already supports `species=mouse` and the kallisto layer is genome-agnostic, but a mouse end-to-end run has not been published here yet.
 
 Runs on a laptop in quick mode for integrity checks and compute-cost prediction. Scales to HPC or cloud in full mode for 10x Cell Ranger comparable count matrices. Outputs self-contained interactive HTML reports plus Cell Ranger style MTX matrices ready for scanpy or Seurat.
 
@@ -52,8 +54,8 @@ flowchart LR
 
 - Cell Ranger style outputs (MTX, barcodes, genes) compatible with scanpy and Seurat without conversion.
 - Self-contained interactive HTML reports with Plotly figures, no static asset hosting needed.
-- Automatic chemistry detection across 10x 3' v3, 10x 3' v2, and Drop-seq layouts.
-- Validated on multiple sequencing platforms (Element AVITI, Illumina NextSeq 2000) using shared 10x 3' v3 chemistry.
+- Chemistry-agnostic kallisto+bustools backend supporting all major single-cell layouts. Current samplesheet validator accepts 10x 3' v2 / v3 / v3.1 and Drop-seq out of the box; adding 10x 3' v4, BD Rhapsody, sci-RNA-seq, Smart-seq3, or other kb-python-supported chemistries is a small schema-only change.
+- Validated end-to-end on 10x Genomics 3' v3 chemistry across two sequencing platforms (Element AVITI, Illumina NextSeq 2000).
 - Two compute envelopes from the same codebase: laptop friendly quick mode for integrity checks, HPC or cloud full mode for production-grade matrices.
 - Resilient by default: per-task retry and graceful skip for FASTP failures, so one bad fastq does not block other samples.
 - Profile based resource model so the same `nextflow run` invocation works on a 16 GB laptop, a 64 GB HPC node, or a tuned AWS instance.
@@ -328,8 +330,8 @@ Memory caps are not baked into the images. They are controlled by the Nextflow c
 ## Roadmap
 
 - **nf-core submission.** Align directory layout, schema, and test data to the [nf-core](https://nf-co.re/) standard and submit for community review.
-- **Broader organism coverage.** Validate on mouse and zebrafish reference indices, add species-aware mitochondrial gene lists.
-- **Chemistry validation.** Extend the chemistry detector and validate on Parse Biosciences, 10x 3' v4, and BD Rhapsody outputs.
+- **Broader organism coverage.** Mouse is already accepted at the schema level and should work as a drop-in, but a published mouse end-to-end run is still pending. Beyond mouse, the next targets are non-mammalian model systems (zebrafish, fly, worm, plant) with species-aware mitochondrial gene lists and validated reference indices.
+- **Chemistry validation.** Extend the samplesheet validator and the chemistry detector to cover the kb-python-supported chemistries the pipeline does not yet expose: Parse Biosciences, 10x 3' v4, BD Rhapsody, sci-RNA-seq, inDrop, Smart-seq3, and others. The kallisto+bustools layer already supports these natively; the work is mostly schema and a few lookup-table rows.
 - **Terraform module for HPC bootstrap.** A one-command Terraform plan that provisions a transient AWS or GCP node sized for full mode, runs the pipeline, ships results to object storage, and tears the node down. Captures the validated reference instance type and the warm-start S3 layout documented in AGENTS.md.
 - **Wiki gallery.** Browsable comparison of quick mode vs full mode reports for the four validation samples, plus the scCLEAN pseudo-experiment results.
 
