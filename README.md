@@ -20,7 +20,8 @@ The pipeline is validated on public 10x Genomics 3' v3 datasets generated on bot
 - [Docker containers](#docker-containers)
 - [Roadmap](#roadmap)
 - [License](#license)
-- [References and acknowledgements](#references-and-acknowledgements)
+- [References](#references)
+- [Acknowledgements](#acknowledgements)
 
 ## Workflow
 
@@ -258,7 +259,7 @@ Memory caps are not baked into the images. They are controlled by the Nextflow c
 
 This project is released under the [MIT License](LICENSE). See `LICENSE` for the full text.
 
-## References and acknowledgements
+## References
 
 - Bray, N. L., Pimentel, H., Melsted, P., and Pachter, L. (2016). Near-optimal probabilistic RNA-seq quantification. *Nature Biotechnology*, 34, 525 to 527. [doi:10.1038/nbt.3519](https://doi.org/10.1038/nbt.3519)
 - Melsted, P., Booeshaghi, A. S., Liu, L., et al. (2021). Modular, efficient and constant-memory single-cell RNA-seq preprocessing. *Nature Biotechnology*, 39, 813 to 818. [doi:10.1038/s41587-021-00870-2](https://doi.org/10.1038/s41587-021-00870-2)
@@ -269,3 +270,20 @@ This project is released under the [MIT License](LICENSE). See `LICENSE` for the
 - Yu, L., Wang, X., Mu, Q., Tam, S. S. T., et al. (2024). scCLEAN improves the signal-to-noise ratio of single-cell transcriptomics by reducing noise from highly expressed genes. *Nature Communications*, 15, [scCLEAN paper]. The validation samples SRR33398036 (depleted) and SRR33398039 (control) are reused with thanks to the authors for the open release.
 - Element Biosciences AVITI data (SRR21064278, SRR21064279) is reused from the public release accompanying the platform's initial single-cell demonstrators.
 - Built with [Nextflow](https://www.nextflow.io/) and the conventions established by [nf-core](https://nf-co.re/). Thanks to the kallisto, bustools, and kb-python teams at the Pachter lab for the underlying alignment tooling.
+
+## Acknowledgements
+
+Muhammad Faizan Khalid: Author and current maintainer
+
+This pipeline grew out of a desire to build something practical: a resource that enables everyday users to perform single-cell analysis at scale while remaining accessible for local, low-compute environments. It provides a framework for both small local analyses and larger-scale studies, acting as a training resource for users who want hands-on experience with downstream single-cell analysis. It also gives labs an opportunity to QC their data locally before committing to cloud costs.
+
+The pipeline was developed as part of an ongoing portfolio in bioinformatics pipeline engineering, with a focus on single-cell sequencing, containerization, and QC resource development beyond the 10x Genomics ecosystem.
+
+The pipeline architecture draws inspiration from the work of [Tommy Tang](https://www.youtube.com/watch?v=fVtiHHIvG-I), who provides several helpful resources on his [GitHub](https://github.com/crazyhottommy). It follows nf-core DSL2 module conventions, with intentional deviations documented in the codebase. The multi-sample framework and harmonized reporting tools reflect the kind of scalable approach needed in production sequencing environments handling tens to hundreds of samples.
+
+This repository is provided for educational and demonstration purposes. It is not affiliated with Tommy Tang, nf-core, 10x Genomics, or any commercial organization. It includes well-commented scripts and a streamlined analysis workflow designed for low-compute environments, ease of use, and local implementation. It is not a commercial product. The code is provided "as is," without warranty of any kind. Bugs and feedback are welcome through the repository's issue tracker.
+
+For citation or attribution, please reference:
+Khalid, M. Faizan (or Khalid MF)
+
+You can follow related research and professional updates via my [Google Scholar profile](https://scholar.google.com/citations?hl=en&user=qFZQ5wYAAAAJ&sortby=title&view_op=list_works&gmla=AL3_zigRWGX9g8Jc22idbBUMFuy7cVN_pEIyL6_DXSA-qWkJbcaONzhRNSmAwmQXKEm-3-WYGouZZC2pCE6zD9tZLxizbM7jQzzZMOgtkgsuL825u4lvSs9kwsccajhJbBg2Mrc37at_HCQ) or [LinkedIn](https://www.linkedin.com/in/m-faizan-khalid/).
