@@ -52,7 +52,7 @@ flowchart LR
 
 - Cell Ranger style outputs (MTX, barcodes, genes) compatible with scanpy and Seurat without conversion.
 - Self-contained interactive HTML reports with Plotly figures, no static asset hosting needed.
-- Chemistry-agnostic kallisto+bustools backend supporting all major single-cell layouts. Current samplesheet validator accepts 10x 3' v2 / v3 / v3.1 and Drop-seq out of the box; adding 10x 3' v4, BD Rhapsody, sci-RNA-seq, Smart-seq3, or other kb-python-supported chemistries is a small schema-only change.
+- Chemistry-agnostic kallisto+bustools backend. The samplesheet validator accepts every chemistry kb-python 0.29.5 recognises (all 10x variants, BD Rhapsody, Drop-seq, inDrops, SMART-Seq, SPLiT-seq, Visium, and more). End-to-end QC has so far been validated on 10x 3' v3 only; the rest pass through the same code path and are flagged for downstream test runs in the [Roadmap](#roadmap).
 - Validated end-to-end on 10x Genomics 3' v3 chemistry across two sequencing platforms (Element AVITI, Illumina NextSeq 2000).
 - Two compute envelopes from the same codebase: laptop friendly quick mode for integrity checks, HPC or cloud full mode for production-grade matrices.
 - Resilient by default: per-task retry and graceful skip for FASTP failures, so one bad fastq does not block other samples.
