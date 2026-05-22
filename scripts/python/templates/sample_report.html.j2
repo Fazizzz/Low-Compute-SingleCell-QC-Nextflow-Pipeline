@@ -44,8 +44,9 @@
     <tr><td>Sample ID</td><td>{{ sample_id }}</td></tr>
     <tr><td>Species</td><td>{{ species }}</td></tr>
     <tr><td>Chemistry (specified)</td><td>{{ chemistry.specified_chemistry }}</td></tr>
-    <tr><td>Chemistry (detected)</td>
-        <td>{{ chemistry.detected_chemistry }}
+    <tr><td>Chemistry check</td>
+        <td>R1 modal length {{ chemistry.modal_r1_length or '-' }} bp
+            {% if chemistry.expected_r1_length %}(expected {{ chemistry.expected_r1_length }} bp){% endif %}
             <span class="badge {{ chemistry.status | lower }}">{{ chemistry.status }}</span></td></tr>
     <tr><td>Cells called</td><td>{{ cell_calling.cells_called }}</td></tr>
     <tr><td>UMI threshold used</td><td>{{ cell_calling.threshold_used }}</td></tr>

@@ -13,7 +13,23 @@ process VALIDATE_SAMPLESHEET {
     python3 <<'PY'
 import csv, sys, os
 
-ALLOWED_CHEM = {'10xv2','10xv3','10xv3.1','dropseq'}
+# Every chemistry recognised by kb-python 0.29.5 / kallisto 0.51.1
+# (output of `kb --list`). End-to-end QC validation has only been
+# performed on 10xv3 so far, but the kb count backend supports the full
+# set natively; values are forwarded verbatim to `kb count -x`.
+ALLOWED_CHEM = {
+    '10xv1', '10xv2', '10xv3', '10xv3.1', '10xv3_ultima', '10xv4',
+    'bdwta', 'bulk',
+    'celseq', 'celseq2',
+    'dropseq',
+    'indropsv1', 'indropsv2', 'indropsv3',
+    'scrubseq',
+    'smartseq2', 'smartseq3',
+    'split-seq',
+    'stormseq',
+    'surecell',
+    'visium',
+}
 ALLOWED_SPECIES = {'human','mouse'}
 REQUIRED = ['sample_id','fastq_r1','fastq_r2','chemistry','species']
 

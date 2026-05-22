@@ -22,7 +22,7 @@ process CHEMISTRY_CHECK {
     stub:
     """
     cat > ${sample_id}_chemistry.json <<JSON
-    {"sample_id":"${sample_id}","specified_chemistry":"${chemistry}","detected_chemistry":"10xv3-class","modal_length":28,"reads_sampled":10000,"length_histogram":{"28":10000},"status":"PASS"}
+    {"sample_id":"${sample_id}","specified_chemistry":"${chemistry}","modal_r1_length":28,"expected_r1_length":28,"reads_sampled":10000,"length_histogram":{"28":10000},"status":"PASS","note":"stub run"}
     JSON
     """
 }
