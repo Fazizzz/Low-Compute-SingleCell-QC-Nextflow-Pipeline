@@ -4,17 +4,25 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Nextflow](https://img.shields.io/badge/nextflow-%E2%89%A524.10.6-23aa62.svg)](https://www.nextflow.io/)
 
-Low-compute Nextflow DSL2 pipeline for fast quality control of single-cell RNA-seq libraries. Runs on a laptop in quick mode for integrity checks and compute-cost prediction, scales to HPC or cloud in full mode for 10x Cell Ranger comparable count matrices. Outputs self-contained interactive HTML reports plus Cell Ranger style MTX matrices ready for scanpy or Seurat.
+## Overview
+
+`scq` is a low-compute Nextflow DSL2 pipeline for fast quality control of single-cell RNA-seq libraries. It replaces the heavy genome-alignment step at the core of Cell Ranger and STARsolo with [kallisto](https://pachterlab.github.io/kallisto/) pseudoalignment. Pseudoalignment matches k-mers from each read against a transcript index rather than computing a full base-by-base alignment, which is roughly an order of magnitude faster and small enough to fit a 16 GB laptop. The tradeoff is a small loss of base-level resolution: pseudoalignment is appropriate for transcript quantification and the QC metrics in this pipeline, but not for tasks that need exact alignment coordinates (variant calling, allele-specific expression, etc.).
+
+The kallisto layer is also chemistry-agnostic. Because reads are matched as k-mers and barcodes are parsed from the read structure rather than from a kit-specific demultiplexer, the same pipeline can in principle ingest any single-cell chemistry that exposes a paired-read layout (10x Genomics 3' v2/v3, BD Rhapsody, Drop-seq, sci-seq, etc.) without being locked into the 10x ecosystem the way Cell Ranger is. At the moment this has only been **validated end-to-end on 10x Genomics 3' v3 chemistry and human / mouse genomes**, but the chemistry detector and the kallisto+bustools backend are not 10x specific.
+
+Runs on a laptop in quick mode for integrity checks and compute-cost prediction. Scales to HPC or cloud in full mode for 10x Cell Ranger comparable count matrices. Outputs self-contained interactive HTML reports plus Cell Ranger style MTX matrices ready for scanpy or Seurat.
 
 The pipeline is validated on public 10x Genomics 3' v3 datasets generated on both Element AVITI and Illumina NextSeq 2000 instruments, exercising multi-platform pseudoalignment, automatic chemistry detection, and reproducing the published scCLEAN (Jumpcode) CRISPR-Cas9 transcript depletion signal in PBMC samples. Library scales from 1,000 to 10,000 cells per sample (65 to 520 million reads) run end-to-end in quick mode on a 16 GB laptop. Full mode produces Cell Ranger comparable count matrices on AWS m6i.4xlarge for roughly one US dollar per sample.
 
 ## Contents
 
+- [Overview](#overview)
 - [Workflow](#workflow)
 - [Features](#features)
 - [Modes](#modes)
 - [Key dependencies](#key-dependencies)
 - [Install](#install)
+- [Resources and downloads](#resources-and-downloads)
 - [Usage](#usage)
 - [Input and output formats](#input-and-output-formats)
 - [Docker containers](#docker-containers)
@@ -74,6 +82,8 @@ Quick mode is the recommended first pass for any new sample. It produces a compl
 
 ## Install
 
+> The commands below are shown as multi-line shell blocks for readability. Please **run them one line at a time**, copying each line individually into your terminal and waiting for it to finish before pasting the next. Some lines (for example `conda env create`) take several minutes; pasting the whole block at once will queue lines while the previous one is still running and will make any error harder to find. If you are new to docker, also read the [Docker containers](#docker-containers) section first; it has a short install guide.
+
 ### Option A: conda environment (laptop or HPC login node)
 
 ```bash
@@ -88,16 +98,60 @@ For strict reproducibility, use `envs/scq.lock.yml` instead of `envs/scq.yml`. T
 
 ### Option B: docker
 
+If you have never used docker before, see the install steps in the [Docker containers](#docker-containers) section below first, then come back here. Once docker is installed and the daemon is running:
+
 ```bash
+git clone https://github.com/Fazizzz/Low-Compute-SingleCell-QC-Nextflow-Pipeline.git
+cd Low-Compute-SingleCell-QC-Nextflow-Pipeline
 docker build -f containers/sc_qc_base/Dockerfile -t sc_qc_base:latest .
 docker build -f containers/sc_qc_annotate/Dockerfile -t sc_qc_annotate:latest .
 ```
 
-Then invoke Nextflow with `-profile docker`. See the [Docker containers](#docker-containers) section for details.
+Then invoke Nextflow with `-profile docker` in the [Usage](#usage) examples below.
 
 ### Option C: singularity
 
 Convert the docker images to `.sif` (`singularity build sc_qc_base.sif docker-daemon://sc_qc_base:latest`) and invoke with `-profile singularity`.
+
+## Resources and downloads
+
+The pipeline ships the code only; reference genomes and the optional CellTypist classification model are NOT bundled and must be downloaded separately. Choose the species that matches your samples.
+
+### Reference genomes (required)
+
+Quick mode needs a kallisto cDNA index. Full mode needs a kallisto nac (spliced + nascent) index. Either can be built from a primary-assembly FASTA + a GTF annotation. Recommended sources:
+
+- **Human GRCh38, Ensembl release 110**
+  - FASTA: [Homo_sapiens.GRCh38.dna.primary_assembly.fa.gz](https://ftp.ensembl.org/pub/release-110/fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna.primary_assembly.fa.gz)
+  - GTF: [Homo_sapiens.GRCh38.110.gtf.gz](https://ftp.ensembl.org/pub/release-110/gtf/homo_sapiens/Homo_sapiens.GRCh38.110.gtf.gz)
+- **Mouse GRCm39, Ensembl release 110**
+  - FASTA: [Mus_musculus.GRCm39.dna.primary_assembly.fa.gz](https://ftp.ensembl.org/pub/release-110/fasta/mus_musculus/dna/Mus_musculus.GRCm39.dna.primary_assembly.fa.gz)
+  - GTF: [Mus_musculus.GRCm39.110.gtf.gz](https://ftp.ensembl.org/pub/release-110/gtf/mus_musculus/Mus_musculus.GRCm39.110.gtf.gz)
+
+Build the index with the helper script:
+
+```bash
+scripts/shell/03_build_reference.sh <genome.fa.gz> <annotation.gtf.gz> <outdir>            # quick mode (cDNA only)
+scripts/shell/03_build_reference.sh <genome.fa.gz> <annotation.gtf.gz> <outdir> --full     # full mode (nac index)
+```
+
+You can also point the pipeline at the genome and GTF directly with `--genome_fasta` and `--genome_gtf`; it will run the same step internally. Both paths produce identical artifacts (`index.idx`, `t2g.txt`, plus `cdna_t2c.txt` and `nascent_t2c.txt` for full mode).
+
+### CellTypist model (optional, only for `--run_celltypist`)
+
+The CellTypist model is a separate `.pkl` file that ships with the CellTypist project, NOT with this pipeline. It is required only if you enable `--run_celltypist true`. Browse the model catalogue at the [CellTypist model gallery](https://www.celltypist.org/models). Common starting points for PBMC and immune work:
+
+- `Immune_All_Low.pkl` ([direct download](https://celltypist.cog.sanger.ac.uk/models/Pan_Immune_CellTypist/v2/Immune_All_Low.pkl)) - broad immune compartments at low granularity. Used in the validation runs in this repo.
+- `Immune_All_High.pkl` ([direct download](https://celltypist.cog.sanger.ac.uk/models/Pan_Immune_CellTypist/v2/Immune_All_High.pkl)) - finer-grained immune labels.
+
+To fetch one manually:
+
+```bash
+mkdir -p celltypist_models
+curl -L -o celltypist_models/Immune_All_Low.pkl https://celltypist.cog.sanger.ac.uk/models/Pan_Immune_CellTypist/v2/Immune_All_Low.pkl
+```
+
+Pass the resulting path with `--celltypist_model_path celltypist_models/Immune_All_Low.pkl` (see Usage below).
 
 ## Usage
 
@@ -146,9 +200,11 @@ AWS, full mode, docker, with CellTypist annotation:
 nextflow run main.nf -profile aws,docker --workflow full \
     --samplesheet samples.csv \
     --prebuilt_index nac.idx --t2g t2g.txt \
-    --cdna_t2c cdna_t2c.txt --nascent_t2c cdna_t2c.txt \
+    --cdna_t2c cdna_t2c.txt --nascent_t2c nascent_t2c.txt \
     --run_celltypist --celltypist_model_path Immune_All_Low.pkl
 ```
+
+`--celltypist_model_path` must point at a `.pkl` file that you have already downloaded; the pipeline does NOT ship CellTypist models. See [Resources and downloads](#resources-and-downloads) for the model gallery and a fetch command.
 
 Standalone shell wrappers for every pipeline stage live under `scripts/shell/` if you need to run individual steps outside Nextflow.
 
@@ -205,19 +261,19 @@ Below the status table, the group report shows per-sample bar charts for the key
 
 Each sample report includes a top-line summary, the FASTP read QC panel, the alignment summary with mode-aware caveats, the barcode rank knee plot, per-cell UMI, gene, mitochondrial percent and doublet score distributions, and an optional CellTypist composition panel.
 
-![Per-sample summary metrics](https://raw.githubusercontent.com/Fazizzz/Low-Compute-SingleCell-QC-Nextflow-Pipeline/main/assets/report-images/Per-sample-stats.png)
+![Per-sample alignment and read QC](https://raw.githubusercontent.com/Fazizzz/Low-Compute-SingleCell-QC-Nextflow-Pipeline/main/assets/report-images/Per-Sample-Detail-Metrics.png)
 
-*Figure 4: Per-sample summary section. Cells called, median UMIs, median genes, mitochondrial fraction, pseudoalignment percentage, and the auto-detected knee threshold sit at the top of every sample report. The asterisk note on quick-mode alignment reminds the reader that intronic reads are not counted in that mode.*
+*Figure 4: Per-sample alignment and read QC. Barcode rank plot with the auto-calculated knee threshold, full pseudoalignment counts, and FASTP read-quality metrics (total reads, Q30 rate, duplication fraction). Together these let users sanity-check chemistry detection, sequencing quality, and library prep before trusting the cell-level metrics below.*
 
-![Per-sample detail metrics](https://raw.githubusercontent.com/Fazizzz/Low-Compute-SingleCell-QC-Nextflow-Pipeline/main/assets/report-images/Per-Sample-Detail-Metrics.png)
+![Per-cell distributions](https://raw.githubusercontent.com/Fazizzz/Low-Compute-SingleCell-QC-Nextflow-Pipeline/main/assets/report-images/Per-sample-stats.png)
 
-*Figure 5: Per-sample alignment and FASTP detail. Total reads, Q30 rate, duplication fraction, and full pseudoalignment counts let users sanity-check chemistry detection and library prep before trusting the cell-level metrics.*
+*Figure 5: Per-cell distributions. UMI counts per cell, genes detected per cell, mitochondrial percent, and Scrublet doublet scores. Together these describe library complexity, sequencing depth, and the doublet content of the called cell population.*
 
 When CellTypist is enabled, each sample receives a cell-type composition bar chart using the same expanded palette as the group plots.
 
 ![Per-sample CellTypist composition](https://raw.githubusercontent.com/Fazizzz/Low-Compute-SingleCell-QC-Nextflow-Pipeline/main/assets/report-images/Per-sample-Celltypist-annotation.png)
 
-*Figure 6: CellTypist composition for a PBMC sample using the Immune_All_Low model. Categorical bars use the 12-color sea-green-anchored palette, with black-outlined bars matching the group report style.*
+*Figure 6: CellTypist composition for a PBMC sample using the Immune_All_Low model. Categorical bars use the 12-color sea-green-anchored palette.*
 
 ### Compute and resource usage
 
@@ -229,6 +285,26 @@ Every report footer summarizes compute usage so users can predict the cost of a 
 
 ## Docker containers
 
+### What is docker (short version)
+
+Docker lets a pipeline ship with all its scientific software (kallisto, bustools, scanpy, ...) pre-installed inside a single image. You run that image as a "container" and the pipeline behaves identically on a Mac, a Linux laptop, or a cloud node, without you having to install anything besides docker itself. It is the lowest-friction way to use this pipeline on a host where you do not control the system python or do not want to manage a conda environment.
+
+### Install docker (if you do not already have it)
+
+- **macOS / Windows**: install [Docker Desktop](https://www.docker.com/products/docker-desktop/), launch it once, and confirm in its menu bar that the docker engine is running.
+- **Linux**: follow the [official engine install guide](https://docs.docker.com/engine/install/) for your distribution (Ubuntu / Debian / Fedora / RHEL each have a one-page recipe). After install, you typically also want to add your user to the docker group so you do not need sudo: `sudo usermod -aG docker $USER && newgrp docker`.
+
+Verify with:
+
+```bash
+docker --version
+docker run --rm hello-world
+```
+
+If the `hello-world` container pulls and prints "Hello from Docker!", you are ready.
+
+### The two images in this repo
+
 Two images, both built from the repo:
 
 | Image | Built from | Purpose |
@@ -238,12 +314,14 @@ Two images, both built from the repo:
 
 The split keeps the celltypist torch and onnx footprint out of the base image, which keeps the docker layer pulled to compute nodes small.
 
-To build both:
+To build both (run line by line, each step takes 5-15 min on a first build):
 
 ```bash
 docker build -f containers/sc_qc_base/Dockerfile     -t sc_qc_base:latest     .
 docker build -f containers/sc_qc_annotate/Dockerfile -t sc_qc_annotate:latest .
 ```
+
+Once built, return to the [Install](#install) and [Usage](#usage) sections and invoke Nextflow with `-profile docker`.
 
 Memory caps are not baked into the images. They are controlled by the Nextflow compute profile (`local`, `hpc`, or `aws`). The same image runs everywhere; only the resource envelope changes.
 
